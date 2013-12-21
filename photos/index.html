@@ -1,0 +1,74 @@
+{% capture body %}
+  <main class="l-photos">
+    {{body}}
+    {% for post in posts limit: 3 %}
+      <figure class="image">
+        <img src="{{post.assets.first.url}}" alt="{{post.title}}">
+        <time class="image-time">{{post.date | date: "%b %d, %Y"}}</time>
+      </figure>
+    {% endfor %}
+  </main>
+  <script>
+    var f = (function(){
+      var LazyLoad = function LazyLoad (container, url, offset) {
+        this.container = document.querySelector(container)
+        this.queue = []
+        var xhr = new XMLHttpRequest()
+          , self = this
+          , scrollTimeout;
+        xhr.onload = function () {
+          self.reqListener(this) // `this` refers to the xhr object here
+        }
+        xhr.open('GET', url, true)
+        xhr.send()
+        window.addEventListener('scroll', function () {
+          if (scrollTimeout) clearTimeout(scrollTimeout)
+          scrollTimeout = setTimeout(function() {
+            if (self.scrollInTrigger) self.loadOne()
+          }, 500)
+        }, false)
+      }
+
+      LazyLoad.prototype = {
+        buildPhoto: function buildPhoto (photo) {
+          var self = this
+          var figure = document.createElement('figure')
+          figure.className = 'image'
+          var time = document.createElement('time')
+          time.className = 'image-time'
+          time.innerText = photo.human_date
+          var img = new Image()
+          img.alt = photo.title
+          figure.appendChild(img)
+          figure.appendChild(time)
+          img.onload = function () {
+            self.container.appendChild(figure)
+          }
+          img.src = photo.url
+        },
+
+        scrollInTrigger: 300 >= (document.height - window.pageYOffset) - window.innerHeight,
+
+        loadOne: function loadOne () {
+          if (this.queue.length) {
+            this.buildPhoto(this.queue[0])
+            this.queue.shift()
+          }
+        },
+
+        reqListener: function reqListener (xhr) {
+          var photos = JSON.parse(xhr.responseText)
+            , self = this;
+          [].forEach.call(photos, function(photo) {
+            self.queue.push(photo)
+          })
+        }
+      }
+
+      new LazyLoad('.l-photos', '/photos/photos.json')
+    })()
+    document.addEventListener('DOMContentLoaded',f)
+  </script>
+{% endcapture %}
+
+{% include 'layouts/default' %}

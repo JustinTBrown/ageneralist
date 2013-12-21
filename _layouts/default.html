@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Larry Fox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/build.css" rel="stylesheet" type="text/css">
+  <link href="/css/highlight/ascetic.css" rel="stylesheet" type="text/css">
+  <script src="//use.typekit.net/otl6jdm.js" type="text/javascript"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
+</head>
+
+<body>
+
+  <header>
+    <a href="/"><img class="logo" src="/img/foxy.svg"></a>
+    <nav class="site-nav">
+      <ul>
+      {% for page in site.pages %}
+        {% if page.title != 'Home' %}
+        <li>
+          <a href="{{ page.url }}" {% if page.url == url %}class="is-current"{% endif %}>
+            {{ page.title }}
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+  {{ body }}
+
+  <footer>
+    &copy; {{ site.date | date: '%Y' }} Larry Fox, all rights reserved
+  </footer>
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>(function(G,o,O,g,l){G.GoogleAnalyticsObject=O;G[O]||(G[O]=function(){(G[O].q=G[O].q||[]).push(arguments)});G[O].l=+new Date;g=o.createElement('script'),l=o.scripts[0];g.src='//www.google-analytics.com/analytics.js';l.parentNode.insertBefore(g,l)}(this,document,'ga'));ga('create','UA-41777951-1');ga('send','pageview')</script>
+</body>
+</html>

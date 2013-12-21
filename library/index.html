@@ -1,0 +1,9 @@
+{% capture body %}
+<main class="l-library cf">
+  {% for post in posts %}
+  {% include "includes/book" %}
+  {% endfor %}
+</main>
+{% endcapture %}
+
+{% include "layouts/default" %}

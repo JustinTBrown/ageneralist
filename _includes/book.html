@@ -1,0 +1,10 @@
+<div class="book">
+  <figure class="book-cover">
+    <a href="{{ post.meta.link }}">
+      <img src="{{ post.assets.first }}" alt="{{ post.title | escape }}">
+    </a>
+  </figure>
+  <figcaption class="book-title">
+    <a class="header" href="{{ post.meta.link }}">{{ post.title }}</a>
+  </figcaption>
+</div>
