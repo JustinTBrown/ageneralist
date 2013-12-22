@@ -7,6 +7,9 @@
     {% endif %}
 
     <h1 class="post-title">{{title}}</h1>
+    <time class="post-time">
+      {{post.date}}
+    </time>
     {{body}}
 
     {% if meta.lead_caption.value != blank %}
