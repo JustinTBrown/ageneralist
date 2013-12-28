@@ -35,7 +35,17 @@ pre .tex .command,
 pre .request,
 pre .status{font-weight:700}
 
-del{position:relative}
+pre{
+	background-color:#fbfbf9;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	color:#38374b;
+	line-height:1.3;
+	padding:1em;
+	overflow:scroll
+}
+
+/*del{position:relative}
 del:after{
 	border-bottom:11px solid #16161d;
 	content:"";
@@ -44,10 +54,7 @@ del:after{
 	pointer-events:none;
 	top:.4em;
 	width:100%
-}
-main{
-	display:block
-}
+}*/
 
 h1,
 h2,
@@ -70,10 +77,6 @@ h6{
 }
 
 h1{font-size: 64px}
-/*h1{
-	font-family: 'Crimson Text', serif;
-	font-weight: 400;
-}*/
 
 a{color:#2852eb;text-decoration:none}
 a:hover,
@@ -105,44 +108,34 @@ a:hover{
 
 
 img{max-width:100%}
-pre{
-	background-color:#fbfbf9;
-	border-top:1px solid #e5e5e5;
-	border-bottom:1px solid #e5e5e5;
-	color:#38374b;
-	line-height:1.3;
-	padding:1em;
-	overflow:scroll
-}
-pre code{
+/*pre code{
 	background-color:transparent;
 	border:0;
 	display:block;
 	line-height:1.3;
 	padding:0
-}
-code{
+}*/
+/*code{
 	background-color:#fbfbf9;
 	border-top:1px solid #e5e5e5;
 	border-bottom:1px solid #e5e5e5;
 	font-family:Consolas,monospace;
 	font-size:.75em;
 	padding:.3em .4em .1em
-}
+}*/
 mark{
 	background-color:rgba(255,255,0,.3)
 }
 body{
 	color:#16161d;
-
-	font-size:16px;
+	font-family: 'Source Sans', 'Noto Sans', adobe-caslon-pro, sans-serif;
+	font-weight: 400;
+	font-size:18px;
 	line-height:1.4;
-	/*font-family:adobe-caslon-pro,georgia,sans-serif;*/
 	margin:auto auto 2em;
 	margin-bottom:50px;
 	padding:0 1rem
 }
-/*header{max-width: 90vw}*/
 footer{color:#dbdbd9;
 	font-size:1rem;
 	font-family:ratio,"Lucida Grande",sans-serif;
@@ -158,16 +151,13 @@ footer{color:#dbdbd9;
 
 .site-header{
 	padding: 1em 0;
-	/*padding: 0;*/
-	/*margin: 0;*/
 	overflow: auto;
 	text-rendering:optimizeLegibility;
 	font-weight:700;
 	letter-spacing:1px;
 	color:#3b3b3b;
 	-webkit-font-smoothing:antialiased;
-	/*text-align:left;*/
-	font-family:ratio,"Lucida Grande",sans-serif;
+	font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
 	font-size:16px;
 	font-weight:700;
 	text-transform:uppercase
@@ -175,7 +165,8 @@ footer{color:#dbdbd9;
 .site-header h1{
 	font-size: 18px;
 	letter-spacing: 2px;
-	font-family:ratio,"Lucida Grande",sans-serif;
+	font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
+	font-weight: 700;
 	text-align:center;
 }
 .site-header a,
@@ -201,8 +192,6 @@ footer{color:#dbdbd9;
 }
 
 .site-header a:hover{
-	/*color:#24536b;*/
-	/*color:#8ab9d1;*/
 	color:#DB4632;
 	-moz-transition:all 0.25s ease-in-out;
 	-o-transition:all 0.25s ease-in-out;
@@ -212,48 +201,34 @@ footer{color:#dbdbd9;
 }
 
 .site-name{
-	/*text-align:left;*/
 	float: left;
-	/*margin: 1em;*/
 	margin: 0;
 	padding: 0 0 0 5vw;
-	/*padding-left: 5vw;*/
 }
 
 .site-nav{
 	float:right;
 	margin: 0;
 	padding: 0 5vw;
-	/*vertical-align: baseline;*/
-	/*padding-right:5vw;*/
 }
 
 .site-nav ul{
 	padding:0;
 	margin:0;
-	/*text-align:right;*/
+
 }
 .site-nav li{
 	display:inline-block;
 	margin: 0 0 0 2em;
 	padding: 0;
 	top: 2px;
-	/*position: relative;*/
-	/*vertical-align: baseline;*/
 }
-/*.site-nav li:after{content:" • "}*/
-/*.site-nav li:last-child:after{content:""}*/
-/*.site-nav a,*/
-/*.site-nav a:hover,*/
-/*.site-nav a:focus,*/
-/*.site-nav a.is-current{text-decoration:none;color: #3b3b3b}*/
-/*.site-nav a:visited{text-decoration:none;color: #3b3b3b}*/
 
 .post-wrap{
 	margin:0 auto 2em;
-	/*margin: 0;*/
 	margin-bottom:50px;
-	padding:140px 1rem;
+	padding:80px 1rem;
+	float: none;
 	max-width:45vw;
 }
 
@@ -281,13 +256,9 @@ footer{color:#dbdbd9;
 	font-style: italic;
 }
 
-/*.post-title a{color:#38374b;text-decoration:none}*/
-/*.post-title a:hover,*/
-/*.post-title a:focus{color:#2852eb}*/
 .post-time{
 	text-align:center;
 	font-family:ratio,"Lucida Grande",sans-serif;
-	/*font-size:.75em;*/
 	font-size: 1em;
 	font-weight:400;
 	text-transform:uppercase
@@ -320,14 +291,10 @@ footer{color:#dbdbd9;
 /*.cf:before,*/
 /*.cf:after{content:" ";display:table}*/
 /*.cf:after{clear:both}@media only screen and (min-width:30em){body{font-size:18px}*/
-/*.site-logo{width:52px}*/
-/*.site-header{margin:1.666em 0 5em}*/
 /*.b-photos p{padding:0 .75em}*/
 /*.book{width:25%}*/
 /*.book-title{font-size:.85em}*/
-/*pre{padding:.75em}*/
 /*.footnotes{font-size:.8em}}@media only screen and (min-width:44em){body{font-size:21px;margin-bottom:50vh}*/
-/*.post-time{font-size:14px}*/
 /*code{font-size:14px}*/
 /*.b-library{max-width:58rem}*/
 /*.book{width:20%}*/

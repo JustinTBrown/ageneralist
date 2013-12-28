@@ -5,10 +5,8 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 */
 
 pre code {
-  /*background: white; */
-  color: black;
-  display: block;
-  /*padding: 0.5em;*/
+  display: block; padding: 0.5em;
+  background: white; color: black;
 }
 
 pre .string,
@@ -19,8 +17,7 @@ pre .change,
 pre .apache .tag,
 pre .apache .cbracket,
 pre .nginx .built_in,
-pre .tex .formula,
-pre .regexp {
+pre .tex .formula {
   color: #888;
 }
 
