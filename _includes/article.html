@@ -1,8 +1,6 @@
 <article class="post">
-  <h1 class="post-title">{{post.title}}</h1>
-  <h2>{{post.date}}</h2>
-<!--   <time class="post-time">
-  {{post.date}}
-  </time> -->
-  {{post.body}}
+	<h1 class="post-title">{{post.title}}</h1>
+	<time class="post-time" pubdate datetime="{{ post.date }}"> {{ post.date | date: "%a, %b, %d, %Y" }} </time>
+	<!-- <time class="post-time"> Time Test </time> -->
+	{{post.body}}
 </article>

@@ -1,0 +1,27 @@
+.bgGradient{
+	background: #f06;
+	background: linear-gradient(45deg, #fff235, #089c91);
+	min-height: 100%;
+}
+
+.bgGradient2{
+	background: #f06;
+	background: linear-gradient(45deg, #FF0000, #0971B2);
+	min-height: 100%;	
+}
+
+#clock{
+	text-align: center;
+	font-family: "jaf-domus-titling-web", sans-serif;
+	font-weight: 300;
+	font-size: 170pt;
+	color: white;
+}
+
+.emphasis{
+	color: black;
+}
+
+/*background: #f06;
+background: linear-gradient(45deg, #f06, yellow);
+min-height: 100%;*/

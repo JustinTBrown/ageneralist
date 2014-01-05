@@ -1,5 +1,4 @@
-
-pre code{color:#000;display:block}
+/*pre code{color:#000;display:block}
 pre .string,
 pre .tag .value,
 pre .filter .argument,
@@ -34,16 +33,16 @@ pre .apache .tag,
 pre .tex .command,
 pre .request,
 pre .status{font-weight:700}
-
-pre{
-	background-color:#fbfbf9;
+*/
+/*pre{
+	background-color:#474949;	
 	border-top:1px solid #e5e5e5;
 	border-bottom:1px solid #e5e5e5;
 	color:#38374b;
 	line-height:1.3;
 	padding:1em;
 	overflow:scroll
-}
+}*/
 
 /*del{position:relative}
 del:after{
@@ -63,13 +62,11 @@ h4,
 h5,
 h6{
 	font-family: 
-	"Calendas Plus",
-	"Crimson Text",
-	"Hoefler Text",
+	"Gentium Book Basic",
 	"Georgia",
 	serif;
-	/*font-family: 'Crimson Text', serif;*/
 	font-weight: 400;
+	/*font-weight: 700;*/
 	text-align:center;
 	/*margin:2em auto*/
 	margin: 0;
@@ -78,26 +75,27 @@ h6{
 
 h1{font-size: 64px}
 
-a{color:#2852eb;text-decoration:none}
+/*a{color:#2852eb;text-decoration:none}
 a:hover,
-a:focus{text-decoration:underline}
+a:focus{text-decoration:underline}*/
 
 a,
 a.is-current,
 a:visited{
-	color: #3b3b3b;
+	color:#DB4632;
+	/*color: #3b3b3b;*/
 	-moz-transition:all 0.25s ease-in-out;
 	-o-transition:all 0.25s ease-in-out;
 	-webkit-transition:all 0.25s ease-in-out;
 	-ms-transition:all 0.25s ease-in-out;
 	transition:all 0.25s ease-in-out;
+	text-decoration: none;
 }
 
 a:active,
 a:hover{
-	/*color:#24536b;*/
-	/*color:#8ab9d1;*/
-	color:#DB4632;
+	color: #3b3b3b;
+	/*color:#DB4632;*/
 	-moz-transition:all 0.25s ease-in-out;
 	-o-transition:all 0.25s ease-in-out;
 	-webkit-transition:all 0.25s ease-in-out;
@@ -249,16 +247,46 @@ footer{color:#dbdbd9;
 /*.post-header{margin:1em auto;line-height:1.1}*/
 
 .post-title{
+	color: #3b3b3b;
+	font-family: 
+	"Gentium Book Basic",
+	"Georgia",
+	serif;
 	margin: 0 auto;
 	padding-top: 16.5px;
 	margin-bottom: 16.5px;
 	line-height: 1.25em;
-	font-style: italic;
+	/*font-style: italic;*/
+}
+
+.post-title a,
+.post-title a.is-current,
+.post-title a:visited{
+	/*color:#DB4632;*/
+	color: #3b3b3b;
+/*	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out;
+	text-decoration: none;*/
+}
+
+.post-title a:active,
+.post-title a:hover{
+	/*color: #3b3b3b;*/
+	color:#DB4632;
+/*	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out;
+	text-decoration: none;*/
 }
 
 .post-time{
 	text-align:center;
-	font-family:ratio,"Lucida Grande",sans-serif;
+	font-family:"Source Sans Pro",ratio,"Lucida Grande",sans-serif;
 	font-size: 1em;
 	font-weight:400;
 	text-transform:uppercase
