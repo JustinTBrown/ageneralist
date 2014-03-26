@@ -297,6 +297,33 @@ footer{color:#dbdbd9;
 	margin-top: 2em;
 	margin-bottom: 2.5em;
 }
+.social-links{
+	width: 1em;
+	text-align: center;
+	margin: auto;
+}
+.social-links a,
+.social-links a:visited,
+.social-links a.is-current,
+.social-links a:active{
+	color: #3b3b3b;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out
+}
+.social-links a:hover{
+	color:#DB4632;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out
+}
+/*.rss{
+	width: 1em;
+}*/
 /*.post-lead-caption{color:#dbdbd9;font-size:.875rem;margin-top:4.762rem;max-width:27rem}*/
 /*.b-library{padding:0;margin-left:auto;margin-right:auto}*/
 /*.book{box-shadow:0 3px #dbdbd9;float:left;margin-bottom:2em;position:relative;width:50%}*/
