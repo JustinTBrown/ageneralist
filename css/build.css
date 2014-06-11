@@ -1,59 +1,4 @@
-/*pre code{color:#000;display:block}
-pre .string,
-pre .tag .value,
-pre .filter .argument,
-pre .addition,
-pre .change,
-pre .apache .tag,
-pre .apache .cbracket,
-pre .nginx .built_in,
-pre .tex .formula,
-pre .regexp{color:#888}
-
-pre .comment,
-pre .template_comment,
-pre .shebang,
-pre .doctype,
-pre .pi,
-pre .javadoc,
-pre .deletion,
-pre .apache .sqbracket{color:#CCC}
-
-pre .keyword,
-pre .tag .title,
-pre .ini .title,
-pre .lisp .title,
-pre .clojure .title,
-pre .http .title,
-pre .nginx .title,
-pre .css .tag,
-pre .winutils,
-pre .flow,
-pre .apache .tag,
-pre .tex .command,
-pre .request,
-pre .status{font-weight:700}
-*/
-/*pre{
-	background-color:#474949;	
-	border-top:1px solid #e5e5e5;
-	border-bottom:1px solid #e5e5e5;
-	color:#38374b;
-	line-height:1.3;
-	padding:1em;
-	overflow:scroll
-}*/
-
-/*del{position:relative}
-del:after{
-	border-bottom:11px solid #16161d;
-	content:"";
-	display:block;
-	position:absolute;
-	pointer-events:none;
-	top:.4em;
-	width:100%
-}*/
+/* BASE ------------------------------------------------------------------------------*/
 
 h1,
 h2,
@@ -66,24 +11,18 @@ h6{
 	"Georgia",
 	serif;
 	font-weight: 400;
-	/*font-weight: 700;*/
 	text-align:center;
-	/*margin:2em auto*/
 	margin: 0;
 	padding: 0;
 }
 
 h1{font-size: 64px}
 
-/*a{color:#2852eb;text-decoration:none}
-a:hover,
-a:focus{text-decoration:underline}*/
 
 a,
 a.is-current,
 a:visited{
 	color:#DB4632;
-	/*color: #3b3b3b;*/
 	-moz-transition:all 0.25s ease-in-out;
 	-o-transition:all 0.25s ease-in-out;
 	-webkit-transition:all 0.25s ease-in-out;
@@ -95,7 +34,6 @@ a:visited{
 a:active,
 a:hover{
 	color: #3b3b3b;
-	/*color:#DB4632;*/
 	-moz-transition:all 0.25s ease-in-out;
 	-o-transition:all 0.25s ease-in-out;
 	-webkit-transition:all 0.25s ease-in-out;
@@ -106,21 +44,6 @@ a:hover{
 
 
 img{max-width:100%}
-/*pre code{
-	background-color:transparent;
-	border:0;
-	display:block;
-	line-height:1.3;
-	padding:0
-}*/
-/*code{
-	background-color:#fbfbf9;
-	border-top:1px solid #e5e5e5;
-	border-bottom:1px solid #e5e5e5;
-	font-family:Consolas,monospace;
-	font-size:.75em;
-	padding:.3em .4em .1em
-}*/
 mark{
 	background-color:rgba(255,255,0,.3)
 }
@@ -140,6 +63,8 @@ footer{color:#dbdbd9;
 	text-align:center;
 	margin-top:4.762em
 }
+
+/* LAYOUT ------------------------------------------------------------------------------*/
 
 .wrap{
 	max-width: 100vw;
@@ -222,6 +147,15 @@ footer{color:#dbdbd9;
 	top: 2px;
 }
 
+.post img{
+	/*padding-left: auto;*/
+	/*padding-right: auto;*/
+	/*margin: 0 auto 0;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
 .post-wrap{
 	margin:0 auto 2em;
 	margin-bottom:50px;
@@ -230,11 +164,6 @@ footer{color:#dbdbd9;
 	max-width:45vw;
 }
 
-/*.b-photos{max-width:40rem;padding:0}*/
-/*.b-photos p{padding:0 1em}*/
-/*.image{list-style:none;margin:1em auto;max-width:38rem;padding:0;position:relative}*/
-/*.image img{display:block}*/
-/*.image-time{font-family:ratio,"Lucida Grande",sans-serif;font-size:1rem;font-weight:600;text-transform:uppercase;color:#ff3d3c;position:absolute;bottom:10px;right:15px}*/
 .post-sep{
 	margin:4.762em auto;
 	width:25%;
@@ -242,9 +171,6 @@ footer{color:#dbdbd9;
 	border:0;
 	border-bottom:3px solid #dbdbd9
 }
-/*.post h2{margin:.75em auto}*/
-/*.post h3{margin:.85em auto}*/
-/*.post-header{margin:1em auto;line-height:1.1}*/
 
 .post-title{
 	color: #3b3b3b;
@@ -256,32 +182,17 @@ footer{color:#dbdbd9;
 	padding-top: 16.5px;
 	margin-bottom: 16.5px;
 	line-height: 1.25em;
-	/*font-style: italic;*/
 }
 
 .post-title a,
 .post-title a.is-current,
 .post-title a:visited{
-	/*color:#DB4632;*/
 	color: #3b3b3b;
-/*	-moz-transition:all 0.25s ease-in-out;
-	-o-transition:all 0.25s ease-in-out;
-	-webkit-transition:all 0.25s ease-in-out;
-	-ms-transition:all 0.25s ease-in-out;
-	transition:all 0.25s ease-in-out;
-	text-decoration: none;*/
 }
 
 .post-title a:active,
 .post-title a:hover{
-	/*color: #3b3b3b;*/
 	color:#DB4632;
-/*	-moz-transition:all 0.25s ease-in-out;
-	-o-transition:all 0.25s ease-in-out;
-	-webkit-transition:all 0.25s ease-in-out;
-	-ms-transition:all 0.25s ease-in-out;
-	transition:all 0.25s ease-in-out;
-	text-decoration: none;*/
 }
 
 .post-time{
@@ -321,36 +232,3 @@ footer{color:#dbdbd9;
 	-ms-transition:all 0.25s ease-in-out;
 	transition:all 0.25s ease-in-out
 }
-/*.rss{
-	width: 1em;
-}*/
-/*.post-lead-caption{color:#dbdbd9;font-size:.875rem;margin-top:4.762rem;max-width:27rem}*/
-/*.b-library{padding:0;margin-left:auto;margin-right:auto}*/
-/*.book{box-shadow:0 3px #dbdbd9;float:left;margin-bottom:2em;position:relative;width:50%}*/
-/*.book:hover */
-/*.book-title{display:block}*/
-/*.book a{border-bottom:0}*/
-/*.book a:hover,*/
-/*.book a:focus{background-color:#16161d}*/
-/*.book-cover{padding:0;margin:0;height:0;padding-top:100%;position:relative;width:100%}*/
-/*.book-cover a{left:0;height:100%;position:absolute;top:0;width:100%}*/
-/*.book-cover a,*/
-/*.book-cover img{display:block;margin:auto;height:100%;max-width:100%}*/
-/*.book-title{display:none;font-size:1.25em;font-style:italic;line-height:1.2}*/
-/*.book-title a{background-color:#16161d;color:#fff;bottom:0;left:0;padding:.5em;position:absolute;right:0;text-decoration:none;top:0;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}*/
-/*.book-title a:hover,*/
-/*.book-title a:focus{background-color:#2852eb}*/
-/*.footnotes{font-size:.85em;padding-top:1em}*/
-/*.footnotes hr{border:0;border-bottom:1px solid #dbdbd9}*/
-/*.spinner{width:20px;height:20px;background-color:#dbdbd9;display:none;margin:2em auto;-webkit-animation:rotateplane 1.2s infinite ease-in-out;animation:rotateplane 1.2s infinite ease-in-out}@-webkit-keyframes rotateplane{0%{-webkit-transform:perspective(120px)}50%{-webkit-transform:perspective(120px) rotateY(180deg)}100%{-webkit-transform:perspective(120px) rotateY(180deg) rotateX(180deg)}}@keyframes rotateplane{0%{transform:perspective(120px) rotateX(0deg) rotateY(0deg)}50%{transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg)}100%{transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg)}}*/
-/*.cf:before,*/
-/*.cf:after{content:" ";display:table}*/
-/*.cf:after{clear:both}@media only screen and (min-width:30em){body{font-size:18px}*/
-/*.b-photos p{padding:0 .75em}*/
-/*.book{width:25%}*/
-/*.book-title{font-size:.85em}*/
-/*.footnotes{font-size:.8em}}@media only screen and (min-width:44em){body{font-size:21px;margin-bottom:50vh}*/
-/*code{font-size:14px}*/
-/*.b-library{max-width:58rem}*/
-/*.book{width:20%}*/
-/*.footnotes{font-size:.75em}}*/
