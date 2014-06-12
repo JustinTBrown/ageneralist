@@ -1,3 +1,6 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
 /* BASE ------------------------------------------------------------------------------*/
 
 h1,
@@ -146,7 +149,17 @@ footer{color:#dbdbd9;
 	padding: 0;
 	top: 2px;
 }
-
+.post-wrap{
+	@include outer-container;
+/*	margin:0 auto 2em;
+	margin-bottom:50px;
+	padding:80px 1rem;
+	float: none;
+	max-width:45vw;*/
+}
+.post {
+	/*@include span-columns(6);*/
+}
 .post img{
 	/*padding-left: auto;*/
 	/*padding-right: auto;*/
@@ -156,13 +169,6 @@ footer{color:#dbdbd9;
 	width: 100%;
 }
 
-.post-wrap{
-	margin:0 auto 2em;
-	margin-bottom:50px;
-	padding:80px 1rem;
-	float: none;
-	max-width:45vw;
-}
 
 .post-sep{
 	margin:4.762em auto;

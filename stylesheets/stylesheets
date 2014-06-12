@@ -1,0 +1,25 @@
+/*
+Errno::ENOENT: No such file or directory - stylesheets/sass
+
+Backtrace:
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:369:in `read'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:369:in `update_stylesheet'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `each'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:221:in `watch'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/plugin.rb:108:in `method_missing'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/exec.rb:509:in `watch_or_update'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/exec.rb:346:in `process_result'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/exec.rb:43:in `parse'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/lib/sass/exec.rb:22:in `parse!'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/gems/sass-3.3.8/bin/sass:13:in `<top (required)>'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/bin/sass:23:in `load'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/bin/sass:23:in `<main>'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/bin/ruby_executable_hooks:15:in `eval'
+/Users/justinbrown/.rvm/gems/ruby-2.0.0-p353@ageneralist/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - stylesheets/sass"; }
