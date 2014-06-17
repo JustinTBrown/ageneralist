@@ -58,21 +58,27 @@
 }
 
 .site-name{
-	position: absolute;
-	left: 0;
+	// position: absolute;
+	// left: 0;
 	// float: left;
 	margin: 0;
 	padding: 0 0 0 5vw;
 	// display: inline-block;
 	display: inline;
+	// vertical-align: bottom;
+	line-height: 0;
 }
 
 .site-nav{
-	float:right;
+	// float:right;
+	position: absolute;
+	right: 0;
 	margin: 0;
 	padding: 0 5vw;
 	// display: inline-block;
 	display: inline;
+	// vertical-align: bottom;
+	// line-height: 0;
 }
 
 .site-nav ul{
