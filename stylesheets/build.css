@@ -118,14 +118,17 @@ footer {
   transition: all 0.25s ease-in-out; }
 
 .site-name {
-  float: left;
+  position: absolute;
+  left: 0;
   margin: 0;
-  padding: 0 0 0 5vw; }
+  padding: 0 0 0 5vw;
+  display: inline; }
 
 .site-nav {
   float: right;
   margin: 0;
-  padding: 0 5vw; }
+  padding: 0 5vw;
+  display: inline; }
 
 .site-nav ul {
   padding: 0;
@@ -138,7 +141,7 @@ footer {
   top: 2px; }
 
 .post-wrap {
-  max-width: 68em;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   /*	margin:0 auto 2em;
@@ -150,9 +153,6 @@ footer {
     content: "";
     display: table;
     clear: both; }
-
-.post {
-  /*@include span-columns(6);*/ }
 
 .post img {
   /*padding-left: auto;*/

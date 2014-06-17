@@ -1,0 +1,5 @@
+.sass-cache
+stylesheets/*.scss
+.gitignore
+config.ru
+Guardfile

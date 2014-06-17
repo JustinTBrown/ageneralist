@@ -1,0 +1,65 @@
+/* BASE ------------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 
+	"Gentium Book Basic",
+	"Georgia",
+	serif;
+	font-weight: 400;
+	text-align:center;
+	margin: 0;
+	padding: 0;
+}
+
+h1{font-size: 64px}
+
+
+a,
+a.is-current,
+a:visited{
+	color:#DB4632;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out;
+	text-decoration: none;
+}
+
+a:active,
+a:hover{
+	color: #3b3b3b;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out;
+	text-decoration: none;
+}
+
+
+img{max-width:100%}
+mark{
+	background-color:rgba(255,255,0,.3)
+}
+body{
+	color:#16161d;
+	font-family: 'Source Sans', 'Noto Sans', adobe-caslon-pro, sans-serif;
+	font-weight: 400;
+	font-size:18px;
+	line-height:1.6;
+	margin:auto auto 2em;
+	margin-bottom:50px;
+	padding:0 1rem
+}
+footer{color:#dbdbd9;
+	font-size:1rem;
+	font-family:ratio,"Lucida Grande",sans-serif;
+	text-align:center;
+	margin-top:4.762em
+}
