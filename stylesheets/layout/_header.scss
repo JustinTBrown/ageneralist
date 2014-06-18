@@ -20,6 +20,8 @@
   top: 0px;
   border-bottom: 1px solid gainsboro;
   z-index: 9999;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 // .sticky {
 // 	position: absolute;
@@ -28,6 +30,16 @@
 //   top: 0px;
 //   border-bottom: 1px solid gainsboro;
 // }
+.open-nav {
+  // max-height: 400px !important;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
 .site-header h1{
 	font-size: 18px;
 	letter-spacing: 2px;
@@ -55,42 +67,61 @@
 	transition:all 0.25s ease-in-out
 }
 .site-name{
-	// position: absolute;
-	// left: 0;
-	// float: left;
+	float: left;
 	margin: 0;
 	padding: 0 0 0 5vw;
-	// display: inline-block;
-	display: inline;
-	// vertical-align: bottom;
-	line-height: 0;
 }
 .site-nav{
-	// float:right;
-	position: absolute;
-	right: 0;
-	margin: 0;
-	padding: 0 5vw;
-	// display: inline-block;
-	display: inline;
-	// vertical-align: bottom;
-	// line-height: 0;
-	@include media($mobile) {
-		// display: none;
+	@include media($screen) {
+		float: right;
+		right: 0;
+		margin: 0;
+		padding: 0 5vw;
+	}
+	@include media($tablet, $mobile) {
+		// display: block;
+		// position: relative;
+		// margin-right: auto;
+		// margin-left: auto;	
+		// margin-top: 10em;	
+	}
+}
+.site-nav.is-closed{
+	@include media($tablet, $mobile) {
+		display: none;
+	}
+}
+.site-nav.is-open{
+	@include media($tablet, $mobile) {
+		display: block;
+		// margin-top: 10em;
+		margin-top: 20em;
 	}
 }
 .site-nav ul{
+	// display: block;
 	padding:0;
 	margin:0;
+	@include media($tablet, $mobile) {
+		display: block;
+	}
 }
-.site-nav li{
-	display:inline-block;
-	margin: 0 0 0 2em;
-	padding: 0;
-	top: 2px;
-	@include media($mobile) {
-		width: 100%;
-		display: none;
+@include media($screen) {
+	.site-nav li{
+		display:inline-block;
+		margin: 0 0 0 2em;
+		padding: 0;
+		top: 2px;
+	}
+}
+@include media($tablet, $mobile) {
+	.site-nav li {
+		// position: relative;
+		display: block;
+		// display: none;
+		text-align: center;
+		margin-bottom: 1em;
+		// width: 100%;
 	}
 }
 .mobile-toggle {
@@ -105,6 +136,9 @@
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
+  @include media($tablet) {
+  	display: block;
+  }
   @include media($mobile) {
   	display: block;
   }
@@ -117,7 +151,4 @@
   // background: #8f8f8f;
   background-color: #3b3b3b;
   display: block;
-}
-.site-nav.is_visible{
-
 }

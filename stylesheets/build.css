@@ -109,7 +109,18 @@ footer {
   opacity: 1;
   top: 0px;
   border-bottom: 1px solid gainsboro;
-  z-index: 9999; }
+  z-index: 9999;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.open-nav {
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); }
 
 .site-header h1 {
   font-size: 18px;
@@ -138,32 +149,44 @@ footer {
   transition: all 0.25s ease-in-out; }
 
 .site-name {
+  float: left;
   margin: 0;
-  padding: 0 0 0 5vw;
-  display: inline;
-  line-height: 0; }
+  padding: 0 0 0 5vw; }
 
-.site-nav {
-  position: absolute;
-  right: 0;
-  margin: 0;
-  padding: 0 5vw;
-  display: inline; }
+@media screen and (min-width: 769px) {
+  .site-nav {
+    float: right;
+    right: 0;
+    margin: 0;
+    padding: 0 5vw; } }
+
+@media screen and (max-width: 768px) {
+  .site-nav.is-closed {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .site-nav.is-open {
+    display: block;
+    margin-top: 20em; } }
 
 .site-nav ul {
   padding: 0;
   margin: 0; }
+  @media screen and (max-width: 768px) {
+    .site-nav ul {
+      display: block; } }
 
-.site-nav li {
-  display: inline-block;
-  margin: 0 0 0 2em;
-  padding: 0;
-  top: 2px; }
-  @media screen and (max-width: 480px) {
-    .site-nav li {
-      width: 100%;
-      display: none; } }
-
+@media screen and (min-width: 769px) {
+  .site-nav li {
+    display: inline-block;
+    margin: 0 0 0 2em;
+    padding: 0;
+    top: 2px; } }
+@media screen and (max-width: 768px) {
+  .site-nav li {
+    display: block;
+    text-align: center;
+    margin-bottom: 1em; } }
 .mobile-toggle {
   display: none;
   cursor: pointer;
@@ -175,6 +198,9 @@ footer {
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in; }
+  @media screen and (max-width: 768px) {
+    .mobile-toggle {
+      display: block; } }
   @media screen and (max-width: 480px) {
     .mobile-toggle {
       display: block; } }

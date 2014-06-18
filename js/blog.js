@@ -1,29 +1,42 @@
-// Sticky Header
-$(window).scroll(function() {
-    console.log("script loading?");
+// // Sticky Header
+// $(window).scroll(function() {
+//     // console.log("script loading?");
 
-    if ($(window).scrollTop() > 100) {
-        $('.site-header').addClass('sticky');
-    } else {
-        $('.site-header').removeClass('sticky');
-    }
-});
+//     if ($(window).scrollTop() > 100) {
+//         $('.site-header').addClass('sticky');
+//     } else {
+//         $('.site-header').removeClass('sticky');
+//     }
+// });
 
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
-    if ($('.main_h').hasClass('open-nav')) {
-        $('.main_h').removeClass('open-nav');
+    console.log("script loading?");
+    if ($('.site-header').hasClass('open-nav')) {
+        $('.site-header').removeClass('open-nav');
     } else {
-        $('.main_h').addClass('open-nav');
-    }
+        $('.site-header').addClass('open-nav');
+    };
+    if ($('.site-nav').hasClass('is-closed')) {
+        // console.log("site-nav is closed");
+        $('.site-nav').removeClass('is-closed');
+        $('.site-nav').addClass('is-open');
+    } else {
+        $('.site-nav').removeClass('is-open');
+        $('.site-nav').addClass('is-closed');
+    };
 });
 
-$('.main_h li a').click(function() {
-    if ($('.main_h').hasClass('open-nav')) {
-        $('.navigation').removeClass('open-nav');
-        $('.main_h').removeClass('open-nav');
-    }
-});
+// $('.site-header li a').click(function() {
+//     if ($('.site-header').hasClass('open-nav')) {
+//         $('.navigation').removeClass('open-nav');
+//         $('.site-header').removeClass('open-nav');
+//     }
+// });
+
+// $('.site-header li').click(function() {
+//     if ($(''))
+// });
 
 // navigation scroll lijepo radi materem
 $('nav a').click(function(event) {
