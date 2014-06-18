@@ -1,0 +1,54 @@
+// Posts
+
+.post-wrap{
+	position: relative;
+	top: 100px;
+	@include outer-container;
+}
+.post {
+	@include span-columns(10);
+	@include shift(1);
+}
+.post-title{
+	color: #3b3b3b;
+	font-family: 
+	"Gentium Book Basic",
+	"Georgia",
+	serif;
+	margin: 0 auto;
+	padding-top: 16.5px;
+	margin-bottom: 16.5px;
+	line-height: 1.25em;
+}
+.post-title a,
+.post-title a.is-current,
+.post-title a:visited{
+	color: #3b3b3b;
+}
+.post-title a:active,
+.post-title a:hover{
+	color:#DB4632;
+}
+.post-time{
+	text-align:center;
+	font-family:"Source Sans Pro",ratio,"Lucida Grande",sans-serif;
+	font-size: 1em;
+	font-weight:400;
+	text-transform:uppercase;
+	color: #dbdbd9;
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 2.5em;
+}
+.post img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.post-sep{
+	margin:4.762em auto;
+	width:25%;
+	min-width:50px;
+	border:0;
+	border-bottom:3px solid #dbdbd9;
+}

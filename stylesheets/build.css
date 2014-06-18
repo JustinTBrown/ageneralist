@@ -52,9 +52,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
-  margin: auto auto 2em;
-  margin-bottom: 50px;
-  padding: 0 1rem; }
+  margin: 0; }
 
 footer {
   color: #dbdbd9;
@@ -69,6 +67,30 @@ footer {
   margin: 0;
   padding: 0; }
 
+.social-links {
+  width: 1em;
+  text-align: center;
+  margin: auto; }
+
+.social-links a,
+.social-links a:visited,
+.social-links a.is-current,
+.social-links a:active {
+  color: #3b3b3b;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+.social-links a:hover {
+  color: #DB4632;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
 .site-header {
   padding: 1em 0;
   overflow: auto;
@@ -80,7 +102,14 @@ footer {
   font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
   font-size: 16px;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+  z-index: 9999; }
 
 .site-header h1 {
   font-size: 18px;
@@ -88,15 +117,6 @@ footer {
   font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
   font-weight: 700;
   text-align: center; }
-
-.site-header a,
-.site-header a:hover,
-.site-header a:focus,
-.site-header a:visited {
-  text-decoration: none;
-  color: #3b3b3b;
-  margin: 0;
-  padding: 0; }
 
 .site-header a,
 .site-header a:visited,
@@ -139,35 +159,53 @@ footer {
   margin: 0 0 0 2em;
   padding: 0;
   top: 2px; }
+  @media screen and (max-width: 480px) {
+    .site-nav li {
+      width: 100%;
+      display: none; } }
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 5vw;
+  top: 1em;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+  @media screen and (max-width: 480px) {
+    .mobile-toggle {
+      display: block; } }
+
+.mobile-toggle span {
+  width: 25px;
+  height: 2px;
+  margin-bottom: 4px;
+  border-radius: 1000px;
+  background-color: #3b3b3b;
+  display: block; }
 
 .post-wrap {
+  position: relative;
+  top: 100px;
   max-width: 800px;
   margin-left: auto;
-  margin-right: auto;
-  /*	margin:0 auto 2em;
-  	margin-bottom:50px;
-  	padding:80px 1rem;
-  	float: none;
-  	max-width:45vw;*/ }
+  margin-right: auto; }
   .post-wrap:after {
     content: "";
     display: table;
     clear: both; }
 
-.post img {
-  /*padding-left: auto;*/
-  /*padding-right: auto;*/
-  /*margin: 0 auto 0;*/
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%; }
-
-.post-sep {
-  margin: 4.762em auto;
-  width: 25%;
-  min-width: 50px;
-  border: 0;
-  border-bottom: 3px solid #dbdbd9; }
+.post {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .post:last-child {
+    margin-right: 0; }
 
 .post-title {
   color: #3b3b3b;
@@ -191,34 +229,20 @@ footer {
   font-family: "Source Sans Pro",ratio,"Lucida Grande",sans-serif;
   font-size: 1em;
   font-weight: 400;
-  text-transform: uppercase; }
-
-.post-time {
+  text-transform: uppercase;
   color: #dbdbd9;
   display: block;
   margin-top: 2em;
   margin-bottom: 2.5em; }
 
-.social-links {
-  width: 1em;
-  text-align: center;
-  margin: auto; }
+.post img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
 
-.social-links a,
-.social-links a:visited,
-.social-links a.is-current,
-.social-links a:active {
-  color: #3b3b3b;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out; }
-
-.social-links a:hover {
-  color: #DB4632;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out; }
+.post-sep {
+  margin: 4.762em auto;
+  width: 25%;
+  min-width: 50px;
+  border: 0;
+  border-bottom: 3px solid #dbdbd9; }

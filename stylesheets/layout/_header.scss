@@ -1,0 +1,123 @@
+// Header
+
+.site-header{
+	padding: 1em 0;
+	overflow: auto;
+	text-rendering:optimizeLegibility;
+	font-weight:700;
+	letter-spacing:1px;
+	color:#3b3b3b;
+	-webkit-font-smoothing:antialiased;
+	font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
+	font-size:16px;
+	font-weight:700;
+	text-transform:uppercase;
+	// position: absolute;
+	position: fixed;
+	width: 100%;
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+  z-index: 9999;
+}
+// .sticky {
+// 	position: absolute;
+//   background-color: rgba(255, 255, 255, 0.93);
+//   opacity: 1;
+//   top: 0px;
+//   border-bottom: 1px solid gainsboro;
+// }
+.site-header h1{
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
+	font-weight: 700;
+	text-align:center;
+}
+.site-header a,
+.site-header a:visited,
+.site-header a.is-current,
+.site-header a:active{
+	color: #3b3b3b;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out
+}
+.site-header a:hover{
+	color:#DB4632;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out
+}
+.site-name{
+	// position: absolute;
+	// left: 0;
+	// float: left;
+	margin: 0;
+	padding: 0 0 0 5vw;
+	// display: inline-block;
+	display: inline;
+	// vertical-align: bottom;
+	line-height: 0;
+}
+.site-nav{
+	// float:right;
+	position: absolute;
+	right: 0;
+	margin: 0;
+	padding: 0 5vw;
+	// display: inline-block;
+	display: inline;
+	// vertical-align: bottom;
+	// line-height: 0;
+	@include media($mobile) {
+		// display: none;
+	}
+}
+.site-nav ul{
+	padding:0;
+	margin:0;
+}
+.site-nav li{
+	display:inline-block;
+	margin: 0 0 0 2em;
+	padding: 0;
+	top: 2px;
+	@include media($mobile) {
+		width: 100%;
+		display: none;
+	}
+}
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  // right: 22px;
+  right: 5vw;
+  top: 1em;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  @include media($mobile) {
+  	display: block;
+  }
+}
+.mobile-toggle span {
+  width: 25px;
+  height: 2px;
+  margin-bottom: 4px;
+  border-radius: 1000px;
+  // background: #8f8f8f;
+  background-color: #3b3b3b;
+  display: block;
+}
+.site-nav.is_visible{
+
+}

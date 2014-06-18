@@ -2,9 +2,13 @@
 @import "vendor/grid-settings";
 @import "vendor/neat/neat";
 
+// Base
 @import "base/base";
 
+// Layout
 @import "layout/layout";
+@import "layout/header";
+@import "layout/posts";
 
 
 
