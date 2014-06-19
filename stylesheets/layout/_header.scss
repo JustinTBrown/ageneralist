@@ -1,40 +1,42 @@
 // Header
 
 .site-header{
-	padding: 1em 0;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  // max-height: 70px;
+  height: 4em;
+  padding-top: 1em;
+  overflow: hidden;
+  // -webkit-transition: all 0.3s;
+  // transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 0px;
+  padding-bottom: 6px;
 	overflow: auto;
-	text-rendering:optimizeLegibility;
-	font-weight:700;
+	text-rendering: optimizeLegibility;
 	letter-spacing:1px;
 	color:#3b3b3b;
-	-webkit-font-smoothing:antialiased;
+	-webkit-font-smoothing: antialiased;
 	font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
 	font-size:16px;
 	font-weight:700;
-	text-transform:uppercase;
-	// position: absolute;
-	position: fixed;
-	width: 100%;
-  background-color: rgba(255, 255, 255, 0.93);
-  opacity: 1;
-  top: 0px;
+	text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid gainsboro;
-  z-index: 9999;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
-// .sticky {
-// 	position: absolute;
-//   background-color: rgba(255, 255, 255, 0.93);
-//   opacity: 1;
-//   top: 0px;
-//   border-bottom: 1px solid gainsboro;
-// }
 .open-nav {
   // max-height: 400px !important;
   height: 100%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  // color: rgb(255,255,255);
+  background-color: rgba(219,70,50, 0.95);
+  // margin-bottom: auto;
+  // height: 400px;
+  // height: 800px;
+  // -webkit-transition: all 0.3s;
+  // transition: all 0.3s;
 }
 .open-nav .mobile-toggle {
   transform: rotate(-90deg);
@@ -58,6 +60,13 @@
 	-ms-transition:all 0.25s ease-in-out;
 	transition:all 0.25s ease-in-out
 }
+.open-nav a,
+.open-nav a:visited,
+.open-nav a.is-current,
+.open-nav a:active{
+	color: rgb(255,255,255);
+}
+
 .site-header a:hover{
 	color:#DB4632;
 	-moz-transition:all 0.25s ease-in-out;
@@ -66,6 +75,10 @@
 	-ms-transition:all 0.25s ease-in-out;
 	transition:all 0.25s ease-in-out
 }
+.open-nav a:hover{
+	color: #3b3b3b;
+}
+
 .site-name{
 	float: left;
 	margin: 0;
@@ -96,6 +109,7 @@
 		display: block;
 		// margin-top: 10em;
 		margin-top: 20em;
+		// height: 100%;
 	}
 }
 .site-nav ul{
@@ -151,4 +165,18 @@
   // background: #8f8f8f;
   background-color: #3b3b3b;
   display: block;
+}
+// .open-nav a,
+// .open-nav a:visited,
+// .open-nav a.is-current,
+// .open-nav a:active{
+.open-nav .mobile-toggle span {	
+	background-color: rgb(255,255,255);
+	-webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.open-nav .mobile-toggle:hover{
+	span {
+		background-color: #3b3b3b;
+	}
 }

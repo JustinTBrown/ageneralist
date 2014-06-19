@@ -92,10 +92,19 @@ footer {
   transition: all 0.25s ease-in-out; }
 
 .site-header {
-  padding: 1em 0;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  height: 4em;
+  padding-top: 1em;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 0px;
+  padding-bottom: 6px;
   overflow: auto;
   text-rendering: optimizeLegibility;
-  font-weight: 700;
   letter-spacing: 1px;
   color: #3b3b3b;
   -webkit-font-smoothing: antialiased;
@@ -103,20 +112,12 @@ footer {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  position: fixed;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.93);
-  opacity: 1;
-  top: 0px;
-  border-bottom: 1px solid gainsboro;
-  z-index: 9999;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid gainsboro; }
 
 .open-nav {
   height: 100%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  background-color: rgba(219, 70, 50, 0.95); }
 
 .open-nav .mobile-toggle {
   transform: rotate(-90deg);
@@ -140,6 +141,12 @@ footer {
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
 
+.open-nav a,
+.open-nav a:visited,
+.open-nav a.is-current,
+.open-nav a:active {
+  color: white; }
+
 .site-header a:hover {
   color: #DB4632;
   -moz-transition: all 0.25s ease-in-out;
@@ -147,6 +154,9 @@ footer {
   -webkit-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
+
+.open-nav a:hover {
+  color: #3b3b3b; }
 
 .site-name {
   float: left;
@@ -212,6 +222,14 @@ footer {
   border-radius: 1000px;
   background-color: #3b3b3b;
   display: block; }
+
+.open-nav .mobile-toggle span {
+  background-color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.open-nav .mobile-toggle:hover span {
+  background-color: #3b3b3b; }
 
 .post-wrap {
   position: relative;
