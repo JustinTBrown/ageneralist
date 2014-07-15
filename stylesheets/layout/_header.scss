@@ -27,21 +27,6 @@
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid gainsboro;
 }
-.open-nav {
-  // max-height: 400px !important;
-  height: 100%;
-  // color: rgb(255,255,255);
-  background-color: rgba(219,70,50, 0.95);
-  // margin-bottom: auto;
-  // height: 400px;
-  // height: 800px;
-  // -webkit-transition: all 0.3s;
-  // transition: all 0.3s;
-}
-.open-nav .mobile-toggle {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-}
 .site-header h1{
 	font-size: 18px;
 	letter-spacing: 2px;
@@ -60,13 +45,6 @@
 	-ms-transition:all 0.25s ease-in-out;
 	transition:all 0.25s ease-in-out
 }
-.open-nav a,
-.open-nav a:visited,
-.open-nav a.is-current,
-.open-nav a:active{
-	color: rgb(255,255,255);
-}
-
 .site-header a:hover{
 	color:#DB4632;
 	-moz-transition:all 0.25s ease-in-out;
@@ -75,53 +53,108 @@
 	-ms-transition:all 0.25s ease-in-out;
 	transition:all 0.25s ease-in-out
 }
-.open-nav a:hover{
-	color: #3b3b3b;
-}
-
 .site-name{
 	float: left;
 	margin: 0;
 	padding: 0 0 0 5vw;
+	white-space: nowrap;
 }
-.site-nav{
+.nav-overlay {
+  @include media($tablet, $mobile) {
+	  // max-height: 400px !important;
+	  // display: table;
+	  height: 100%;
+	  width: 100%;
+	  // color: rgb(255,255,255);
+	  background-color: rgba(219,70,50, 0.95);
+	  // margin-bottom: auto;
+	  // height: 400px;
+	  // height: 800px;
+	  // -webkit-transition: all 0.3s;
+	  // transition: all 0.3s;
+  	// height: calc( 100% + 200px );
+  	// height: calc( 120% );
+  };
+}
+.nav-overlay .mobile-toggle {
+  // transform: rotate(-90deg);
+  // -webkit-transform: rotate(-90deg);
+}
+.nav-overlay a,
+.nav-overlay a:visited,
+.nav-overlay a.is-current,
+.nav-overlay a:active{
+	color: rgb(255,255,255);
+}
+.nav-overlay a:hover{
+	color: #3b3b3b;
+}
+.nav-links{
+	// width: 100%;
 	@include media($screen) {
-		float: right;
+		// float: right;
 		right: 0;
 		margin: 0;
 		padding: 0 5vw;
 	}
 	@include media($tablet, $mobile) {
+		// display: table-cell;
+		// width: 100%;
+		// width: 766px;
+		// margin: 0;
+		// width: border-box;
+		// display: table-cell;
+	 //  vertical-align: middle; 
+	 //  text-align: center;
 		// display: block;
 		// position: relative;
 		// margin-right: auto;
 		// margin-left: auto;	
+		// margin: auto;
 		// margin-top: 10em;	
 	}
 }
-.site-nav.is-closed{
+.nav-links.is-closed-for-mobile{
 	@include media($tablet, $mobile) {
 		display: none;
 	}
 }
-.site-nav.is-open{
+.nav-links.is-open-for-mobile{
 	@include media($tablet, $mobile) {
-		display: block;
+		// display: table-cell;
+	 //  vertical-align: middle; 
+	  // text-align: center; 
+	  // margin: auto;
+	  // margin-left: auto;
+	  // margin-right: auto;
+		// display: block;
+		// display: table;
 		// margin-top: 10em;
-		margin-top: 20em;
+		// margin-top: 20em;
+		// margin-top: 30%;
+		margin-top: 45%;
 		// height: 100%;
+		// width: 100%;
 	}
 }
-.site-nav ul{
-	// display: block;
-	padding:0;
-	margin:0;
+.nav-links ul{
+	@include media($screen) {
+		// display: block;
+		// display: inline-block;
+		float: right;
+		// right: 0;
+		// padding:0;
+		margin:0;
+	}
 	@include media($tablet, $mobile) {
 		display: block;
+		// margin: 0;
+		padding: 0;
+
 	}
 }
 @include media($screen) {
-	.site-nav li{
+	.nav-links li{
 		display:inline-block;
 		margin: 0 0 0 2em;
 		padding: 0;
@@ -129,7 +162,7 @@
 	}
 }
 @include media($tablet, $mobile) {
-	.site-nav li {
+	.nav-links li {
 		// position: relative;
 		display: block;
 		// display: none;
@@ -145,8 +178,8 @@
   position: absolute;
   // right: 22px;
   right: 5vw;
-  top: 1em;
-  width: 30px;
+  top: 1.2em;
+  width: 20px;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
@@ -158,7 +191,7 @@
   }
 }
 .mobile-toggle span {
-  width: 25px;
+  width: 20px;
   height: 2px;
   margin-bottom: 4px;
   border-radius: 1000px;
@@ -166,16 +199,19 @@
   background-color: #3b3b3b;
   display: block;
 }
-// .open-nav a,
-// .open-nav a:visited,
-// .open-nav a.is-current,
-// .open-nav a:active{
-.open-nav .mobile-toggle span {	
+// .nav-overlay a,
+// .nav-overlay a:visited,
+// .nav-overlay a.is-current,
+// .nav-overlay a:active{
+.nav-overlay .mobile-toggle span,
+.nav-overlay .mobile-toggle span:visited,
+.nav-overlay .mobile-toggle span.is-current,
+.nav-overlay .mobile-toggle span:active {
 	background-color: rgb(255,255,255);
 	-webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.open-nav .mobile-toggle:hover{
+.nav-overlay .mobile-toggle:hover{
 	span {
 		background-color: #3b3b3b;
 	}

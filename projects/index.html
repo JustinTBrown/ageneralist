@@ -1,0 +1,9 @@
+{% capture body %}
+<main class="project-wrap">
+  {% for post in posts %}
+  {% include "includes/project" %}
+  {% endfor %}
+</main>
+{% endcapture %}
+
+{% include "layouts/default" %}

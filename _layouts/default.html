@@ -11,7 +11,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   <script src="/js/jquery-1.11.1.min.js"></script>
   // <script src="/js/blog.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans|Gentium+Book+Basic|Alegreya' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans|Gentium+Book+Basic|Alegreya|Merriweather' rel='stylesheet' type='text/css'>
   <link href="{{site.permalink}}/feed.xml" rel="alternate" type="application/rss+xml" title="A Generalist | JB's adventures in learning to code and develop technology" />
 </head>
 
@@ -28,7 +28,7 @@
         <span></span>
       </div>
 
-      <nav class="site-nav is-closed">
+      <nav class="nav-links is-closed-for-mobile">
         <ul>
         {% for page in site.pages %}
           {% if page.title != 'Home' %}
@@ -44,11 +44,11 @@
     </div>
   </header>
 
-  <div class="post-wrap">
+  <div class="body-wrap">
     {{ body }}
   </div>
 
-  <footer>
+  <footer class="footer">
     <div class="social-links">
       <!-- <a href="{{site.permalink}}/feed.xml"><img src="img/rss.svg" alt="rss"></a> -->
     </div>

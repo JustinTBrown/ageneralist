@@ -67,6 +67,17 @@ footer {
   margin: 0;
   padding: 0; }
 
+.body-wrap {
+  position: relative;
+  top: 100px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+  .body-wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .social-links {
   width: 1em;
   text-align: center;
@@ -115,14 +126,6 @@ footer {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid gainsboro; }
 
-.open-nav {
-  height: 100%;
-  background-color: rgba(219, 70, 50, 0.95); }
-
-.open-nav .mobile-toggle {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg); }
-
 .site-header h1 {
   font-size: 18px;
   letter-spacing: 2px;
@@ -141,12 +144,6 @@ footer {
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
 
-.open-nav a,
-.open-nav a:visited,
-.open-nav a.is-current,
-.open-nav a:active {
-  color: white; }
-
 .site-header a:hover {
   color: #DB4632;
   -moz-transition: all 0.25s ease-in-out;
@@ -155,45 +152,58 @@ footer {
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
 
-.open-nav a:hover {
-  color: #3b3b3b; }
-
 .site-name {
   float: left;
   margin: 0;
-  padding: 0 0 0 5vw; }
+  padding: 0 0 0 5vw;
+  white-space: nowrap; }
+
+@media screen and (max-width: 768px) {
+  .nav-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(219, 70, 50, 0.95); } }
+
+.nav-overlay a,
+.nav-overlay a:visited,
+.nav-overlay a.is-current,
+.nav-overlay a:active {
+  color: white; }
+
+.nav-overlay a:hover {
+  color: #3b3b3b; }
 
 @media screen and (min-width: 769px) {
-  .site-nav {
-    float: right;
+  .nav-links {
     right: 0;
     margin: 0;
     padding: 0 5vw; } }
 
 @media screen and (max-width: 768px) {
-  .site-nav.is-closed {
+  .nav-links.is-closed-for-mobile {
     display: none; } }
 
 @media screen and (max-width: 768px) {
-  .site-nav.is-open {
-    display: block;
-    margin-top: 20em; } }
-
-.site-nav ul {
-  padding: 0;
-  margin: 0; }
-  @media screen and (max-width: 768px) {
-    .site-nav ul {
-      display: block; } }
+  .nav-links.is-open-for-mobile {
+    margin-top: 45%; } }
 
 @media screen and (min-width: 769px) {
-  .site-nav li {
+  .nav-links ul {
+    float: right;
+    margin: 0; } }
+@media screen and (max-width: 768px) {
+  .nav-links ul {
+    display: block;
+    padding: 0; } }
+
+@media screen and (min-width: 769px) {
+  .nav-links li {
     display: inline-block;
     margin: 0 0 0 2em;
     padding: 0;
     top: 2px; } }
 @media screen and (max-width: 768px) {
-  .site-nav li {
+  .nav-links li {
     display: block;
     text-align: center;
     margin-bottom: 1em; } }
@@ -203,8 +213,8 @@ footer {
   font-size: 20px;
   position: absolute;
   right: 5vw;
-  top: 1em;
-  width: 30px;
+  top: 1.2em;
+  width: 20px;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in; }
@@ -216,31 +226,32 @@ footer {
       display: block; } }
 
 .mobile-toggle span {
-  width: 25px;
+  width: 20px;
   height: 2px;
   margin-bottom: 4px;
   border-radius: 1000px;
   background-color: #3b3b3b;
   display: block; }
 
-.open-nav .mobile-toggle span {
+.nav-overlay .mobile-toggle span,
+.nav-overlay .mobile-toggle span:visited,
+.nav-overlay .mobile-toggle span.is-current,
+.nav-overlay .mobile-toggle span:active {
   background-color: white;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
-.open-nav .mobile-toggle:hover span {
+.nav-overlay .mobile-toggle:hover span {
   background-color: #3b3b3b; }
 
-.post-wrap {
-  position: relative;
-  top: 100px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto; }
-  .post-wrap:after {
-    content: "";
-    display: table;
-    clear: both; }
+.about {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .about:last-child {
+    margin-right: 0; }
 
 .post {
   float: left;
@@ -290,3 +301,96 @@ footer {
   min-width: 50px;
   border: 0;
   border-bottom: 3px solid #dbdbd9; }
+
+.project-wrap {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+  .project-wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 769px) {
+    .project-wrap {
+      position: relative;
+      top: 40px; } }
+
+.project {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .project:last-child {
+    margin-right: 0; }
+
+.project-title {
+  color: #3b3b3b;
+  margin: 0 auto;
+  padding-top: 16.5px;
+  margin-bottom: 16.5px;
+  line-height: 1.25em;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left; }
+
+.project-title a,
+.project-title a.is-current,
+.project-title a:visited {
+  color: #3b3b3b; }
+
+.project-title a:active,
+.project-title a:hover {
+  color: #DB4632; }
+
+.project-shot {
+  margin: 0 0 16.5px 0; }
+
+.project-overlay {
+  padding: 1em;
+  position: absolute;
+  transition: 0.25s;
+  color: transparent;
+  line-height: 1.5em;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: "Merriweather", "Georgia", serif;
+  font-weight: 300; }
+
+.project-overlay p {
+  margin: 0; }
+
+.project-overlay a,
+.project-overlay a.is-current,
+.project-overlay a:visited {
+  color: transparent; }
+
+.project-overlay a:active,
+.project-overlay a:hover {
+  color: transparent; }
+
+.project-overlay:hover {
+  background-color: #DB4632;
+  color: white;
+  opacity: 0.95; }
+
+.project-overlay:hover a {
+  line-height: 1.5em; }
+
+.project-overlay:hover a,
+.project-overlay:hover a.is-current,
+.project-overlay:hover a:visited {
+  color: #3b3b3b; }
+
+.project-overlay:hover a:active,
+.project-overlay:hover a:hover {
+  color: white; }
+
+@media screen and (min-width: 769px) {
+  .footer {
+    position: relative;
+    top: 75px;
+    margin-bottom: 1em; } }

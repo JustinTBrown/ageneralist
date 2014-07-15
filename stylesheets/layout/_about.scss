@@ -1,0 +1,6 @@
+// ABOUT
+
+.about {
+	@include span-columns(10);
+	@include shift(1);
+}

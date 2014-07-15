@@ -1,10 +1,10 @@
 // Posts
 
-.post-wrap{
-	position: relative;
-	top: 100px;
-	@include outer-container;
-}
+// .post-wrap{
+// 	position: relative;
+// 	top: 100px;
+// 	@include outer-container;
+// }
 .post {
 	@include span-columns(10);
 	@include shift(1);

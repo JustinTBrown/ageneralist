@@ -1,0 +1,9 @@
+.footer{
+	@include media($screen) {
+		// margin-top: 400px;
+		position: relative;
+		top: 75px;
+		margin-bottom: 1em;
+
+	};
+}

@@ -5,6 +5,11 @@
 	margin: 0;
 	padding: 0;	
 }
+.body-wrap{
+	position: relative;
+	top: 100px;
+	@include outer-container;
+}
 .social-links{
 	width: 1em;
 	text-align: center;

@@ -1,0 +1,15 @@
+<div class="project">
+  <h2 class="project-title">
+    <a class="header" href="{{ post.meta.link }}">{{ post.title }}</a>
+  </h2>
+  <div class="project-shot">
+  	<div class="project-overlay">
+			<p>
+				{{ post.excerpt }} <!-- Remember to add excerpt to CMS post followed by two empty lines -->
+			</p>
+  	</div>
+    <a href="{{ post.meta.link }}">
+      <img src="{{ post.assets.first }}" alt="{{ post.title | escape }}">
+    </a>
+  </div>
+</div>
