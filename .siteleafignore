@@ -3,3 +3,4 @@ stylesheets/*.scss
 .gitignore
 config.ru
 Guardfile
+js/main/live-reload.js

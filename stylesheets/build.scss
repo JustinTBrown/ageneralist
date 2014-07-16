@@ -1,9 +1,11 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/grid-settings";
 @import "vendor/neat/neat";
+@import "vendor/highlight/rainbow";
 
 // Base
 @import "base/base";
+@import "base/fonts";
 
 // Layout
 @import "layout/layout";
