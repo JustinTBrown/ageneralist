@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans|Gentium+Book+Basic|Alegreya|Merriweather:300);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans:300|Gentium+Book+Basic|Alegreya|Merriweather:300);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -163,7 +163,7 @@ mark {
 body {
   color: #16161d;
   font-family: 'Source Sans', 'Noto Sans', adobe-caslon-pro, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.6;
   margin: 0; }
