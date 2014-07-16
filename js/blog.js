@@ -1,14 +1,3 @@
-// // Sticky Header
-// $(window).scroll(function() {
-//     // console.log("script loading?");
-
-//     if ($(window).scrollTop() > 100) {
-//         $('.site-header').addClass('sticky');
-//     } else {
-//         $('.site-header').removeClass('sticky');
-//     }
-// });
-
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
     console.log("script loading?");
@@ -28,45 +17,26 @@ $('.mobile-toggle').click(function() {
 });
 
 // Project Shots
-// $(.project-overlay).css('height',$(.project-shot).innerHeight());
 var currentHeight = 0;
 var currentWidth = 0;
-// $(document).ready(function() {
-$(window).load(function() {
+$(window).on("load", function() {
     //get the natural page height -set it in variable above.
-
-    // // Pseudo Code
-    // For each project-shot
-    //     get the child img height
-    //     set the child overlay height to match
-
     $('.project-shot').each(function() {
         currentHeight = $('img', this).outerHeight();
-        console.log("currentHeight = " + currentHeight);
         $('.project-overlay', this).css('height', currentHeight);
-
+        currentWidth = $('img', this).outerWidth();
+        $('.project-overlay', this).css('width', currentWidth);
     })
-
-    // $('.project-overlay').each(function() {
-    //     currentHeight = $('.project-shot img').outerHeight();
-    //     console.log("currentHeight = " + currentHeight);
-    //     $(this).css('height', currentHeight);    
-    // });
-    currentWidth = $('.project-shot img').outerWidth();
-    $('.project-overlay').css('width', currentWidth);
-
 });
-
-// $('.site-header li a').click(function() {
-//     if ($('.site-header').hasClass('nav-overlay')) {
-//         $('.navigation').removeClass('nav-overlay');
-//         $('.site-header').removeClass('nav-overlay');
-//     }
-// });
-
-// $('.site-header li').click(function() {
-//     if ($(''))
-// });
+$(window).on("resize", function() {
+    //get the natural page height -set it in variable above.
+    $('.project-shot').each(function() {
+        currentHeight = $('img', this).outerHeight();
+        $('.project-overlay', this).css('height', currentHeight);
+        currentWidth = $('img', this).outerWidth();
+        $('.project-overlay', this).css('width', currentWidth);
+    })
+});  
 
 // navigation scroll lijepo radi materem
 $('nav a').click(function(event) {

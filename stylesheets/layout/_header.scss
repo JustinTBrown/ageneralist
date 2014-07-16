@@ -36,9 +36,18 @@
 }
 .site-header a,
 .site-header a:visited,
-.site-header a.is-current,
+// .site-header a.is-current,
 .site-header a:active{
 	color: #3b3b3b;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out
+}
+.site-header a.is-current{
+	// color:#DB4632;
+	text-decoration: underline;
 	-moz-transition:all 0.25s ease-in-out;
 	-o-transition:all 0.25s ease-in-out;
 	-webkit-transition:all 0.25s ease-in-out;
@@ -82,9 +91,12 @@
 }
 .nav-overlay a,
 .nav-overlay a:visited,
-.nav-overlay a.is-current,
+// .nav-overlay a.is-current,
 .nav-overlay a:active{
 	color: rgb(255,255,255);
+}
+.nav-overlay a.is-current{
+	text-decoration: underline;
 }
 .nav-overlay a:hover{
 	color: #3b3b3b;

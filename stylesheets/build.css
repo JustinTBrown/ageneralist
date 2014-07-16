@@ -135,9 +135,16 @@ footer {
 
 .site-header a,
 .site-header a:visited,
-.site-header a.is-current,
 .site-header a:active {
   color: #3b3b3b;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+.site-header a.is-current {
+  text-decoration: underline;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
@@ -166,9 +173,11 @@ footer {
 
 .nav-overlay a,
 .nav-overlay a:visited,
-.nav-overlay a.is-current,
 .nav-overlay a:active {
   color: white; }
+
+.nav-overlay a.is-current {
+  text-decoration: underline; }
 
 .nav-overlay a:hover {
   color: #3b3b3b; }
