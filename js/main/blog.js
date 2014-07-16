@@ -1,3 +1,7 @@
+// require(['jquery'], function() {
+//     console.log('jquery required from blog.js');
+// });
+
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
     console.log("script loading?");

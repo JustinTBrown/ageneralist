@@ -475,7 +475,7 @@ footer {
 @media screen and (min-width: 769px) {
   .project-overlay {
     position: absolute;
-    padding: 1em;
+    padding: 1em 0.9em;
     transition: 0.25s;
     color: transparent;
     line-height: 1.5em;

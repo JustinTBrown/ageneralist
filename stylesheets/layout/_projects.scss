@@ -42,7 +42,7 @@
 	@include media($screen) {
 		position: absolute;
 		// z-index: 10;
-		padding: 1em;
+		padding: 1em 0.9em;
 		transition: 0.25s;
 		color: transparent;
 		line-height: 1.5em;
