@@ -7,9 +7,20 @@
 			<p>
 				{{ post.excerpt }} <!-- Remember to add excerpt to CMS post followed by two empty lines -->
 			</p>
+<!-- 			<div class="triangle-bottomright">
+				<div class="curvedarrow"></div>
+			</div> -->
   	</div>
     <a href="{{ post.meta.link }}">
       <img src="{{ post.assets.first }}" alt="{{ post.title | escape }}">
     </a>
+    <div class="project-caption is-visible"> 
+			<p>
+				{{ post.excerpt }}
+			</p>
+<!-- 			<div class="triangle-bottomright">
+				<div class="curvedarrow"></div>
+			</div> -->
+    </div>
   </div>
 </div>

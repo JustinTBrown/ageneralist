@@ -349,19 +349,27 @@ footer {
 .project-shot {
   margin: 0 0 16.5px 0; }
 
-.project-overlay {
-  padding: 1em;
-  position: absolute;
-  transition: 0.25s;
-  color: transparent;
-  line-height: 1.5em;
-  font-size: 22px;
-  letter-spacing: 2px;
-  font-family: "Merriweather", "Georgia", serif;
-  font-weight: 300; }
+@media screen and (min-width: 769px) {
+  .project-overlay {
+    position: absolute;
+    padding: 1em;
+    transition: 0.25s;
+    color: transparent;
+    line-height: 1.5em;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: "Merriweather", "Georgia", serif;
+    font-weight: 300; } }
+@media screen and (max-width: 768px) {
+  .project-overlay {
+    position: absolute;
+    display: none; } }
 
 .project-overlay p {
   margin: 0; }
+  @media screen and (max-width: 768px) {
+    .project-overlay p {
+      display: none; } }
 
 .project-overlay a,
 .project-overlay a.is-current,
@@ -376,6 +384,9 @@ footer {
   background-color: #DB4632;
   color: white;
   opacity: 0.95; }
+  @media screen and (max-width: 480px) {
+    .project-overlay:hover {
+      background-color: transparent; } }
 
 .project-overlay:hover a {
   line-height: 1.5em; }
@@ -389,8 +400,71 @@ footer {
 .project-overlay:hover a:hover {
   color: white; }
 
+@media screen and (max-width: 768px) {
+  .project-caption {
+    transition: 0.25s;
+    color: #3b3b3b;
+    line-height: 1.5em;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: "Merriweather", "Georgia", serif;
+    font-weight: 300;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(141, 141, 141, 0.5); } }
+@media screen and (min-width: 769px) {
+  .project-caption {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .project-caption.is-visible {
+    display: block; } }
+
+@media screen and (max-width: 768px) {
+  .project-caption.is-hidden {
+    display: none; } }
+
 @media screen and (min-width: 769px) {
   .footer {
     position: relative;
     top: 75px;
     margin-bottom: 1em; } }
+
+@media screen and (max-width: 480px) {
+  .triangle-bottomright {
+    position: absolute;
+    opacity: 0.8;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #DB4632;
+    border-left: 50px solid transparent; }
+
+  .curvedarrow {
+    position: relative;
+    opacity: 0.9;
+    top: 33px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid white;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg); }
+
+  .curvedarrow:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 3px solid white;
+    border-radius: 20px 0 0 0;
+    top: -12px;
+    left: -9px;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg); } }

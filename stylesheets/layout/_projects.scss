@@ -34,30 +34,37 @@
 }
 .project-shot {
 	margin: 0 0 16.5px 0;
+	// @include media($mobile, $tablet) {
+	// 	position: absolute;
+	// }
 }
 .project-overlay{
-	// @include span-columns(10);
-	padding: 1em;
-	position: absolute;
-	transition: 0.25s;
-	color: transparent;
-	// line-height: 1.25em;
-	line-height: 1.5em;
-	// font-size: 16px;
-	font-size: 22px;
-	// font-size: 26px;
-	letter-spacing: 2px;
-	// font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Arial",sans-serif;
-	// font-family: "Gentium Book Basic", "Georgia", serif;
-	// font-family: "Alegreya", "Georgia", serif;
-	font-family: "Merriweather", "Georgia", serif;
-	font-weight: 300;
+	@include media($screen) {
+		position: absolute;
+		// z-index: 10;
+		padding: 1em;
+		transition: 0.25s;
+		color: transparent;
+		line-height: 1.5em;
+		font-size: 22px;
+		letter-spacing: 2px;
+		font-family: "Merriweather", "Georgia", serif;
+		font-weight: 300;
+	};
+	@include media($tablet, $mobile) {
+		position: absolute;
+		// z-index: 9999;
+
+		display: none;
+	};
 }
 .project-overlay p{
 	margin: 0;
-	// text-align: justify;
-	// hyphens: auto;
-	// -webkit-hyphens;
+	@include media($tablet, $mobile) {
+		display: none;
+		// font-size: 10px;
+		// line-height: 1.5em;
+	}
 }
 .project-overlay a,
 .project-overlay a.is-current,
@@ -74,6 +81,9 @@
 	background-color:#DB4632;
 	color: white;
 	opacity: 0.95;
+	@include media($mobile, $screen) {
+		background-color: transparent;
+	}
 }
 .project-overlay:hover a{
 	line-height: 1.5em;
@@ -88,3 +98,41 @@
 .project-overlay:hover a:hover{
 	color: white;
 }
+.project-caption{
+	@include media($tablet, $mobile) {
+		// padding: 1em;
+		transition: 0.25s;
+		color: #3b3b3b;
+		line-height: 1.5em;
+		font-size: 16px;
+		letter-spacing: 2px;
+		font-family: "Merriweather", "Georgia", serif;
+		font-weight: 300;
+		padding-bottom: 1em;
+		border-bottom: 1px solid rgba(141,141,141,0.5);
+		// border-bottom-width: 10em;
+	};
+	@include media($screen) {
+		display: none;
+	};
+}
+.project-caption.is-visible{
+	@include media($tablet, $mobile) {
+		display: block;
+	};
+}
+.project-caption.is-hidden {
+	@include media($tablet, $mobile) {
+		display: none;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// height: 100%;
+		// width: 100%;
+	};
+}
+// .project-caption.is-hidden p{
+// 	@include media($mobile, $tablet) {
+// 		display: none;
+// 	};
+// }

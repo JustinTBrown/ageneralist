@@ -31,6 +31,7 @@ $('.mobile-toggle').click(function() {
 // $(.project-overlay).css('height',$(.project-shot).innerHeight());
 var currentHeight = 0;
 var currentWidth = 0;
+// $(document).ready(function() {
 $(window).load(function() {
     //get the natural page height -set it in variable above.
 
