@@ -3,7 +3,6 @@
 	@include media($screen) {
 		position: relative;
 		top: 40px;
-		// top: 100px;
 	};
 }
 .project{
@@ -34,14 +33,10 @@
 }
 .project-shot {
 	margin: 0 0 16.5px 0;
-	// @include media($mobile, $tablet) {
-	// 	position: absolute;
-	// }
 }
 .project-overlay{
 	@include media($screen) {
 		position: absolute;
-		// z-index: 10;
 		padding: 1em 0.9em;
 		transition: 0.25s;
 		color: transparent;
@@ -53,17 +48,14 @@
 	};
 	@include media($tablet, $mobile) {
 		position: absolute;
-		// z-index: 9999;
-
 		display: none;
 	};
 }
 .project-overlay p{
 	margin: 0;
+
 	@include media($tablet, $mobile) {
 		display: none;
-		// font-size: 10px;
-		// line-height: 1.5em;
 	}
 }
 .project-overlay a,
@@ -71,11 +63,12 @@
 .project-overlay a:visited{
 	// color: #3b3b3b;
 	color: transparent;
+	// font-weight: 400;
 }
 .project-overlay a:active,
 .project-overlay a:hover{
 	// color:#DB4632;
-	color:transparent;
+	// color:transparent;
 }
 .project-overlay:hover{
 	background-color:#DB4632;
@@ -91,16 +84,16 @@
 .project-overlay:hover a,
 .project-overlay:hover a.is-current,
 .project-overlay:hover a:visited{
-	// color:#DB4632;
 	color: #3b3b3b;
+	font-weight: 300;
 }
 .project-overlay:hover a:active,
 .project-overlay:hover a:hover{
+	// color: #454545;
 	color: white;
 }
 .project-caption{
 	@include media($tablet, $mobile) {
-		// padding: 1em;
 		transition: 0.25s;
 		color: #3b3b3b;
 		line-height: 1.5em;
@@ -110,7 +103,6 @@
 		font-weight: 300;
 		padding-bottom: 1em;
 		border-bottom: 1px solid rgba(141,141,141,0.5);
-		// border-bottom-width: 10em;
 	};
 	@include media($screen) {
 		display: none;
@@ -124,15 +116,5 @@
 .project-caption.is-hidden {
 	@include media($tablet, $mobile) {
 		display: none;
-		// position: absolute;
-		// top: 0;
-		// left: 0;
-		// height: 100%;
-		// width: 100%;
 	};
 }
-// .project-caption.is-hidden p{
-// 	@include media($mobile, $tablet) {
-// 		display: none;
-// 	};
-// }

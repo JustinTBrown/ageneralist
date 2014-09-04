@@ -499,10 +499,6 @@ footer {
 .project-overlay a:visited {
   color: transparent; }
 
-.project-overlay a:active,
-.project-overlay a:hover {
-  color: transparent; }
-
 .project-overlay:hover {
   background-color: #DB4632;
   color: white;
@@ -517,7 +513,8 @@ footer {
 .project-overlay:hover a,
 .project-overlay:hover a.is-current,
 .project-overlay:hover a:visited {
-  color: #3b3b3b; }
+  color: #3b3b3b;
+  font-weight: 300; }
 
 .project-overlay:hover a:active,
 .project-overlay:hover a:hover {
