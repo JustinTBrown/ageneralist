@@ -375,9 +375,6 @@ img .header-image {
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
-.nav-overlay .mobile-toggle:hover span {
-  background-color: #3b3b3b; }
-
 /* ABOUT ------------------------------------------------------------------------------*/
 .about {
   float: left;

@@ -198,6 +198,7 @@ img .header-image{
   cursor: pointer;
   font-size: 20px;
   position: absolute;
+  // color: white;
   // right: 22px;
   right: 5vw;
   top: 1.2em;
@@ -234,7 +235,7 @@ img .header-image{
   transition: all 0.3s;
 }
 .nav-overlay .mobile-toggle:hover{
-	span {
-		background-color: #3b3b3b;
-	}
+	// span {
+	// 	background-color: #3b3b3b;
+	// }
 }
