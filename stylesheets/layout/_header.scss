@@ -1,4 +1,4 @@
-// Header
+/* HEADER ------------------------------------------------------------------------------*/
 
 .site-header{
   position: fixed;
@@ -61,6 +61,16 @@
 	-webkit-transition:all 0.25s ease-in-out;
 	-ms-transition:all 0.25s ease-in-out;
 	transition:all 0.25s ease-in-out
+}
+img .header-image{
+	max-width: 16px;
+	max-height: 16px;
+	position: absolute;
+}
+.site-header img{
+	max-height: 16px;
+	max-width: 16px;
+	position: absolute;
 }
 .site-name{
 	float: left;

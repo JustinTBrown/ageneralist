@@ -216,6 +216,7 @@ footer {
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
 
+/* HEADER ------------------------------------------------------------------------------*/
 .site-header {
   position: fixed;
   top: 0px;
@@ -272,6 +273,16 @@ footer {
   -webkit-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
+
+img .header-image {
+  max-width: 16px;
+  max-height: 16px;
+  position: absolute; }
+
+.site-header img {
+  max-height: 16px;
+  max-width: 16px;
+  position: absolute; }
 
 .site-name {
   float: left;
@@ -367,6 +378,7 @@ footer {
 .nav-overlay .mobile-toggle:hover span {
   background-color: #3b3b3b; }
 
+/* ABOUT ------------------------------------------------------------------------------*/
 .about {
   float: left;
   display: block;
@@ -376,6 +388,7 @@ footer {
   .about:last-child {
     margin-right: 0; }
 
+/* POSTS ------------------------------------------------------------------------------*/
 .post {
   float: left;
   display: block;
@@ -425,6 +438,7 @@ footer {
   border: 0;
   border-bottom: 3px solid #dbdbd9; }
 
+/* PROJECTS ------------------------------------------------------------------------------*/
 .project-wrap {
   max-width: 800px;
   margin-left: auto;
@@ -543,11 +557,21 @@ footer {
   .project-caption.is-hidden {
     display: none; } }
 
+/* FOOTER ------------------------------------------------------------------------------*/
 @media screen and (min-width: 769px) {
   .footer {
+    border-top: 1px solid gainsboro;
+    color: #888888;
     position: relative;
     top: 75px;
-    margin-bottom: 1em; } }
+    margin-bottom: 1em;
+    padding: 2em 0;
+    background: #F9F9F9; } }
+
+.footer-image {
+  max-width: 128px;
+  max-height: 128px;
+  margin: 0 auto 2em auto; }
 
 @media screen and (max-width: 480px) {
   .triangle-bottomright {

@@ -1,7 +1,22 @@
+/* FOOTER ------------------------------------------------------------------------------*/
 .footer{
 	@include media($screen) {
+		border-top: 1px solid gainsboro;
+		color: #888888;
 		position: relative;
 		top: 75px;
 		margin-bottom: 1em;
+		padding: 2em 0;
+		// background-color: #DB4632;
+		background: #F9F9F9;
+		// background: #FEFEFE;
 	};
 }
+.footer-image{
+	max-width: 128px;
+	// max-width: none;
+	max-height: 128px;
+	margin: 0 auto 2em auto;
+	// position: absolute;
+}
+// hi

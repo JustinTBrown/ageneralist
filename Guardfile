@@ -9,3 +9,5 @@ group :development do
   end
 
 end
+
+guard 'sass', :input => 'stylesheets'
