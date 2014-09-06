@@ -3,8 +3,7 @@
 ## Deployment
 Simple three-step process:
 
-`middleman build`
-`middleman s3_sync`
+`siteleaf push theme`
 Publish files on Siteleaf
 
 
@@ -12,4 +11,4 @@ Publish files on Siteleaf
 
 `sass --scss --watch stylesheets:stylesheets` for Sass pre-processing
 `guard` for Live-Reload
-`middleman s` for serving
+`siteleaf s` for serving
