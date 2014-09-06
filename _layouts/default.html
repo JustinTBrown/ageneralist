@@ -33,9 +33,14 @@
         {% for page in site.pages %}
           {% if page.title != 'Home' %}
           <li>
-            <a href="{{ page.url }}" {% if page.url == url %}class="is-current"{% endif %}>
-              {{ page.title }}
-            </a>
+            <div class="line-container">
+              <div class="line">
+                <a href="{{ page.url }}" {% if page.url == url %}class="is-current"{% endif %}>
+                {{ page.title }}
+                </a>
+                
+              </div>
+            </div>
           </li>
           {% endif %}
         {% endfor %}

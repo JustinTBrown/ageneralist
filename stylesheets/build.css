@@ -259,12 +259,21 @@ footer {
   transition: all 0.25s ease-in-out; }
 
 .site-header a.is-current {
-  text-decoration: underline;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
+
+.line-container {
+  position: relative;
+  width: 100%;
+  padding: 0; }
+
+.line a.is-current {
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: #BBBBBB 2px solid; }
 
 .site-header a:hover {
   color: #DB4632;
@@ -324,7 +333,7 @@ img .header-image {
 @media screen and (min-width: 769px) {
   .nav-links ul {
     float: right;
-    margin: 0; } }
+    margin: 2px 0 0 0; } }
 @media screen and (max-width: 768px) {
   .nav-links ul {
     display: block;
