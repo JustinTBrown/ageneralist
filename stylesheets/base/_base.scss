@@ -11,12 +11,23 @@ h6{
 	"Georgia",
 	serif;
 	font-weight: 400;
-	text-align:center;
 	margin: 0;
 	padding: 0;
+	color:#3b3b3b;
 }
 
-h1{font-size: 64px}
+// h1{font-size: 64px}
+h1{
+	font-size: 3em;
+	text-align:center;
+}
+h2{
+	font-size: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 0em;
+	border-bottom: #BFBFBF 1px solid;
+	line-height: 1em;
+}
 
 
 a,
