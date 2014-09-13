@@ -6,8 +6,8 @@
 // 	@include outer-container;
 // }
 .post {
-	@include span-columns(10);
-	@include shift(1);
+	@include span-columns(6);
+	@include shift(3);
 }
 .post-title{
 	color: #3b3b3b;
@@ -51,4 +51,8 @@
 	min-width:50px;
 	border:0;
 	border-bottom:3px solid #dbdbd9;
+}
+.comment-link{
+	text-align: center;
+	margin: 3em;
 }

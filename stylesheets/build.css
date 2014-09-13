@@ -400,8 +400,8 @@ img .header-image {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
+  width: 48.82117%;
+  margin-left: 25.58941%; }
   .post:last-child {
     margin-right: 0; }
 
@@ -445,7 +445,14 @@ img .header-image {
   border: 0;
   border-bottom: 3px solid #dbdbd9; }
 
+.comment-link {
+  text-align: center;
+  margin: 3em; }
+
 /* PROJECTS ------------------------------------------------------------------------------*/
+body {
+  background: #E6E6E6; }
+
 .project-wrap {
   max-width: 1000px;
   margin-left: auto;
@@ -629,6 +636,45 @@ img .header-image {
     width: 48.21067%; }
     .l-features-column-sub-2:last-child {
       margin-right: 0; } }
+
+.heading-bar {
+  background: #9C9C9C;
+  padding: 0.5em; }
+
+.heading-icon {
+  line-height: 0;
+  background: #D8D8D8;
+  padding: 1em;
+  margin: 0; }
+
+.project-wrap h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: left;
+  margin-bottom: 0; }
+.project-wrap h2 {
+  display: inline;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 0;
+  color: #D8D8D8;
+  margin: 0;
+  border-bottom: none; }
+
+.title-details {
+  background: white;
+  padding: 0.5em 1em; }
+
+.title-details .site-link {
+  font-size: 0.8em;
+  font-weight: 700; }
+
+.title-details .project-author {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-bottom: 1em; }
 
 /* FOOTER ------------------------------------------------------------------------------*/
 @media screen and (min-width: 769px) {

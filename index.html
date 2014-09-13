@@ -15,9 +15,12 @@
         {{ post.date | date: "%a, %b, %d, %Y" }}
       </time>
       {{ post.body }}
+      <div class="comment-link">
+        <a href="{{ post.url }}#disqus_thread"><h3>Comments?</h3></a>
+      </div>
     </article>
 
-    <a href="{{ post.url }}#disqus_thread"><h3>Comments?</h3></a>
+<!--     <a href="{{ post.url }}#disqus_thread"><h3>Comments?</h3></a> -->
 <!--   </br>
   </br>  
   <div id="disqus_thread"></div>
