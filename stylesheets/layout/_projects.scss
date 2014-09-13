@@ -119,3 +119,41 @@
 		display: none;
 	};
 }
+.l-side-column{
+	@include media($screen) {
+		@include span-columns(4);
+		@include shift(8);
+	}
+}
+.l-main-column{
+	@include media($screen) {
+		@include span-columns(8);
+		@include shift(-12);
+	}
+}
+.l-mobile-column{
+	@include media($screen) {
+		@include span-columns(3 of 8);
+	}
+}
+.l-desktop-column{
+	@include media($screen) {
+		@include span-columns(5 of 8);
+		@include omega();
+	}
+}
+.l-features-column{
+	@include media($screen) {
+		@include span-columns(8 of 8);
+	}
+}
+.l-features-column-sub-1 {
+	@include media($screen) {
+		@include span-columns(4 of 8);
+	}
+}
+.l-features-column-sub-2 {
+	@include media($screen) {
+		@include span-columns(4 of 8);
+	}
+}
