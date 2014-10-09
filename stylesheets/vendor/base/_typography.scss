@@ -14,13 +14,36 @@ h4,
 h5,
 h6 {
   font-family: $header-font-family;
+  font-weight: $header-font-weight;
   line-height: $header-line-height;
   margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+
+  @include transition(color 0.1s linear);
+  color: $header-link-color;
+  // color: $base-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $header-hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $header-hover-link-color;
+    outline: none;
+  } 
+}
 
 h1 {
   font-size: $h1-font-size;
+  text-align: $h1-text-alignment;
 }
 
 h2 {
