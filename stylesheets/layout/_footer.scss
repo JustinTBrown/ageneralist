@@ -3,8 +3,9 @@
 	@include media($screen) {
 		border-top: 1px solid gainsboro;
 		color: #888888;
-		position: relative;
-		top: 75px;
+		position: static;
+		// position: relative;
+		// top: 75px;
 		margin-bottom: 1em;
 		padding: 2em 0;
 		// background-color: #DB4632;

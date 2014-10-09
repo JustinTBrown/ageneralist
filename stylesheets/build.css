@@ -190,8 +190,7 @@ footer {
   padding: 0; }
 
 .body-wrap {
-  position: relative;
-  top: 100px; }
+  margin: 10em 0 0 0; }
 
 .social-links {
   width: 1em;
@@ -664,7 +663,7 @@ body {
   border-bottom: none; }
 
 .title-details {
-  background: white;
+  background: #fdfdfd;
   padding: 0.5em 1em; }
 
 .title-details .site-link {
@@ -676,13 +675,34 @@ body {
   font-style: italic;
   margin-bottom: 1em; }
 
+.share {
+  background: white;
+  padding: 0.5em 1em;
+  margin: 1.5em 0 0 0; }
+
+.share h2 {
+  display: block;
+  font-weight: 400;
+  color: #9c9c9c;
+  margin: 1em 0 0 0; }
+
+.about-project {
+  background: white;
+  padding: 0.5em 1em;
+  margin: 1.5em 0 0 0; }
+
+.about-project h2 {
+  display: block;
+  font-weight: 400;
+  color: #9c9c9c;
+  margin: 1em 0 0 0; }
+
 /* FOOTER ------------------------------------------------------------------------------*/
 @media screen and (min-width: 769px) {
   .footer {
     border-top: 1px solid gainsboro;
     color: #888888;
-    position: relative;
-    top: 75px;
+    position: static;
     margin-bottom: 1em;
     padding: 2em 0;
     background: #F9F9F9; } }

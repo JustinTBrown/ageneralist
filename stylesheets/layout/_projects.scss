@@ -204,7 +204,8 @@ body{
 	}
 }
 .title-details{
-	background: white;
+	// background: white;
+	background: #fdfdfd;
 	padding: 0.5em 1em;
 	// @include pad(padding-right);
 }
@@ -216,4 +217,26 @@ body{
 	font-size: 0.8em;
 	font-style: italic;
 	margin-bottom: 1em;
+}
+.share{
+	background: white;
+	padding: 0.5em 1em;
+	margin: 1.5em 0 0 0;
+}
+.share h2{
+	display: block;
+	font-weight: 400;
+	color: #9c9c9c;
+	margin: 1em 0 0 0;
+}
+.about-project{
+	background: white;
+	padding: 0.5em 1em;
+	margin: 1.5em 0 0 0;
+}
+.about-project h2{
+	display: block;
+	font-weight: 400;
+	color: #9c9c9c;
+	margin: 1em 0 0 0;
 }
