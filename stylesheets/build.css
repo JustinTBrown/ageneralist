@@ -78,8 +78,7 @@ h6 a {
     outline: none; }
 
 h1 {
-  font-size: 54px;
-  text-align: center; }
+  font-size: 54px; }
 
 h2 {
   font-size: 36px; }
@@ -95,6 +94,10 @@ h5 {
 
 h6 {
   font-size: 18px; }
+
+time {
+  font-size: 18px;
+  font-weight: 400; }
 
 p {
   margin: 0 0 0.8em; }
@@ -594,6 +597,15 @@ img .header-image {
   margin-left: 25.58941%; }
   .post:last-child {
     margin-right: 0; }
+
+.post-title {
+  margin: 0 auto;
+  text-align: center; }
+
+time.post-time {
+  text-align: center;
+  text-transform: uppercase;
+  display: block; }
 
 .post img {
   margin-left: auto;

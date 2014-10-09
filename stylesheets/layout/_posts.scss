@@ -15,7 +15,8 @@
 	// "Gentium Book Basic",
 	// "Georgia",
 	// serif;
-	// margin: 0 auto;
+	margin: 0 auto;
+	text-align: center;
 	// padding-top: 16.5px;
 	// margin-bottom: 16.5px;
 	// line-height: 1.25em;
@@ -29,14 +30,15 @@
 .post-title a:hover{
 	// color:#DB4632;
 }
-.post-time{
-	// text-align:center;
+time.post-time{
+	text-align:center;
+	// margin: 0 auto;
 	// font-family:"Source Sans Pro",ratio,"Lucida Grande",sans-serif;
 	// font-size: 1em;
 	// font-weight:400;
-	// text-transform:uppercase;
+	text-transform:uppercase;
 	// color: #dbdbd9;
-	// display: block;
+	display: block;
 	// margin-top: 2em;
 	// margin-bottom: 2.5em;
 }
