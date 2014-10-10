@@ -24,12 +24,13 @@ footer{
 	max-width: 128px;
 	// max-width: none;
 	max-height: 128px;
-	margin: 0 auto 2em auto;
+	margin: 0 auto 1em auto;
 	// position: absolute;
 }
 // hi
 .copyright{
 	color: $medium-gray;
 	text-align: center;
+	font-size: 0.8em;
 	// Should this be tagged with <author>?
 }
