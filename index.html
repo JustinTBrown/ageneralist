@@ -1,5 +1,5 @@
 {% capture body %}
-  {% for post in posts %}
+  {% for post in posts | limit:5 %}
     <article class="post">
       {% if post.meta.lead_image != blank %}
       <figure class="post-lead-image image">

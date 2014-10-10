@@ -269,6 +269,7 @@ input[type="submit"] {
   white-space: nowrap; }
 
 body {
+  display: block;
   margin: 0; }
 
 * {
@@ -883,10 +884,9 @@ time.post-time {
 
 /* FOOTER ------------------------------------------------------------------------------*/
 @media screen and (min-width: 769px) {
-  .footer {
+  footer {
     border-top: 1px solid gainsboro;
     color: #888888;
-    position: static;
     margin-bottom: 1em;
     padding: 2em 0;
     background: #F9F9F9; } }
