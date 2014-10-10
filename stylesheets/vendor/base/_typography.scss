@@ -41,6 +41,9 @@ h6 a {
 
 h1 {
   font-size: $h1-font-size;
+  @include media($screen) {
+    font-size: $h1-font-size-large;
+  };
   // text-align: $h1-text-alignment;
 }
 
