@@ -8,6 +8,10 @@
 .post {
 	@include span-columns(6);
 	@include shift(3);
+	// @extend %default-ul;
+}
+ul {
+	@extend %default-ul;
 }
 .post-title{
 	// color: #3b3b3b;
@@ -31,16 +35,16 @@
 	// color:#DB4632;
 }
 time.post-time{
+	display: block;
 	text-align:center;
-	// margin: 0 auto;
 	// font-family:"Source Sans Pro",ratio,"Lucida Grande",sans-serif;
 	// font-size: 1em;
 	// font-weight:400;
 	text-transform:uppercase;
 	// color: #dbdbd9;
-	display: block;
 	// margin-top: 2em;
 	// margin-bottom: 2.5em;
+	margin: 2em 0 2.5em 0;
 }
 .post img{
 	margin-left: auto;
@@ -55,6 +59,6 @@ time.post-time{
 	border-bottom:3px solid #dbdbd9;
 }
 .comment-link{
-	// text-align: center;
-	// margin: 3em;
+	text-align: center;
+	margin: 3em;
 }

@@ -19,6 +19,7 @@ $time-font-size: 18px;
 // Font Weights CUSTOM
 $header-font-weight: 400;
 $time-font-weight: 400;
+$time-font-weight: 600;
 
 // Line height
 // $base-line-height: 1.5;
@@ -50,6 +51,8 @@ $base-background-color: white;
 $base-font-color: $dark-gray;
 // $base-accent-color: $blue;
 $base-accent-color: $red;
+// $time-font-color: $light-gray;
+$time-font-color: $medium-gray;
 
 // Link Colors
 $base-link-color: $base-accent-color;

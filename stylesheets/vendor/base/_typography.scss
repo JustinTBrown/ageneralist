@@ -46,6 +46,10 @@ h1 {
 
 h2 {
   font-size: $h2-font-size;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: #BFBFBF 1px solid;
+  line-height: 1em; 
 }
 
 h3 {
@@ -67,7 +71,8 @@ h6 {
 time {
   font-size: $time-font-size;
   font-weight: $time-font-weight;
-  
+  color: $time-font-color;
+
 }
 
 p {
