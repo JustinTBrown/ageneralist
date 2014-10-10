@@ -503,6 +503,7 @@ img .header-image {
 .site-name {
   float: left;
   margin: 0;
+  margin: 5px 0 0 0;
   padding: 0 0 0 5vw;
   white-space: nowrap; }
 
@@ -540,7 +541,7 @@ img .header-image {
 @media screen and (min-width: 769px) {
   .nav-links ul {
     float: right;
-    margin: 2px 0 0 0; } }
+    margin: 3px 0 0 0; } }
 @media screen and (max-width: 768px) {
   .nav-links ul {
     display: block;
@@ -607,7 +608,8 @@ img .header-image {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  margin-left: 25.58941%; }
+  margin-left: 25.58941%;
+  float: none; }
   .post:last-child {
     margin-right: 0; }
 
@@ -889,7 +891,8 @@ time.post-time {
     color: #888888;
     margin-bottom: 1em;
     padding: 2em 0;
-    background: #F9F9F9; } }
+    background: #F9F9F9;
+    text-align: center; } }
 
 .footer-image {
   max-width: 128px;

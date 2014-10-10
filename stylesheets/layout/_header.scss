@@ -103,6 +103,7 @@ img .header-image{
 .site-name{
 	float: left;
 	margin: 0;
+	margin: 5px 0 0 0;
 	padding: 0 0 0 5vw;
 	white-space: nowrap;
 }
@@ -194,7 +195,8 @@ img .header-image{
 		float: right;
 		// right: 0;
 		// padding:0;
-		margin:2px 0 0 0;
+		margin:3px 0 0 0;
+		// margin:0 0 0 0;
 	}
 	@include media($tablet, $mobile) {
 		display: block;
