@@ -903,6 +903,46 @@ time.post-time {
   color: #9c9c9c;
   margin: 1em 0 0 0; }
 
+.hover-tile-outer {
+  background-position: bottom;
+  background-size: cover;
+  background-size: cover;
+  border: 1px solid #dddddd;
+  height: 12em;
+  margin-bottom: 1.6;
+  cursor: pointer; }
+  .hover-tile-outer .hover-tile-container {
+    height: 12em;
+    overflow: hidden; }
+  .hover-tile-outer .hover-tile-container:hover > .hover-tile {
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+    transform: translate(0, -100%); }
+  .hover-tile-outer .hover-tile {
+    -webkit-transition: all, 0.2s ease-in-out;
+    -moz-transition: all, 0.2s ease-in-out;
+    transition: all, 0.2s ease-in-out;
+    background: inherit;
+    color: white;
+    height: inherit;
+    padding: 1em 1.5em; }
+  .hover-tile-outer .hover-tile-visible {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2em;
+    font-weight: 200;
+    padding-top: 1.5em;
+    text-align: center; }
+  .hover-tile-outer a .hover-tile-hidden {
+    display: block; }
+  .hover-tile-outer .hover-tile-hidden {
+    background: rgba(0, 0, 0, 0.5); }
+    .hover-tile-outer .hover-tile-hidden h4 {
+      margin-bottom: .5em; }
+    .hover-tile-outer .hover-tile-hidden p {
+      color: rgba(255, 255, 255, 0.7); }
+
 /* FOOTER ------------------------------------------------------------------------------*/
 footer {
   border-top: 1px solid gainsboro;

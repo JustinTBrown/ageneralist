@@ -20,4 +20,17 @@
       </p>
     </div>
   </div>
+
+  <div class="hover-tile-outer" style="background:url( {{ post.assets.first }} )">
+    <div class="hover-tile-container">
+      <div class="hover-tile hover-tile-visible">
+        {{ post.title }}
+      </div>
+      <!-- <a href="{{ post.taxonomy['sitelink'] }}" target="_blank"></a> -->
+      <div class="hover-tile hover-tile-hidden">
+        <h4>{{ post.title }}</h4>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    </div>
+  </div>
 </div>
