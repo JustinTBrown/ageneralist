@@ -1,38 +1,54 @@
 <div class="project">
-  <h2 class="project-title">
-    <!-- <a class="header" href="{{ post.meta.link }}">{{ post.title }}</a> -->
-    <a class="header" href="{{ post.taxonomy['sitelink'] }}" target="_blank">{{ post.title }}</a>
-  </h2>
-  <div class="project-shot">
-  	<div class="project-overlay">
-			<p>
-				{{ post.excerpt }} <!-- Remember to add excerpt to CMS post followed by two empty lines -->
-			</p>
-  	</div>
-
-      <!-- <a href="{{ post.meta.link }}"> -->
-    <a href="{{ post.taxonomy['sitelink'] }}" target="_blank">
-      <img src="{{ post.assets.first }}" alt="{{ post.title | escape }}">
-    </a>
-    <div class="project-caption is-visible"> 
-      <p>
-        {{ post.excerpt }}
-      </p>
-    </div>
+  <div class="project-title">
+    {{ post.title }}
   </div>
-
-  <div class="hover-tile-outer" style="background:url( {{ post.assets.first }} )">
+  <div class="hover-tile-outer" style="background-image:url( {{ post.assets.first }} )" alt="{{ post.title | escape }}">
     <div class="hover-tile-container">
       <div class="hover-tile hover-tile-visible">
-        {{ post.title }}
+        <!-- {{ post.title }} -->
       </div>
       <div class="hover-tile hover-tile-hidden">
-        <h4>{{ post.title }}</h4>
         <p>{{ post.excerpt }}</p>
+<!--         <a href="{{ post.taxonomy['sitelink'] }}" target="_blank">
+          {{ post.excerpt }}
+        </a> -->
         <a href="{{ post.taxonomy['sitelink'] }}" target="_blank">
           <span class="tile-link"></span>
         </a>
+        <!-- <h4>{{ post.title }}</h4> -->
       </div>
     </div>
   </div>
+
+  <div class = "browsers">
+    <div class = "browser">
+      <div class="browser-top-bar">
+        <div class="browser-circle"></div>
+        <div class="browser-circle"></div>
+        <div class="browser-circle"></div>
+      </div>
+    <div class="browser-content"></div>
+    </div>
+    <div class = "browser">
+      <div class="browser-top-bar">
+        <div class="browser-circle"></div>
+        <div class="browser-circle"></div>
+        <div class="browser-circle"></div>
+      </div>
+      <div class="browser-content">
+        <p>Hello?</p>
+      </div>
+    </div>
+    <div class = "browser">
+      <div class="browser-top-bar">
+        <div class="browser-circle"></div>
+        <div class="browser-circle"></div>
+        <div class="browser-circle"></div>
+      </div>
+      <div class="browser-content"></div>
+    </div>
+  </div>
+
+  <div class="cover"></div>
+
 </div>

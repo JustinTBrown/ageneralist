@@ -659,6 +659,9 @@ time.post-time {
   margin: 3em; }
 
 /* PROJECTS ------------------------------------------------------------------------------*/
+body.project-index {
+  background: #E6E6E6; }
+
 .project-wrap {
   max-width: 1000px;
   margin-left: auto;
@@ -669,14 +672,15 @@ time.post-time {
     clear: both; }
   @media screen and (min-width: 769px) {
     .project-wrap {
-      margin-top: 10em; } }
+      margin: 10em auto 0 auto; } }
 
 .project {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  margin-left: 8.5298%; }
+  margin-left: 8.5298%;
+  margin-bottom: 4em; }
   .project:last-child {
     margin-right: 0; }
 
@@ -904,8 +908,7 @@ time.post-time {
   margin: 1em 0 0 0; }
 
 .hover-tile-outer {
-  background-position: bottom;
-  background-size: cover;
+  background-position: center;
   background-size: cover;
   border: 1px solid #dddddd;
   height: 12em;
@@ -932,25 +935,140 @@ time.post-time {
     color: rgba(255, 255, 255, 0.7);
     font-size: 2em;
     font-weight: 200;
-    padding-top: 1.5em;
+    padding-top: 2.2em;
     text-align: center; }
   .hover-tile-outer a .hover-tile-hidden {
     display: block; }
   .hover-tile-outer .hover-tile-hidden {
     position: relative;
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.9); }
     .hover-tile-outer .hover-tile-hidden h4 {
       margin-bottom: .5em; }
     .hover-tile-outer .hover-tile-hidden p {
-      color: rgba(255, 255, 255, 0.7); }
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center; }
   .hover-tile-outer .hover-tile-hidden a > span {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
-    /* edit: added z-index */
-    z-index: 1; }
+    left: 0; }
+
+.browsers {
+  display: inline-block;
+  padding-top: 0;
+  text-align: center;
+  width: 100%; }
+  @media screen and (min-width: 769px) {
+    .browsers {
+      padding-top: 2em; } }
+
+.browser-top-bar {
+  background-color: #ececec;
+  background-image: -webkit-linear-gradient(#ececec, #e7e7e7);
+  background-image: linear-gradient(#ececec, #e7e7e7);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 0px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  height: 1.5em;
+  width: 100%; }
+
+.browser-circle {
+  border-radius: 1em;
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.5), inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  margin: 0.5em 0; }
+
+.browser-circle:nth-child(1) {
+  background: #FF6F55;
+  margin-left: 0.5em; }
+
+.browser-circle:nth-child(2) {
+  background: #F5B01D;
+  margin-left: 0.16667em; }
+
+.browser-circle:nth-child(3) {
+  background: #51B151;
+  margin-left: 0.16667em; }
+
+.browser {
+  border-bottom: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  text-align: left;
+  width: 20%; }
+
+.browser:nth-child(1) {
+  background-color: #f0f0f0;
+  display: none; }
+  @media screen and (min-width: 769px) {
+    .browser:nth-child(1) {
+      display: inline-block; } }
+  .browser:nth-child(1) .browser-content {
+    background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot1.png);
+    background-color: #f0f0f0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.browser:nth-child(2) {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  background-color: white;
+  width: 90%; }
+  @media screen and (min-width: 769px) {
+    .browser:nth-child(2) {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+      width: 40%; } }
+  .browser:nth-child(2) .browser-content {
+    background: url(https://raw.githubusercontent.com/thoughtbot/refills/9c16f8b69d857c296c85f2d8c434e825f813a566/source/images/refills-screenshot2.jpg);
+    background-color: white;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.browser:nth-child(3) {
+  background-color: #f0f0f0;
+  display: none; }
+  @media screen and (min-width: 769px) {
+    .browser:nth-child(3) {
+      display: inline-block; } }
+  .browser:nth-child(3) .browser-content {
+    background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot3.png);
+    background-color: #f0f0f0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.browser-content {
+  border-left: 0px;
+  border-right: 0px;
+  height: 17em;
+  overflow: hidden; }
+  @media screen and (min-width: 769px) {
+    .browser-content {
+      height: 18em; } }
+
+.cover {
+  background: white;
+  border-top: 1px solid #E6E6E6;
+  height: 3.2em;
+  margin-top: -1em;
+  position: relative;
+  width: 100%;
+  z-index: 999; }
 
 /* FOOTER ------------------------------------------------------------------------------*/
 footer {
