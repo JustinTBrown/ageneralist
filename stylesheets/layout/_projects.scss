@@ -284,10 +284,12 @@ body.project-index{
     padding-top: 1.5em;
     text-align: center;
   }
+  // a.hover-tile-hidden,
 	a .hover-tile-hidden {
 		display: block;
 	}
   .hover-tile-hidden {
+  	position: relative;
     background: transparentize(black, .5);
     h4 {
       margin-bottom: .5em;
@@ -295,6 +297,18 @@ body.project-index{
     p {
       color: transparentize(white, .3);
     }
+  }
+
+  // Tile link from http://stackoverflow.com/questions/796087/make-a-div-into-a-link
+  .hover-tile-hidden a > span{
+	  position:absolute; 
+	  width:100%;
+	  height:100%;
+	  top:0;
+	  left: 0;
+
+	  /* edit: added z-index */
+	  z-index: 1;
   }
 }
 
