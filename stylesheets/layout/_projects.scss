@@ -16,7 +16,7 @@ body.project-index{
 	@include span-columns(10);
 	@include shift(1);
 	// margin: 0 auto 4em auto;
-	margin-bottom: 4em;
+	margin-bottom: 3em;
 }
 .project-title{
 	color: #3b3b3b;
@@ -104,12 +104,13 @@ body.project-index{
 .project-caption{
 	@include media($tablet, $mobile) {
 		transition: 0.25s;
-		color: #3b3b3b;
-		line-height: 1.5em;
-		font-size: 16px;
-		letter-spacing: 2px;
-		font-family: "Merriweather", "Georgia", serif;
-		font-weight: 300;
+		// color: #3b3b3b;
+		// line-height: 1.5em;
+		// font-size: 16px;
+		// letter-spacing: 2px;
+		// font-family: "Merriweather", "Georgia", serif;
+		// font-weight: 300;
+		padding: 0 0.25em 1em 0.25em;
 		padding-bottom: 1em;
 		border-bottom: 1px solid rgba(141,141,141,0.5);
 	};
@@ -247,6 +248,7 @@ body.project-index{
 
 // Hover Tiles ----------
 .hover-tile-outer {
+	position: relative;
   $hover-tile-height: 10em;
   $hover-tile-height: 12em;
 
@@ -262,11 +264,18 @@ body.project-index{
   height: $hover-tile-height;
   margin-bottom: $base-line-height;
   cursor: pointer;
+
   
   @include media($tablet) {
     // width: 40%;
   }
   .hover-tile-container {
+	  @include media($mobile) {
+	  	display: none;
+	  }
+	  @include media($tablet) {
+	  	display: none;
+	  }
     height: $hover-tile-height;
     overflow: hidden;
   }
@@ -281,6 +290,7 @@ body.project-index{
     padding: 1em 1.5em;
   }
   .hover-tile-visible {
+  	// position: relative;
     color: transparentize(white, .3);
     font-size: 2em;
     font-weight: 200;  
@@ -292,11 +302,11 @@ body.project-index{
 		display: block;
 	}
   .hover-tile-hidden {
-  	// @include media($screen) {
-  	// 	@include span-columns(8 of 10);
-  	// 	@include shift(1);
-  	// }
-  	padding: 3em 5em;
+  	@include media($screen) {
+  		// @include span-columns(8 of 10);
+  		// @include shift(1);
+	  	padding: 3em 5em;
+  	}
   	position: relative;
     background: transparentize($dark-gray, .05);
     h4 {
@@ -307,6 +317,7 @@ body.project-index{
       text-align: center;
     }
   }
+  .hover-tile-outer a > span,
   .hover-tile-hidden a > span{ // Tile link from http://stackoverflow.com/questions/796087/make-a-div-into-a-link
 	  position:absolute; 
 	  width:100%;
@@ -319,6 +330,18 @@ body.project-index{
   // .hover-tile-hidden p > a{
   // 	z-index: 2;
   // }
+}
+.hover-tile-outer a > span{ // Tile link from http://stackoverflow.com/questions/796087/make-a-div-into-a-link
+  @include media($screen) {
+  	display: none;
+  };
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  // z-index: -1;
+  // z-index: 1;
 }
 
 

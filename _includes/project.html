@@ -5,6 +5,9 @@
     </a>  
   </div>
   <div class="hover-tile-outer" style="background-image:url( {{ post.assets.first }} ); background-position:{{ post.meta['background_position'] }}" alt="{{ post.title | escape }}">
+    <a href="{{ post.taxonomy['sitelink'] }}" target="_blank">
+      <span class="tile-link"></span>
+    </a>
     <div class="hover-tile-container">
       <div class="hover-tile hover-tile-visible">
         <!-- {{ post.title }} -->
@@ -20,6 +23,9 @@
         <!-- <h4>{{ post.title }}</h4> -->
       </div>
     </div>
+  </div>
+  <div class="project-caption">
+    <p>{{ post.excerpt }}</p>
   </div>
 
 </div>

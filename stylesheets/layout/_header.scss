@@ -74,7 +74,15 @@
   margin: 0 auto;
   // width: 50%;
   width: 100%;
-  border-bottom: #BBBBBB 2px solid;
+  @include media($mobile) {
+	  border-bottom: white 2px solid;
+  }
+  @include media($tablet) {
+	  border-bottom: white 2px solid;
+  }
+  @include media($screen) {
+	  border-bottom: #BBBBBB 2px solid;
+  }
 }
 // .line a:hover{
 //   margin: 0 auto;
@@ -135,7 +143,7 @@ img .header-image{
 	color: rgb(255,255,255);
 }
 .nav-overlay a.is-current{
-	text-decoration: underline;
+	// text-decoration: underline;
 }
 .nav-overlay a:hover{
 	color: #3b3b3b;

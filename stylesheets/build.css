@@ -482,8 +482,16 @@ pre .tex .formula {
 
 .line a.is-current {
   margin: 0 auto;
-  width: 100%;
-  border-bottom: #BBBBBB 2px solid; }
+  width: 100%; }
+  @media screen and (max-width: 480px) {
+    .line a.is-current {
+      border-bottom: white 2px solid; } }
+  @media screen and (max-width: 768px) {
+    .line a.is-current {
+      border-bottom: white 2px solid; } }
+  @media screen and (min-width: 769px) {
+    .line a.is-current {
+      border-bottom: #BBBBBB 2px solid; } }
 
 .site-header a:hover {
   color: #DB4632;
@@ -520,9 +528,6 @@ img .header-image {
 .nav-overlay a:visited,
 .nav-overlay a:active {
   color: white; }
-
-.nav-overlay a.is-current {
-  text-decoration: underline; }
 
 .nav-overlay a:hover {
   color: #3b3b3b; }
@@ -680,7 +685,7 @@ body.project-index {
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 8.5298%;
-  margin-bottom: 4em; }
+  margin-bottom: 3em; }
   .project:last-child {
     margin-right: 0; }
 
@@ -760,12 +765,7 @@ body.project-index {
 @media screen and (max-width: 768px) {
   .project-caption {
     transition: 0.25s;
-    color: #3b3b3b;
-    line-height: 1.5em;
-    font-size: 16px;
-    letter-spacing: 2px;
-    font-family: "Merriweather", "Georgia", serif;
-    font-weight: 300;
+    padding: 0 0.25em 1em 0.25em;
     padding-bottom: 1em;
     border-bottom: 1px solid rgba(141, 141, 141, 0.5); } }
 @media screen and (min-width: 769px) {
@@ -908,6 +908,7 @@ body.project-index {
   margin: 1em 0 0 0; }
 
 .hover-tile-outer {
+  position: relative;
   background-position: center;
   background-size: cover;
   border: 1px solid #dddddd;
@@ -917,6 +918,12 @@ body.project-index {
   .hover-tile-outer .hover-tile-container {
     height: 12em;
     overflow: hidden; }
+    @media screen and (max-width: 480px) {
+      .hover-tile-outer .hover-tile-container {
+        display: none; } }
+    @media screen and (max-width: 768px) {
+      .hover-tile-outer .hover-tile-container {
+        display: none; } }
   .hover-tile-outer .hover-tile-container:hover > .hover-tile {
     -webkit-transform: translate(0, -100%);
     -moz-transform: translate(0, -100%);
@@ -940,20 +947,33 @@ body.project-index {
   .hover-tile-outer a .hover-tile-hidden {
     display: block; }
   .hover-tile-outer .hover-tile-hidden {
-    padding: 3em 5em;
     position: relative;
     background: rgba(51, 51, 51, 0.95); }
+    @media screen and (min-width: 769px) {
+      .hover-tile-outer .hover-tile-hidden {
+        padding: 3em 5em; } }
     .hover-tile-outer .hover-tile-hidden h4 {
       margin-bottom: .5em; }
     .hover-tile-outer .hover-tile-hidden p {
       color: rgba(255, 255, 255, 0.7);
       text-align: center; }
+  .hover-tile-outer .hover-tile-outer a > span,
   .hover-tile-outer .hover-tile-hidden a > span {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0; }
+
+.hover-tile-outer a > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  @media screen and (min-width: 769px) {
+    .hover-tile-outer a > span {
+      display: none; } }
 
 /* FOOTER ------------------------------------------------------------------------------*/
 footer {
