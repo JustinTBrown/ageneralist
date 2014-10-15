@@ -8,5 +8,6 @@ require(["main/blog"], function() {
 });
 require(["main/highlight.pack"], function() {
 	hljs.initHighlightingOnLoad();
+	console.log("hljs loaded");
 });
 require(["main/google-analytics"], function() {});
