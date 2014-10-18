@@ -79,3 +79,27 @@ time.post-time{
 	text-align: center;
 	margin: 3em;
 }
+.recent-posts-outer{
+	@include outer-container();
+	@include media($mobile) {
+		@include pad(1em);
+	};
+	@include media($tablet) {
+		@include pad(1em 2em);
+	};
+	@include media($screen) {
+		@include pad(1em 6em);
+	};
+	@include media ($large-screen) {
+		padding: 0 8em;
+		float: none;
+	}
+	float: none;
+
+}
+li.block{
+	display: inline;
+  @include span-columns(6);
+  @include omega(2n);
+  margin-bottom: 1em;
+}

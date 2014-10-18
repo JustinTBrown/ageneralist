@@ -1,6 +1,6 @@
 {% capture body %}
   <!-- {% assign indexref = 5 %} -->
-  {% for post in posts %}
+  {% for post in posts | limit:3 %}
 
     <article class="post">
       {% if post.meta.lead_image != blank %}
@@ -30,9 +30,29 @@
     <hr class="post-sep">
     {% endif %}
 
-
   {% endfor %}
 
+    <!-- <div class="recent-posts-outer"> -->
+  <ul class="recent-posts-outer">
+    {% for post in posts | offset:3 %}
+      <li class="block">
+        
+      
+        <div class="hover-tile-outer">
+          <div class="hover-tile-container">
+            <div class="hover-tile hover-tile-visible">
+              Hover
+            </div>
+            <div class="hover-tile hover-tile-hidden">
+              <h4>Hidden Copy</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, hic, dolore, labore,provident eligendi fugiat ad exercitationem.</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+    <!-- </div> -->
 {% endcapture %}
 
 {% include 'layouts/default' %}
