@@ -24,15 +24,12 @@
       </div>
     </article>
 
-    <!-- <span>{{ post.meta }}</span> -->
-
     {% if post != posts.last %}
     <hr class="post-sep">
     {% endif %}
 
   {% endfor %}
 
-    <!-- <div class="recent-posts-outer"> -->
   <div class="recent-posts-outer">
     <h2>
       Recent Posts
@@ -40,10 +37,6 @@
     
   </div>
   <ul class="recent-posts-outer">
-<!--     <h2>
-      Recent Posts
-    </h2> -->
-
     {% for post in posts | offset:1 %}
       <li class="block">
         <article class="post-tile-outer">
@@ -56,7 +49,17 @@
               </a>  
             </h3>
             <p class="post-snippet">
-              Vestibulum fermentum imperdiet volutpat. Aenean eu nisl nunc. Etiam in tortor sed orci ullamcorper sollicitudin non non leo. Maecenas ultricies.
+              <!-- {{ post.meta.summary }} -->
+    <!--           {% if post.excerpt %}
+                {{ post.excerpt }}
+              {% else %}
+                {{ post.meta.summary }}
+              {% endif %} -->
+              <!-- {{ post.body | truncatewords: 25, "&hellip;" }} -->
+              <!-- {{ post.meta.summary | truncatewords: 20, "&hellip;" }} -->
+              {{ post.meta.summary | strip_html | truncate: 125 }}
+              <!-- {{ post.body }} -->
+              <!-- Vestibulum fermentum imperdiet volutpat. Aenean eu nisl nunc. Etiam in tortor sed orci ullamcorper sollicitudin non non leo. Maecenas ultricies. -->
             </p>
           </div>
         </article>

@@ -150,6 +150,10 @@ li.block{
 	// @include ellipsis();
 	// overflow: hidden;
 	// text-overflow: ellipsis;
+	// word-wrap: break-word;
+	word-wrap: break-all;
+	// @include hyphens(auto);
+
 }
 
 .recent-posts-outer{

@@ -755,6 +755,9 @@ li.block {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+.post-snippet {
+  word-wrap: break-all; }
+
 .recent-posts-outer .hover-tile-outer {
   border: 2px solid #dddddd; }
 .recent-posts-outer h3 {
