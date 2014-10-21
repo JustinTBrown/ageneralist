@@ -44,6 +44,10 @@ body.project-index{
 	margin: 0 0 16.5px 0;
 }
 .project-overlay{
+	// @include media($tablet, $mobile) {
+	position: absolute;
+	display: none;
+	// };
 	@include media($screen) {
 		position: absolute;
 		padding: 1em 0.9em;
@@ -55,17 +59,13 @@ body.project-index{
 		font-family: "Merriweather", "Georgia", serif;
 		font-weight: 300;
 	};
-	@include media($tablet, $mobile) {
-		position: absolute;
-		display: none;
-	};
 }
 .project-overlay p{
-	margin: 0;
-
-	@include media($tablet, $mobile) {
-		display: none;
+	display: none;
+	@include media($screen) {
+		margin: 0;
 	}
+
 }
 .project-overlay a,
 .project-overlay a.is-current,
@@ -265,19 +265,13 @@ body.project-index{
   margin-bottom: $base-line-height;
   cursor: pointer;
 
-  
-  @include media($tablet) {
-    // width: 40%;
-  }
   .hover-tile-container {
-	  @include media($mobile) {
-	  	display: none;
-	  }
-	  @include media($tablet) {
-	  	display: none;
-	  }
+  	display: none;
     height: $hover-tile-height;
     overflow: hidden;
+	  @include media($screen) {
+	  	display: block;
+	  }
   }
   .hover-tile-container:hover > .hover-tile {
     @include transform(translate(0, -100%));

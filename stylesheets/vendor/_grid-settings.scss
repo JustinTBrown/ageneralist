@@ -16,7 +16,12 @@ $default-layout-direction: LTR !default;
 $max-width: 1000px;
 
 // Define your breakpoints
+// $mobile: new-breakpoint(max-width 480px 4);
+$mobile: new-breakpoint(max-width 479px 4);
+// $tablet: new-breakpoint(max-width 768px 8);
+$tablet: new-breakpoint(min-width 480px 8);
+// $screen: new-breakpoint(min-width 769px);
+$screen: new-breakpoint(min-width 768px);
+// $screen: new-breakpoint(min-width 769px max-width 1000px);
 $large-screen: new-breakpoint(min-width 1000px);
-$screen: new-breakpoint(min-width 769px);
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 480px 4);
+// $large-screen: new-breakpoint(min-width 1001px);

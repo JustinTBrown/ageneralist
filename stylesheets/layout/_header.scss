@@ -5,12 +5,9 @@
   top: 0px;
   z-index: 999;
   width: 100%;
-  // max-height: 70px;
   height: 4em;
   padding-top: 1em;
   overflow: hidden;
-  // -webkit-transition: all 0.3s;
-  // transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   top: 0px;
@@ -36,7 +33,6 @@
 }
 .site-header a,
 .site-header a:visited,
-// .site-header a.is-current,
 .site-header a:active{
 	color: #3b3b3b;
 	-moz-transition:all 0.25s ease-in-out;
@@ -46,24 +42,11 @@
 	transition:all 0.25s ease-in-out
 }
 .site-header a.is-current{
-	// color:#DB4632;
-	// text-decoration: underline;
 	-moz-transition:all 0.25s ease-in-out;
 	-o-transition:all 0.25s ease-in-out;
 	-webkit-transition:all 0.25s ease-in-out;
 	-ms-transition:all 0.25s ease-in-out;
 	transition:all 0.25s ease-in-out;
-	// .line-container {
-	//   position: relative;
-	//   width: 100%;
-	//   padding: 0;
-	// }
-	// .line {
-	//   margin: 0 auto;
-	//   // width: 50%;
-	//   width: 100%;
-	//   border-bottom: #BBBBBB 2px solid;
-	// }
 }
 .line-container {
   position: relative;
@@ -72,7 +55,6 @@
 }
 .line a.is-current{
   margin: 0 auto;
-  // width: 50%;
   width: 100%;
   @include media($mobile) {
 	  border-bottom: white 2px solid;
@@ -82,14 +64,11 @@
   }
   @include media($screen) {
 	  border-bottom: #BBBBBB 2px solid;
+  }  
+  @include media($large-screen) {
+	  border-bottom: #BBBBBB 2px solid;
   }
 }
-// .line a:hover{
-//   margin: 0 auto;
-//   // width: 50%;
-//   width: 100%;
-//   border-bottom: #BBBBBB 2px solid;
-// }
 .site-header a:hover{
 	color:#DB4632;
 	-moz-transition:all 0.25s ease-in-out;
@@ -116,21 +95,11 @@ img .header-image{
 	white-space: nowrap;
 }
 .nav-overlay {
-  @include media($tablet, $mobile) {
-	  // max-height: 400px !important;
-	  // display: table;
-	  height: 100%;
-	  width: 100%;
-	  // color: rgb(255,255,255);
-	  background-color: rgba(219,70,50, 0.95);
-	  // margin-bottom: auto;
-	  // height: 400px;
-	  // height: 800px;
-	  // -webkit-transition: all 0.3s;
-	  // transition: all 0.3s;
-  	// height: calc( 100% + 200px );
-  	// height: calc( 120% );
-  };
+  // @include media($tablet, $mobile) {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(219,70,50, 0.95);
+  // };
 }
 .nav-overlay .mobile-toggle {
   // transform: rotate(-90deg);
@@ -138,7 +107,6 @@ img .header-image{
 }
 .nav-overlay a,
 .nav-overlay a:visited,
-// .nav-overlay a.is-current,
 .nav-overlay a:active{
 	color: rgb(255,255,255);
 }
@@ -149,121 +117,90 @@ img .header-image{
 	color: #3b3b3b;
 }
 .nav-links{
-	// width: 100%;
+	@include media($tablet, $mobile) {
+
+	}
 	@include media($screen) {
-		// float: right;
 		right: 0;
 		margin: 0;
 		padding: 0 5vw;
 	}
-	@include media($tablet, $mobile) {
-		// display: table-cell;
-		// width: 100%;
-		// width: 766px;
-		// margin: 0;
-		// width: border-box;
-		// display: table-cell;
-	 //  vertical-align: middle; 
-	 //  text-align: center;
-		// display: block;
-		// position: relative;
-		// margin-right: auto;
-		// margin-left: auto;	
-		// margin: auto;
-		// margin-top: 10em;	
+	@include media($large-screen) {
+		right: 0;
+		margin: 0;
+		padding: 0 5vw;
 	}
 }
 .nav-links.is-closed-for-mobile{
-	@include media($tablet, $mobile) {
-		display: none;
+	display: none;
+	@include media($screen) {
+		display: block;
 	}
 }
 .nav-links.is-open-for-mobile{
-	@include media($tablet, $mobile) {
-		// display: table-cell;
-	 //  vertical-align: middle; 
-	  // text-align: center; 
-	  // margin: auto;
-	  // margin-left: auto;
-	  // margin-right: auto;
-		// display: block;
-		// display: table;
-		// margin-top: 10em;
-		// margin-top: 20em;
-		// margin-top: 30%;
-		margin-top: 45%;
-		// height: 100%;
-		// width: 100%;
-	}
+	// @include media($tablet, $mobile) {
+	margin-top: 45%;
+	// }
 }
 .nav-links ul{
+	// @include media($tablet, $mobile) {
+	display: block;
+	padding: 0;
+	// }
 	@include media($screen) {
-		// display: block;
-		// display: inline-block;
 		float: right;
-		// right: 0;
-		// padding:0;
 		margin:3px 0 0 0;
-		// margin:0 0 0 0;
 	}
-	@include media($tablet, $mobile) {
-		display: block;
-		// margin: 0;
-		padding: 0;
-
+	@include media($large-screen) {
+		float: right;
+		margin:3px 0 0 0;
 	}
 }
-@include media($screen) {
-	.nav-links li{
+.nav-links li{
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+	@include media($tablet) {
+		display: block;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	@include media($screen) {
+		display:inline-block;
+		margin: 0 0 0 2em;
+		padding: 0;
+		top: 2px;
+	}
+	@include media($large-screen) {
 		display:inline-block;
 		margin: 0 0 0 2em;
 		padding: 0;
 		top: 2px;
 	}
 }
-@include media($tablet, $mobile) {
-	.nav-links li {
-		// position: relative;
-		display: block;
-		// display: none;
-		text-align: center;
-		margin-bottom: 1em;
-		// width: 100%;
-	}
-}
 .mobile-toggle {
-  display: none;
+	display: block;
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  // color: white;
-  // right: 22px;
   right: 5vw;
   top: 1.2em;
   width: 20px;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
-  @include media($tablet) {
-  	display: block;
-  }
-  @include media($mobile) {
-  	display: block;
-  }
+	@include media($screen) {
+	  display: none;
+	}
 }
 .mobile-toggle span {
   width: 20px;
   height: 2px;
   margin-bottom: 4px;
   border-radius: 1000px;
-  // background: #8f8f8f;
   background-color: #3b3b3b;
   display: block;
 }
-// .nav-overlay a,
-// .nav-overlay a:visited,
-// .nav-overlay a.is-current,
-// .nav-overlay a:active{
 .nav-overlay .mobile-toggle span,
 .nav-overlay .mobile-toggle span:visited,
 .nav-overlay .mobile-toggle span.is-current,

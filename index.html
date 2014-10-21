@@ -1,6 +1,6 @@
 {% capture body %}
   <!-- {% assign indexref = 5 %} -->
-  {% for post in posts | limit:3 %}
+  {% for post in posts | limit:1 %}
 
     <article class="post">
       {% if post.meta.lead_image != blank %}
@@ -33,22 +33,34 @@
   {% endfor %}
 
     <!-- <div class="recent-posts-outer"> -->
+  <div class="recent-posts-outer">
+    <h2>
+      Recent Posts
+    </h2>
+    
+  </div>
   <ul class="recent-posts-outer">
-    {% for post in posts | offset:3 %}
+<!--     <h2>
+      Recent Posts
+    </h2> -->
+
+    {% for post in posts | offset:1 %}
       <li class="block">
-        
-      
-        <div class="hover-tile-outer">
-          <div class="hover-tile-container">
-            <div class="hover-tile hover-tile-visible">
-              Hover
-            </div>
-            <div class="hover-tile hover-tile-hidden">
-              <h4>Hidden Copy</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, hic, dolore, labore,provident eligendi fugiat ad exercitationem.</p>
-            </div>
+        <article class="post-tile-outer">
+          <div class="post-tile-image" style="background-image:url( {{ post.assets.first }} ); background-position:{{ post.meta['background_position'] }}" alt="{{ post.title | escape }}">
           </div>
-        </div>
+          <div class="post-tile-text">
+            <h3 class="post-tile-title">
+              <a href="{{ post.url }}" target="_blank">
+                {{ post.title }}
+              </a>  
+            </h3>
+            <p class="post-snippet">
+              Vestibulum fermentum imperdiet volutpat. Aenean eu nisl nunc. Etiam in tortor sed orci ullamcorper sollicitudin non non leo. Maecenas ultricies.
+            </p>
+          </div>
+        </article>
+
       </li>
     {% endfor %}
   </ul>

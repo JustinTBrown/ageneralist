@@ -2,32 +2,15 @@
 footer{
 	border-top: 1px solid gainsboro;
 	color: $medium-gray;
-
-	// position: static;
-	// position: relative;
-	// position: absolute;
-	// bottom: 0;
-	// top: 75px;
-	// margin-bottom: 1em;
-
 	padding: 2em 0 1em 0;
-	// background-color: #DB4632;
 	background: #F9F9F9;
-	// background: #FEFEFE;
 	text-align: center;	
-}
-
-.footer{
-
 }
 .footer-image{
 	max-width: 128px;
-	// max-width: none;
 	max-height: 128px;
 	margin: 0 auto 1em auto;
-	// position: absolute;
 }
-// hi
 .copyright{
 	color: $medium-gray;
 	text-align: center;

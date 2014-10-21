@@ -1,6 +1,15 @@
 /* ABOUT ------------------------------------------------------------------------------*/
 
 .about {
-	@include span-columns(10);
-	@include shift(1);
+	@include outer-container();
+	@include pad(default 1em);
+	// @include span-columns(10);
+	// @include shift(1);
+	float: none;
+	margin-bottom: 5em;
+	@include media($screen) {
+		// @include pad(0 5em);
+		max-width: 768px;
+		// margin: 0 auto;
+	}
 }
