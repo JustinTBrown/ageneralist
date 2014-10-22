@@ -104,7 +104,7 @@ time.post-time{
 }
 li.block{
 	// @include media($mobile) {
-		// display: inline;
+	display: inline-block;
 		// @include span-columns(12);
 	  // @include span-columns(4);
 		// @include omega(1n);

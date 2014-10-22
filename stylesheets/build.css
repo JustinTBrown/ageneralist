@@ -703,6 +703,7 @@ time.post-time {
   padding-left: 0; }
 
 li.block {
+  display: inline-block;
   margin-bottom: 3em; }
   @media screen and (min-width: 480px) {
     li.block {
