@@ -30,43 +30,36 @@
 
   {% endfor %}
 
-  <div class="recent-posts-outer">
-    <h2>
+  <section class="recent-posts">
+    <h1>
       Recent Posts
-    </h2>
+    </h1>
+    <ul>
+      {% for post in posts | offset:1 %}
+        <li class="block">
+          <article class="post-tile-outer">
+            <a href="{{ post.url }}">
+              <span class="tile-link"></span>
+            </a>
+            <div class="post-tile-image" style="background-image:url( {{ post.assets.first }} ); background-position:{{ post.meta['background_position'] }}" alt="{{ post.title | escape }}">
+            </div>
+            <div class="post-tile-text">
+              <h2 class="post-tile-title">
+                <a href="{{ post.url }}" target="_blank">
+                  {{ post.title }}
+                </a>  
+              </h2>
+              <p class="post-snippet">
+                {{ post.meta.summary | truncatewords: 23, "&hellip;" }}
+              </p>
+            </div>
+          </article>
+
+        </li>
+      {% endfor %}
+    </ul>
     
   </div>
-  <ul class="recent-posts-outer">
-    {% for post in posts | offset:1 %}
-      <li class="block">
-        <article class="post-tile-outer">
-          <div class="post-tile-image" style="background-image:url( {{ post.assets.first }} ); background-position:{{ post.meta['background_position'] }}" alt="{{ post.title | escape }}">
-          </div>
-          <div class="post-tile-text">
-            <h3 class="post-tile-title">
-              <a href="{{ post.url }}" target="_blank">
-                {{ post.title }}
-              </a>  
-            </h3>
-            <p class="post-snippet">
-              <!-- {{ post.meta.summary }} -->
-    <!--           {% if post.excerpt %}
-                {{ post.excerpt }}
-              {% else %}
-                {{ post.meta.summary }}
-              {% endif %} -->
-              <!-- {{ post.body | truncatewords: 25, "&hellip;" }} -->
-              <!-- {{ post.meta.summary | truncatewords: 20, "&hellip;" }} -->
-              {{ post.meta.summary | strip_html | truncate: 125 }}
-              <!-- {{ post.body }} -->
-              <!-- Vestibulum fermentum imperdiet volutpat. Aenean eu nisl nunc. Etiam in tortor sed orci ullamcorper sollicitudin non non leo. Maecenas ultricies. -->
-            </p>
-          </div>
-        </article>
-
-      </li>
-    {% endfor %}
-  </ul>
     <!-- </div> -->
 {% endcapture %}
 

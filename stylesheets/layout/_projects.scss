@@ -325,17 +325,4 @@ body.project-index{
   // 	z-index: 2;
   // }
 }
-.hover-tile-outer a > span{ // Tile link from http://stackoverflow.com/questions/796087/make-a-div-into-a-link
-  @include media($screen) {
-  	display: none;
-  };
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  // z-index: -1;
-  // z-index: 1;
-}
-
 

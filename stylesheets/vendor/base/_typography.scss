@@ -4,6 +4,7 @@ body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  font-weight: $base-font-weight;
   line-height: $base-line-height;
 }
 
@@ -13,6 +14,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: $dark-gray;
   font-family: $header-font-family;
   font-weight: $header-font-weight;
   line-height: $header-line-height;
@@ -51,7 +53,7 @@ h2 {
   font-size: $h2-font-size;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
-  border-bottom: #BFBFBF 1px solid;
+  border-bottom: $light-gray 1px solid;
   line-height: 1em; 
 }
 
@@ -72,6 +74,7 @@ h6 {
 }
 
 time {
+  font-family: $header-font-family;
   font-size: $time-font-size;
   font-weight: $time-font-weight;
   color: $time-font-color;
@@ -80,6 +83,7 @@ time {
 
 p {
   margin: 0 0 ($base-spacing / 2);
+  font-size: $p-font-size;
 }
 
 a {

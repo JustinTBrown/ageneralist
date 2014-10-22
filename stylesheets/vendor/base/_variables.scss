@@ -1,14 +1,20 @@
 // Typography
 $sans-serif: $helvetica;
 $serif: $georgia;
-$base-font-family: 'Source Sans', $sans-serif;
-$header-font-family: 'Gentium Book Basic', $base-font-family;
+// $base-font-family: 'Source Sans', $sans-serif;
+$base-font-family: 'Arvo', 'EB Garamond', 'Merriweather', $serif;
+// $header-font-family: 'Gentium Book Basic', $base-font-family;
+// $header-font-family: 'Source Sans Pro', $sans-serif;
+$header-font-family: 'Open Sans', $sans-serif;
+// $header-font-family: $sans-serif;
 
 // Font Sizes
 $base-font-size: 18px;
+$p-font-size: 18px;
 $h1-font-size-large: $base-font-size * 3;
 $h1-font-size: $base-font-size * 2.5;
 $h2-font-size: $base-font-size * 2;
+$h2-font-size: $base-font-size * 1.5;
 $h3-font-size: $base-font-size * 1.75;
 $h4-font-size: $base-font-size * 1.5;
 $h5-font-size: $base-font-size * 1.25;
@@ -16,8 +22,8 @@ $h6-font-size: $base-font-size;
 $time-font-size: 18px;
 
 // Font Weights
-$header-font-weight: 400;
-$time-font-weight: 400;
+$base-font-weight: 400;
+$header-font-weight: 600;
 $time-font-weight: 600;
 
 // Line height
@@ -37,8 +43,10 @@ $h1-text-alignment: center;
 $blue: #477DCA;
 $dark-gray: #333;
 $faint-gray: #EEE;
+// $faint-gray: #FFF;
 $medium-gray: #999;
 $light-gray: #DDD;
+// $light-gray: #EEE;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;

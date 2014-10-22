@@ -79,12 +79,11 @@ time.post-time{
 	text-align: center;
 	margin: 3em;
 }
-// Recent Posts
+// RECENT POSTS ----------------------------------------------------------------------------------------------------------------
+.recent-posts,
 .recent-posts-outer{
 	@include outer-container();
-	// @include media($mobile) {
 	@include pad(1em 1em);
-	// };
 	@include media($tablet) {
 		@include pad(1em 2em);
 	};
@@ -95,8 +94,13 @@ time.post-time{
 		padding: 0 8em;
 		float: none;
 	}
-	// float: none;
-
+}
+.recent-posts h1{
+	font-size: 0.75 * $base-font-size;
+	margin-bottom: 3em;
+}
+.recent-posts ul{
+	padding-left: 0;
 }
 li.block{
 	// @include media($mobile) {
@@ -125,6 +129,27 @@ li.block{
 	  margin-bottom: 3em;
 	}
 }
+.post-tile-outer{
+	position: relative;
+
+}
+.post-tile-outer a > span{ // Tile link from http://stackoverflow.com/questions/796087/make-a-div-into-a-link
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  &:hover{
+  	// background: transparentize($red, 0.9);
+  }
+};
+a:hover ~ .post-tile-text{
+	// background: transparentize($red, 0.9);
+	background-color: tint($red, 50%);
+}
+// a:hover + div{
+// 	background: transparentize($red, 0.9);
+// }
 .post-tile-image{
 	height: 12em;
 	// width: 100%;
@@ -133,8 +158,9 @@ li.block{
 .post-tile-text{
 	// background-color: $light-gray;
 	background-color: $faint-gray;
+	box-shadow: inset 0 1px $light-gray;
 	@include outer-container();
-	@include pad(1em default default default);
+	@include pad(1em 1em 0.25em 1em);
 	// height: 8em;
 	// max-width: 100%;
 	// overflow: hidden;
@@ -145,8 +171,19 @@ li.block{
 }
 .post-tile-title{
 	@include ellipsis();
+	border: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 0.75 * $base-font-size;
+	// font-size: 1 * $base-font-size;
+	font-weight: 700;
+	// font-size: $h6-font-size;
+	margin-top: 0.5em;
+	&:hover{
+		color: $dark-gray;
+	}
 }
 .post-snippet{
+	font-size: 0.75 * $base-font-size;
 	// @include ellipsis();
 	// overflow: hidden;
 	// text-overflow: ellipsis;
@@ -159,14 +196,13 @@ li.block{
 .recent-posts-outer{
 	.hover-tile-outer{
 		border: 2px solid $light-gray;
-
 	}
-	h2{
-
-	}
-	h3{
-		font-size: 1em;
-		color: $dark-gray;
-		text-align: left;
-	}
+	// h1{
+	// 	font-size: $h6-font-size;
+	// }
+	// h2{
+	// 	font-size: 1em;
+	// 	color: $dark-gray;
+	// 	text-align: left;
+	// }
 }
