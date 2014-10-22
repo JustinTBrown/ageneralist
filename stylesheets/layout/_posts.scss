@@ -131,6 +131,7 @@ li.block{
 }
 .post-tile-outer{
 	position: relative;
+	border: $light-gray 1px solid;
 
 }
 .post-tile-outer a > span{ // Tile link from http://stackoverflow.com/questions/796087/make-a-div-into-a-link
@@ -158,7 +159,7 @@ a:hover ~ .post-tile-text{
 .post-tile-text{
 	// background-color: $light-gray;
 	background-color: $faint-gray;
-	box-shadow: inset 0 1px $light-gray;
+	box-shadow: inset 0 2px $medium-gray;
 	@include outer-container();
 	@include pad(1em 1em 0.25em 1em);
 	// height: 8em;
