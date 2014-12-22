@@ -3,10 +3,11 @@ $parallax-window-height: 30em;
 $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-window {
-  max-height: $parallax-window-height;
+  // max-height: $parallax-window-height;
+  height: 30em;
   overflow: hidden;
   position: relative;
-  text-align: center;
+  // text-align: center;
   width: 100%;
 }
 
@@ -19,14 +20,16 @@ $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-background {
   // background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
-  background: url("/img/user_smartphone.jpg");
+  background: url("/img/user_smartphone_reverse.jpg");
   background-size: cover;
+  // background-size: 110%;
   background-color: beige;
   // background-origin: bottom;
-  background-position: bottom;
+  // background-position: bottom;
   background-position: 0% 1300%;
   height: $parallax-background-height;
-  left: 0;
+  // left: 0;
+  right: 0;
   position: absolute;
   top: - $parallax-window-height / 3;
   width: 100%;

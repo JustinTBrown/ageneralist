@@ -1,67 +1,106 @@
 {% capture body %}
-  <div class="hero-home">
-    <div id="particles-js"></div>
-    <div class="hero-overlay">
-      <div class="text-overlay">
-        <header>
-          <h1>
-            <!-- Hi, my name is <strong>Justin Brown</strong>. -->
-            <!-- HI, MY NAME IS<strong> JUSTIN BROWN</strong>. -->
-          </h1>
-          <span>
-            I love to build <em>websites</em> <br>
-            and <em>applications</em>.
-          </span>
-        </header>
+  <div class="landing-page">
+    
+    <div class="hero-home">
+      <div id="particles-js"></div>
+      <div class="hero-overlay">
+        <div class="text-overlay">
+          <header>
+            <h1>
+              <!-- Hi, my name is <strong>Justin Brown</strong>. -->
+              <!-- HI, MY NAME IS<strong> JUSTIN BROWN</strong>. -->
+            </h1>
+            <span>
+              I love to build <em>websites</em> <br>
+              and <em>applications</em>.
+            </span>
+          </header>
+        </div>
       </div>
     </div>
+    <section class="principles">
+      <h2>My approach to design is...</h2>
+      <!-- <h2>MY APPROACH TO DESIGN IS...</h2> -->
+      <!-- <h2>PRINCIPLES</h2> -->
+      <ul>
+        <li>
+          <img data-gender="female" data-src="/img/person.svg" class="iconic iconic-md" alt="person" />
+          <!-- <img data-gender="male" data-src="/img/person.svg" class="iconic iconic-md" alt="person" /> -->
+          <br>
+          <!-- <img src="/img/person.svg" alt="" /><br> -->
+          User Focused
+        </li>
+        <li>
+          <!-- <img data-src="/img/copywriting.svg" class="iconic iconic-md" alt="copywriting"> -->
+          <img data-src="/img/image.svg" class="iconic iconic-md" data-orientation="landscape" alt="image" />
+          <br>
+          Content Driven
+        </li>
+        <li>
+          <img data-src="/img/iphone.svg" class="iconic iconic-md" alt="iphone">
+          <!-- <img data-src="/img/laptop.svg" class="iconic iconic-md" data-screenshot="/assets/jb_headshot.jpg" alt="laptop" /> -->
+          <br>
+          Responsive
+        </li>
+        <li>
+          <img data-src="/img/timer.svg" class="iconic iconic-md" alt="timer">
+          <!-- <img data-src="/img/tablet.svg" class="iconic iconic-md" alt="tablet"> -->
+          <br>
+          Future Friendly
+        </li>
+      </ul>
+    </section>
+    <section id="js-parallax-window" class="parallax-window">
+      <div class="parallax-static-content user-focused">
+        <div class="column-1">
+          <div class="bullet-icon">
+            <img data-gender="female" data-src="/img/person.svg" class="iconic iconic-md" alt="person" />
+          </div>
+          <div class="bullet-content">
+            <h2>
+              User Focused
+            </h2>
+            <p>Nulla pharetra ante ut erat rhoncus viverra. Etiam blandit dui ipsum, id finibus tellus laoreet at. Donec dictum varius lorem eu pulvinar. Fusce convallis tellus vel urna venenatis posuere.</p>
+            
+          </div>
+          
+        </div>
+<!--         <div class="column-2">
+          
+        </div> -->
+      </div>
+      <div id="js-parallax-background" class="parallax-background"></div>
+    </section>
+    <section class="content-driven">
+      <div class="column-1">
+        <h2>Content Driven</h2>
+        <p>Nullam lorem lectus, cursus at aliquam at, viverra porttitor mi. Proin quis est aliquam, tristique metus ullamcorper, faucibus dui. Donec laoreet diam nec risus gravida, vitae finibus diam posuere. Phasellus dictum convallis tortor.</p>
+      </div>
+    </section>
+    <section class="responsive">
+      <h2>Responsive</h2>
+      <p>Aenean odio magna, congue eu facilisis id, luctus eget justo. Vivamus ultricies mollis tortor, in bibendum dolor pellentesque a. Sed sit amet nulla mi. Suspendisse potenti. Etiam eleifend arcu vel ex pellentesque, nec blandit ex faucibus. Ut.</p>
+    </section>
+    <section class="future-friendly">
+      <h2>Future Friendly</h2>
+      <p>Integer vitae magna in ex commodo malesuada id sit amet lorem. Cras vitae tortor eu dui posuere vehicula. Etiam porta nec lorem non tincidunt. Suspendisse nibh arcu, efficitur eget risus vel, malesuada cursus nisi. In hac habitasse platea dictumst. Quisque non.</p>
+    </section>
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
   </div>
-  <section class="principles">
-    <h2>My approach to design is...</h2>
-    <!-- <h2>MY APPROACH TO DESIGN IS...</h2> -->
-    <!-- <h2>PRINCIPLES</h2> -->
-    <ul>
-      <li>
-        <!-- <span>1.</span> -->
-        <img data-gender="female" data-src="/img/person.svg" class="iconic iconic-md" alt="person" />
-        <!-- <img data-gender="male" data-src="/img/person.svg" class="iconic iconic-md" alt="person" /> -->
-        <br>
-        <!-- <img src="/img/person.svg" alt="" /><br> -->
-        User Focused
-      </li>
-      <li>
-        <!-- <img data-src="/img/copywriting.svg" class="iconic iconic-md" alt="copywriting"> -->
-        <img data-src="/img/image.svg" class="iconic iconic-md" data-orientation="landscape" alt="image" />
-        <br>
-        <!-- <span>2.</span> -->
-        Content Driven
-      </li>
-      <li>
-        <img data-src="/img/iphone.svg" class="iconic iconic-md" alt="iphone">
-        <!-- <img data-src="/img/laptop.svg" class="iconic iconic-md" data-screenshot="/assets/jb_headshot.jpg" alt="laptop" /> -->
-        <br>
-        <!-- <span>3.</span> -->
-        Responsive
-      </li>
-      <li>
-        <img data-src="/img/timer.svg" class="iconic iconic-md" alt="timer">
-        <!-- <img data-src="/img/tablet.svg" class="iconic iconic-md" alt="tablet"> -->
-        <br>
-        <!-- <span>4.</span> -->
-        Future Friendly
-      </li>
-    </ul>
-  </section>
-  <div id="js-parallax-window" class="parallax-window">
-    <div class="parallax-static-content">
-      <b>User Focused</b>
-    </div>
-    <div id="js-parallax-background" class="parallax-background"></div>
-  </div>
-  <section class="content-driven">
-    <h2>Content Driven</h2>
-    <p>Nullam lorem lectus, cursus at aliquam at, viverra porttitor mi. Proin quis est aliquam, tristique metus ullamcorper, faucibus dui. Donec laoreet diam nec risus gravida, vitae finibus diam posuere. Phasellus dictum convallis tortor.</p>
-  </section>
 
 
 

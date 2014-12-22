@@ -4,7 +4,7 @@ require(["main/particles"], function() {
 	console.log("particles.js loaded");
 });
 require(["jquery"], function() {
-	// console.log("jquery loaded");
+	console.log("jquery loaded");
 });
 require(["main/highlight.pack"], function() {
 	hljs.initHighlightingOnLoad();
@@ -14,7 +14,7 @@ require(["main/highlight.pack"], function() {
 require(["main/iconic.min"], function() {
 	console.log("iconic.min.js loaded");
 });
+require(["main/google-analytics"], function() {});
 require(["main/blog"], function() {
 	console.log("blog.js loaded");
 });
-require(["main/google-analytics"], function() {});

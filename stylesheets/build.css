@@ -389,6 +389,16 @@ Style with support for rainbow parens
 .body-wrap {
   margin: 6em 0 0 0; }
 
+.landing-page h2 {
+  border: none;
+  font-family: 'Open Sans';
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center; }
+
+.landing-page p {
+  text-align: left; }
+
 .hero-home {
   background: #DB4632; }
 
@@ -455,11 +465,8 @@ Style with support for rainbow parens
     clear: both; }
 
 .principles h2 {
-  border: none;
-  font-family: 'Open Sans';
-  font-weight: 700;
-  margin-bottom: 5em;
-  text-align: center; }
+  font-size: 2em;
+  margin-bottom: 2em; }
 
 .principles li {
   float: left;
@@ -471,11 +478,89 @@ Style with support for rainbow parens
   .principles li:last-child {
     margin-right: 0; }
 
-.content-driven {
+.user-focused {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto; }
+  .user-focused:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.user-focused .column-1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  overflow: auto;
+  margin-bottom: 1.6; }
+  .user-focused .column-1:last-child {
+    margin-right: 0; }
+
+.user-focused h2 {
+  display: inline-block;
+  margin-top: 0;
+  text-align: left;
+  padding-top: 0.1em;
+  margin-bottom: 0.58333em;
+  display: inline-block; }
+
+.user-focused p {
+  color: #333; }
+
+.bullet-icon {
+  float: left;
+  background: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  padding: 0.875em;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em; }
+
+.bullet-content {
+  margin-left: 4.9em;
+  margin-bottom: 2em; }
+
+.content-driven {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10em;
+  margin-top: 10em; }
   .content-driven:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.responsive {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10em;
+  margin-top: 10em; }
+  .responsive:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.future-friendly {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10em;
+  margin-top: 10em; }
+  .future-friendly:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.skills {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10em;
+  margin-top: 10em; }
+  .skills:after {
     content: "";
     display: table;
     clear: both; }
@@ -1253,10 +1338,9 @@ footer {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg); } }
 .parallax-window {
-  max-height: 30em;
+  height: 30em;
   overflow: hidden;
   position: relative;
-  text-align: center;
   width: 100%; }
 
 .parallax-static-content {
@@ -1266,13 +1350,12 @@ footer {
   z-index: 9; }
 
 .parallax-background {
-  background: url("/img/user_smartphone.jpg");
+  background: url("/img/user_smartphone_reverse.jpg");
   background-size: cover;
   background-color: beige;
-  background-position: bottom;
   background-position: 0% 1300%;
   height: 60em;
-  left: 0;
+  right: 0;
   position: absolute;
   top: -10em;
   width: 100%; }

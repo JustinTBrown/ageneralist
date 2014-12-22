@@ -12,6 +12,21 @@
 	// top: 100px;
 	// @include outer-container;
 }
+.landing-page h2{
+	border: none;
+	// font-family: 'Arvo';
+	font-family: 'Open Sans';
+	font-size: 3em;
+	// font-style: italic;
+	// font-weight: 400;
+	font-weight: 700;
+	// letter-spacing: 2px;
+	// margin-bottom: 5em;
+	text-align: center;
+}
+.landing-page p{
+	text-align: left;
+}
 .hero-home{
 	background: #DB4632;
 	// display: block;
@@ -93,16 +108,16 @@
 	padding-top: 12em;
 }
 .principles h2{
-	border: none;
-	// font-family: 'Arvo';
-	font-family: 'Open Sans';
-	// font-size: 2em;
-	// font-style: italic;
-	// font-weight: 400;
-	font-weight: 700;
-	// letter-spacing: 2px;
-	margin-bottom: 5em;
-	text-align: center;
+	// border: none;
+	// // font-family: 'Arvo';
+	// font-family: 'Open Sans';
+	font-size: 2em;
+	// // font-style: italic;
+	// // font-weight: 400;
+	// font-weight: 700;
+	// // letter-spacing: 2px;
+	margin-bottom: 2em;
+	// text-align: center;
 
 }
 .principles li{
@@ -110,8 +125,73 @@
 	font-size: 1.5em;
 	text-align: center;
 }
+.user-focused{
+	@include outer-container();
+}
+.user-focused .column-1{
+	// @include row();
+	@include span-columns(6);
+	// @include shift(7);
+	// text-align: left;
+	overflow: auto;
+  margin-bottom: $base-line-height;
+
+}
+.user-focused .column-2{
+
+}
+$icon-bullet-size: 3.5em;
+.user-focused h2{
+	display: inline-block;
+	// margin-top: 1em;
+	margin-top: 0;
+	text-align: left;
+  // font-size: $icon-bullet-size /2.5;
+  // padding-top: $icon-bullet-size /7;
+  padding-top: 0.1em;
+  margin-bottom: $icon-bullet-size /6;
+  // border-bottom: 1px solid transparentize($base-font-color, .8);
+  display: inline-block;
+}
+.user-focused p{
+	color: $base-font-color;
+}
+.bullet-icon {
+  float: left;
+  background: rgba(255,255,255,0.7);
+  display: inline-block;
+  padding: $icon-bullet-size /4;
+  border-radius: 50%;
+  width: $icon-bullet-size;
+  height: $icon-bullet-size;
+}
+.bullet-content {
+  margin-left: $icon-bullet-size *1.4;
+  margin-bottom: 2em;
+}
+// .section-icon{
+// 	float: left;
+// 	// text-align: left;
+// }
 .content-driven{
 	@include outer-container();
+	margin-bottom: 10em;
+	margin-top: 10em;
+}
+.responsive{
+	@include outer-container();
+	margin-bottom: 10em;
+	margin-top: 10em;
+}
+.future-friendly{
+	@include outer-container();
+	margin-bottom: 10em;
+	margin-top: 10em;
+}
+.skills{
+	@include outer-container();
+	margin-bottom: 10em;
+	margin-top: 10em;
 }
 
 .social-links{
