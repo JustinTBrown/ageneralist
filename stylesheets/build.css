@@ -389,6 +389,97 @@ Style with support for rainbow parens
 .body-wrap {
   margin: 6em 0 0 0; }
 
+.hero-home {
+  background: #DB4632; }
+
+#particles-js {
+  background: #DB4632;
+  display: block;
+  height: 100%;
+  width: 100%; }
+  @media screen and (max-width: 479px) {
+    #particles-js {
+      display: none; } }
+
+#particle-js canvas {
+  z-index: -1; }
+
+.hero-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5; }
+
+.text-overlay {
+  margin: 0 auto;
+  padding-top: 12em;
+  width: 800px; }
+
+.text-overlay header {
+  font-family: 'Open Sans';
+  font-size: 3em;
+  font-weight: 700; }
+
+.text-overlay h1 {
+  font-family: "Arvo";
+  font-family: "Open Sans";
+  font-size: 0.5em;
+  font-weight: 400;
+  margin-bottom: 2em; }
+
+.text-overlay em {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 700; }
+
+.text-overlay span {
+  font-family: 'Arvo';
+  font-weight: 400; }
+
+.text-overlay strong {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px; }
+
+.principles {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15em;
+  padding-top: 12em; }
+  .principles:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.principles h2 {
+  border: none;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  margin-bottom: 5em;
+  text-align: center; }
+
+.principles li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  font-size: 1.5em;
+  text-align: center; }
+  .principles li:last-child {
+    margin-right: 0; }
+
+.content-driven {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content-driven:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .social-links {
   width: 1em;
   text-align: center;
@@ -437,6 +528,10 @@ Style with support for rainbow parens
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid gainsboro; }
+
+.site-header-transparent {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 
 .site-header h1 {
   font-size: 18px;
@@ -1157,3 +1252,27 @@ footer {
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg); } }
+.parallax-window {
+  max-height: 30em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+.parallax-static-content {
+  color: #9A9A8A;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9; }
+
+.parallax-background {
+  background: url("/img/user_smartphone.jpg");
+  background-size: cover;
+  background-color: beige;
+  background-position: bottom;
+  background-position: 0% 1300%;
+  height: 60em;
+  left: 0;
+  position: absolute;
+  top: -10em;
+  width: 100%; }

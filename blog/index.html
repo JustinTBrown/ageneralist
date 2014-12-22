@@ -1,0 +1,66 @@
+{% capture body %}
+  <!-- {% assign indexref = 5 %} -->
+  {% for post in posts | limit:1 %}
+
+    <article class="post">
+      {% if post.meta.lead_image != blank %}
+      <figure class="post-lead-image image">
+        <a href="{{ post.url }}">
+          <img src="{{ post.meta.lead_image }}">
+        </a>
+      </figure>
+      {% endif %}
+      <h1 class="post-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h1>
+      <time class="post-time" pubdate datetime="{{ post.date }}">
+        {{ post.date | date: "%a, %b, %d, %Y" }}
+      </time>
+      {{ post.body }}
+      <div class="comment-link">
+        <a href="{{ post.url }}#disqus_thread">
+          <span>Comments?</span>
+        </a>
+      </div>
+    </article>
+
+    {% if post != posts.last %}
+    <hr class="post-sep">
+    {% endif %}
+
+  {% endfor %}
+
+  <section class="recent-posts">
+    <h1>
+      Recent Posts
+    </h1>
+    <ul>
+      {% for post in posts | offset:1 %}
+        <li class="block">
+          <article class="post-tile-outer">
+            <a href="{{ post.url }}">
+              <span class="tile-link"></span>
+            </a>
+            <div class="post-tile-image" style="background-image:url( {{ post.assets.first }} ); background-position:{{ post.meta['background_position'] }}" alt="{{ post.title | escape }}">
+            </div>
+            <div class="post-tile-text">
+              <h2 class="post-tile-title">
+                <a href="{{ post.url }}" target="_blank">
+                  {{ post.title }}
+                </a>  
+              </h2>
+              <p class="post-snippet">
+                {{ post.meta.summary | truncatewords: 23, "&hellip;" }}
+              </p>
+            </div>
+          </article>
+
+        </li>
+      {% endfor %}
+    </ul>
+    
+  </div>
+    <!-- </div> -->
+{% endcapture %}
+
+{% include 'layouts/default' %}

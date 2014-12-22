@@ -12,9 +12,108 @@
 	// top: 100px;
 	// @include outer-container;
 }
-// .footer{
+.hero-home{
+	background: #DB4632;
+	// display: block;
+	// position: relative;
+	// height: 100%;
+}
 
-// }
+#particles-js{
+	@include media($mobile) {
+		display: none;
+	}
+	// @include outer-container();
+	background: #DB4632;
+	display: block;
+	height: 100%;
+	// padding: 6em 0 0 0;
+	// max-width: 800px;
+	// position: absolute;
+	// position: relative;
+	// top: 0;
+	width: 100%;
+	// z-index: -1;
+}
+#particle-js canvas{
+	z-index: -1;
+}
+	
+
+.hero-overlay{
+	// @include outer-container();
+	display: block;
+	// margin: 0 auto;
+	// max-width: 800px;
+	// padding: 6em 0 0 0;
+	position: absolute;
+	top: 0;
+	// width: 800px;
+	width: 100%;
+	z-index: 5;
+
+}
+.text-overlay{
+	margin: 0 auto;
+	padding-top: 12em;
+	width: 800px;
+}
+.text-overlay header{
+	font-family: 'Open Sans';
+	font-size: 3em;
+	font-weight: 700;
+}
+.text-overlay h1{
+	font-family: "Arvo";
+	font-family: "Open Sans";
+	font-size: 0.5em;
+	// font-style: italic;
+	font-weight: 400;
+	margin-bottom: 2em;
+}
+.text-overlay em{
+	font-family: 'Arvo';
+	font-style: normal;
+	font-weight: 700;
+}
+.text-overlay span{
+	font-family: 'Arvo';
+	// font-style: italic;
+	font-weight: 400;
+}
+.text-overlay strong{
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.principles{
+	@include outer-container();
+	padding-bottom: 15em;
+	padding-top: 12em;
+}
+.principles h2{
+	border: none;
+	// font-family: 'Arvo';
+	font-family: 'Open Sans';
+	// font-size: 2em;
+	// font-style: italic;
+	// font-weight: 400;
+	font-weight: 700;
+	// letter-spacing: 2px;
+	margin-bottom: 5em;
+	text-align: center;
+
+}
+.principles li{
+	@include span-columns(3);
+	font-size: 1.5em;
+	text-align: center;
+}
+.content-driven{
+	@include outer-container();
+}
+
 .social-links{
 	width: 1em;
 	text-align: center;
