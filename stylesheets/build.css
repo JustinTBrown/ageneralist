@@ -12,7 +12,7 @@
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #db4632;
+  background-color: #DB4632;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -33,7 +33,7 @@ input[type="submit"] {
 body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
-  color: #333333;
+  color: #333;
   font-family: "Arvo", "EB Garamond", "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 400;
@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333;
+  color: #333;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.25;
@@ -61,7 +61,7 @@ h6 a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #333333;
+  color: #333;
   text-decoration: none; }
   h1 a:hover,
   h2 a:hover,
@@ -69,7 +69,7 @@ h6 a {
   h4 a:hover,
   h5 a:hover,
   h6 a:hover {
-    color: #db4632; }
+    color: #DB4632; }
   h1 a:active, h1 a:focus,
   h2 a:active,
   h2 a:focus,
@@ -81,7 +81,7 @@ h6 a {
   h5 a:focus,
   h6 a:active,
   h6 a:focus {
-    color: #db4632;
+    color: #DB4632;
     outline: none; }
 
 h1 {
@@ -94,7 +94,7 @@ h2 {
   font-size: 27px;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
-  border-bottom: #dddddd 1px solid;
+  border-bottom: #DDD 1px solid;
   line-height: 1em; }
 
 h3 {
@@ -113,7 +113,7 @@ time {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
-  color: #999999; }
+  color: #999; }
 
 p {
   margin: 0 0 0.8em;
@@ -123,7 +123,7 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #db4632;
+  color: #DB4632;
   text-decoration: none; }
   a:hover {
     color: #a42d1d; }
@@ -132,7 +132,7 @@ a {
     outline: none; }
 
 hr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -144,7 +144,7 @@ picture {
   max-width: 100%; }
 
 blockquote {
-  border-left: 2px solid #dddddd;
+  border-left: 2px solid #DDD;
   color: #595959;
   margin: 1.6em 0;
   padding-left: 0.8em; }
@@ -157,7 +157,7 @@ cite {
 
 fieldset {
   background: #f7f7f7;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
   margin: 0 0 0.8em 0;
   padding: 1.6em; }
 
@@ -187,7 +187,7 @@ select[multiple=multiple] {
   transition: border-color;
   background-color: white;
   border-radius: 3px;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "Arvo", "EB Garamond", "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 18px;
@@ -201,7 +201,7 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #db4632;
+    border-color: #DB4632;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(207, 57, 36, 0.7);
     outline: none; }
 
@@ -242,7 +242,7 @@ th {
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
   padding: 0.8em 0; }
 
 tr,
@@ -750,7 +750,7 @@ li.block {
 
 .post-tile-outer {
   position: relative;
-  border: #dddddd 1px solid; }
+  border: #DDD 1px solid; }
 
 .post-tile-outer a > span {
   position: absolute;
@@ -767,8 +767,8 @@ a:hover ~ .post-tile-text {
   background-size: cover; }
 
 .post-tile-text {
-  background-color: #eeeeee;
-  box-shadow: inset 0 2px #999999;
+  background-color: #EEE;
+  box-shadow: inset 0 2px #999;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -778,7 +778,7 @@ a:hover ~ .post-tile-text {
     display: table;
     clear: both; }
   .post-tile-text:hover {
-    background-color: #dddddd; }
+    background-color: #DDD; }
 
 .post-tile-title {
   display: inline-block;
@@ -792,14 +792,14 @@ a:hover ~ .post-tile-text {
   font-weight: 700;
   margin-top: 0.5em; }
   .post-tile-title:hover {
-    color: #333333; }
+    color: #333; }
 
 .post-snippet {
   font-size: 13.5px;
   word-wrap: break-all; }
 
 .recent-posts-outer .hover-tile-outer {
-  border: 2px solid #dddddd; }
+  border: 2px solid #DDD; }
 
 /* PROJECTS ------------------------------------------------------------------------------*/
 body.project-index {
@@ -1048,7 +1048,7 @@ body.project-index {
   position: relative;
   background-position: center;
   background-size: cover;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
   height: 12em;
   margin-bottom: 1.6;
   cursor: pointer; }
@@ -1103,7 +1103,7 @@ body.project-index {
 /* FOOTER ------------------------------------------------------------------------------*/
 footer {
   border-top: 1px solid gainsboro;
-  color: #999999;
+  color: #999;
   padding: 2em 0 1em 0;
   background: #F9F9F9;
   text-align: center; }
@@ -1114,7 +1114,7 @@ footer {
   margin: 0 auto 1em auto; }
 
 .copyright {
-  color: #999999;
+  color: #999;
   text-align: center;
   font-size: 0.8em; }
 
