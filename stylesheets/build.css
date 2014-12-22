@@ -468,6 +468,9 @@ Style with support for rainbow parens
   font-size: 2em;
   margin-bottom: 2em; }
 
+.principles ul {
+  padding-left: 0; }
+
 .principles li {
   float: left;
   display: block;
@@ -508,12 +511,15 @@ Style with support for rainbow parens
 .user-focused p {
   color: #333; }
 
+.iconic-person-female * {
+  fill: #333; }
+
 .bullet-icon {
   float: left;
-  background: rgba(255, 255, 255, 0.7);
   display: inline-block;
   padding: 0.875em;
   border-radius: 50%;
+  border: solid 1px #333;
   width: 3.5em;
   height: 3.5em; }
 

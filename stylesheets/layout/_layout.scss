@@ -120,6 +120,9 @@
 	// text-align: center;
 
 }
+.principles ul{
+	padding-left: 0;
+}
 .principles li{
 	@include span-columns(3);
 	font-size: 1.5em;
@@ -156,12 +159,17 @@ $icon-bullet-size: 3.5em;
 .user-focused p{
 	color: $base-font-color;
 }
+.iconic-person-female * {
+	fill: $base-font-color;
+}
 .bullet-icon {
   float: left;
-  background: rgba(255,255,255,0.7);
+  // background: rgba(255,255,255,0.7);
+  // color: $base-font-color;
   display: inline-block;
   padding: $icon-bullet-size /4;
   border-radius: 50%;
+  border: solid 1px $base-font-color;
   width: $icon-bullet-size;
   height: $icon-bullet-size;
 }
