@@ -579,7 +579,8 @@ Style with support for rainbow parens
   width: 100%; }
   @media screen and (min-width: 1000px) {
     .browsers {
-      padding-top: 2em; } }
+      padding-top: 2em;
+      padding-top: 1.2em; } }
 
 .browser-top-bar {
   background-color: #ececec;
@@ -633,7 +634,7 @@ Style with support for rainbow parens
       -ms-transform: scale(1.2);
       -o-transform: scale(1.2);
       transform: scale(1.2);
-      width: 70%; } }
+      width: 80%; } }
   .browser .browser-content {
     background: url(/img/user_smartphone.jpg);
     background-color: white;
