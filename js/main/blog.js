@@ -278,178 +278,34 @@ function parallax(){
   };
 };
 
-// FUTURE CHAERT -------------------------------------------------------------------------------------------------------------------------------
+// FUTURE CHART -------------------------------------------------------------------------------------------------------------------------------
 
-// $(document).ready(function() {
-//   var ctx = $("#future-chart").get(0).getContext("2d");
-// });
-// // document.getElementById('#future-chart');
-// // var ctx = $("#future-chart").get(0).getContext("2d");
-// var data = {
-//     labels: ["January", "February", "March", "April", "May", "June", "July"],
-//     datasets: [
-//         {
-//             label: "My First dataset",
-//             fillColor: "rgba(220,220,220,0.2)",
-//             strokeColor: "rgba(220,220,220,1)",
-//             pointColor: "rgba(220,220,220,1)",
-//             pointStrokeColor: "#fff",
-//             pointHighlightFill: "#fff",
-//             pointHighlightStroke: "rgba(220,220,220,1)",
-//             data: [65, 59, 80, 81, 56, 55, 40]
-//         },
-//         {
-//             label: "My Second dataset",
-//             fillColor: "rgba(151,187,205,0.2)",
-//             strokeColor: "rgba(151,187,205,1)",
-//             pointColor: "rgba(151,187,205,1)",
-//             pointStrokeColor: "#fff",
-//             pointHighlightFill: "#fff",
-//             pointHighlightStroke: "rgba(151,187,205,1)",
-//             data: [28, 48, 40, 19, 86, 27, 90]
-//         }
-//     ]
-// };
-// var myLineChart = new Chart(ctx).Line(data, options);
-
-// =======
-// function init() {
-//   // Run your javascript code here
-//   // document.getElementById('#future-chart');
-//   var ctx = $("#future-chart").get(0).getContext("2d");
-// var data = {
-//     labels: ["January", "February", "March", "April", "May", "June", "July"],
-//     datasets: [
-//         {
-//             label: "My First dataset",
-//             fillColor: "rgba(220,220,220,0.2)",
-//             strokeColor: "rgba(220,220,220,1)",
-//             pointColor: "rgba(220,220,220,1)",
-//             pointStrokeColor: "#fff",
-//             pointHighlightFill: "#fff",
-//             pointHighlightStroke: "rgba(220,220,220,1)",
-//             data: [65, 59, 80, 81, 56, 55, 40]
-//         },
-//         {
-//             label: "My Second dataset",
-//             fillColor: "rgba(151,187,205,0.2)",
-//             strokeColor: "rgba(151,187,205,1)",
-//             pointColor: "rgba(151,187,205,1)",
-//             pointStrokeColor: "#fff",
-//             pointHighlightFill: "#fff",
-//             pointHighlightStroke: "rgba(151,187,205,1)",
-//             data: [28, 48, 40, 19, 86, 27, 90]
-//         }
-//     ]
-// };
-// //   var myLineChart = new Chart(ctx).Line(data, options);
-// // }
-// // document.addEventListener("DOMContentLoaded", init, false);
-
-//   console.log("test");
-//   // var canvas = document.getElementById("canvas");
-//   var canvas = $("#future-chart");
-//   var ctx = canvas.getContext("2d");
-//   var futureChart = new Chart(ctx).Line(data, options);
-//   console.log("chart script?");
-// function init() {
-//   var data = [
-//       {
-//           value: 20,
-//           color:"#637b85"
-//       },
-//       {
-//           value : 30,
-//           color : "#2c9c69"
-//       },
-//       {
-//           value : 40,
-//           color : "#dbba34"
-//       },
-//       {
-//           value : 10,
-//           color : "#c62f29"
-//       }
-
-//   ];
-//   var canvas = document.getElementById("future-chart");
-//   var ctx = canvas.getContext("2d");
-//   new Chart(ctx).Doughnut(data);
-// };
-
-
-// function future_Chart() {
-//   var data = [
-//       {
-//           value: 20,
-//           color:"#637b85"
-//       },
-//       {
-//           value : 30,
-//           color : "#2c9c69"
-//       },
-//       {
-//           value : 40,
-//           color : "#dbba34"
-//       },
-//       {
-//           value : 10,
-//           color : "#c62f29"
-//       }
-
-//   ];
-//   var canvas = document.getElementById("future-chart");
-//   var ctx = canvas.getContext("2d");
-//   new Chart(ctx).Doughnut(data);
-// };
-// future_Chart();
-
-
-// function init() {
-//   var data = [
-//       {
-//           value: 20,
-//           color:"#637b85"
-//       },
-//       {
-//           value : 30,
-//           color : "#2c9c69"
-//       },
-//       {
-//           value : 40,
-//           color : "#dbba34"
-//       },
-//       {
-//           value : 10,
-//           color : "#c62f29"
-//       }
-
-//   ];
-//   var canvas = document.getElementById("future-chart");
-//   var ctx = canvas.getContext("2d");
-//   new Chart(ctx).Doughnut(data);
-// };
-
-console.log("test");
-var data = [
-    {
-        value: 20,
-        color:"#637b85"
-    },
-    {
-        value : 30,
-        color : "#2c9c69"
-    },
-    {
-        value : 40,
-        color : "#dbba34"
-    },
-    {
-        value : 10,
-        color : "#c62f29"
-    }
-
-];
+var data = {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+        },
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 86, 27, 90]
+        }
+    ]
+};
 var canvas = document.getElementById("future-chart");
 var ctx = canvas.getContext("2d");
-new Chart(ctx).Doughnut(data);
+// new Chart(ctx).Doughnut(data);
+var myLineChart = new Chart(ctx).Line(data);

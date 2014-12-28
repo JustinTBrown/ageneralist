@@ -425,10 +425,15 @@ $browser-content-background-3: #F0F0F0;
 .future-friendly .column-2{
 	@include span-columns(7);
 	// @include shift(-12);
+	height: 400px;
 }
 #future-chart{
-	height: 400px;
-	width: 400px;
+	display: block;
+	// height: 400px;
+	height: 100%;
+	margin: 0 auto;
+	// width: 400px;
+	width: 100%;
 }
 .skills{
 	@include outer-container();

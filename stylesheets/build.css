@@ -749,13 +749,16 @@ Style with support for rainbow parens
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 57.35098%; }
+  width: 57.35098%;
+  height: 400px; }
   .future-friendly .column-2:last-child {
     margin-right: 0; }
 
 #future-chart {
-  height: 400px;
-  width: 400px; }
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%; }
 
 .skills {
   max-width: 1000px;
