@@ -1,0 +1,21 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "authors": [
+    "JustinBrown <brown.jt@gmail.com>"
+  ],
+  "description": "For my personal site at justinbrown.io",
+  "license": "MIT",
+  "homepage": "justinbrown.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chartjs": "~0.2.0"
+  }
+}

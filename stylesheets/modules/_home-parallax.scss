@@ -1,10 +1,11 @@
 $parallax-window-height: 30em;
 // $parallax-window-height: 50em;
-$parallax-background-height: $parallax-window-height * 2;
+$parallax-background-height: $parallax-window-height * 2.5;
 
 .parallax-window {
   // max-height: $parallax-window-height;
-  height: 30em;
+  // height: 30em;
+  max-height: 30em;
   overflow: hidden;
   position: relative;
   // text-align: center;
@@ -26,8 +27,14 @@ $parallax-background-height: $parallax-window-height * 2;
   background-color: beige;
   // background-origin: bottom;
   // background-position: bottom;
+  // background-position: 0% 800%;
   background-position: 0% 1300%;
+  background-position: 0% 1800%;
   height: $parallax-background-height;
+  // @include media($large-screen) {
+  //   background-position: 0% 1800%;
+  //   height: $parallax-background-height;
+  // }
   // left: 0;
   right: 0;
   position: absolute;
