@@ -422,6 +422,14 @@ $browser-content-background-3: #F0F0F0;
 .future-friendly .column-1{
 	@include span-columns(5);
 }
+.future-friendly .column-2{
+	@include span-columns(7);
+	// @include shift(-12);
+}
+#future-chart{
+	height: 400px;
+	width: 400px;
+}
 .skills{
 	@include outer-container();
 	padding-bottom: 10em;

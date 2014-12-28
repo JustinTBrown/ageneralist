@@ -15,7 +15,7 @@ require(["main/iconic.min"], function() {
 	console.log("iconic.min.js loaded");
 });
 require(["main/google-analytics"], function() {});
-require(["../bower_components/chartjs/Chart"], function() {
+require(["../bower_components/chartjs/Chart.js?v=1"], function() {
 	console.log("Chart.js loaded");
 });
 require(["main/blog"], function() {
