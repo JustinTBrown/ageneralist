@@ -14,10 +14,10 @@ require(["main/highlight.pack"], function() {
 require(["main/iconic.min"], function() {
 	console.log("iconic.min.js loaded");
 });
-require(["main/google-analytics"], function() {});
-require(["../bower_components/chartjs/Chart.js?v=1"], function() {
+require(["../bower_components/chartjs/Chart.js?v=1.12"], function() {
 	console.log("Chart.js loaded");
 });
+require(["main/google-analytics"], function() {});
 require(["main/blog"], function() {
 	console.log("blog.js loaded");
 });

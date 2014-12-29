@@ -281,31 +281,60 @@ function parallax(){
 // FUTURE CHART -------------------------------------------------------------------------------------------------------------------------------
 
 var data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    datasets: [
-        {
-            label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 80, 81, 56, 55, 40]
-        },
-        {
-            label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
-            pointColor: "rgba(151,187,205,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [28, 48, 40, 19, 86, 27, 90]
-        }
-    ]
+  labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+  datasets: [
+    // {
+    //     label: "My First dataset",
+    //     fillColor: "rgba(220,220,220,0.2)",
+    //     strokeColor: "rgba(220,220,220,1)",
+    //     pointColor: "rgba(220,220,220,1)",
+    //     pointStrokeColor: "#fff",
+    //     pointHighlightFill: "#fff",
+    //     pointHighlightStroke: "rgba(220,220,220,1)",
+    //     data: [65, 59, 80, 81, 56, 55, 40]
+    // },
+    {
+      label: "My Second dataset",
+      // fillColor: "rgba(151,187,205,0.2)",
+      fillColor: "rgba(219, 70, 50, 0.7)",
+      // strokeColor: "rgba(151,187,205,1)",
+      strokeColor: "#DB4632",
+      // pointColor: "rgba(151,187,205,1)",
+      // pointColor: "#DB4632",
+      pointColor: "#fff",
+      pointStrokeColor: "#DB4632",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(151,187,205,1)",
+      data: [1, 2, 3, 6, 12, 21, 33],
+      // showScale: false
+    }
+  ]
+};
+var steps = 2;
+var options = {
+  bezierCurve: false,
+  datasetStrokeWidth: 6,
+  // multiTooltipTemplate: "<%= data %>",
+  pointDotRadius: 9,
+  pointDotStrokeWidth: 4,
+  scaleShowGridLines: false,
+  // showScale: false
+  // showScale: true
+  // scaleShowLabels: false,
+  scaleShowLabels: true,
+  scaleOverride: true,
+  scaleSteps: steps,
+  scaleStepWidth: Math.ceil(40 / steps),
+  scaleStartValue: 0,
+  showTooltips: true
+  // tooltipXPadding: 10,
+  // tooltipYPadding: 6,
+  // tooltipFontSize: 18,
+  // tooltipFontStyle: 'bold'
+
+
 };
 var canvas = document.getElementById("future-chart");
 var ctx = canvas.getContext("2d");
 // new Chart(ctx).Doughnut(data);
-var myLineChart = new Chart(ctx).Line(data);
+var myLineChart = new Chart(ctx).Line(data, options);
