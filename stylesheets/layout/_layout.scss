@@ -84,14 +84,16 @@
 	font-weight: 700;
 }
 .text-overlay h1{
+	// color: #044959;
 	font-family: "Arvo";
 	font-family: "Open Sans";
-	font-size: 0.5em;
+	// font-size: 0.5em;
 	// font-style: italic;
 	font-weight: 400;
-	margin-bottom: 2em;
+	// margin-bottom: 2em;
 }
 .text-overlay em{
+	// color: #044959;
 	font-family: 'Arvo';
 	font-style: normal;
 	font-weight: 700;
@@ -119,6 +121,7 @@
 	// @include outer-container();
 	// background: $base-font-color;
 	// background: #606060;
+	// background: #F06B59;
 	// color: #eee;
 	// color: $base-link-color;
 	padding-bottom: 8em;
@@ -190,6 +193,8 @@
 .iconic-person-female *,
 .iconic-image-landscape *,
 .iconic-iphone *,
+.iconic-tablet *,
+.iconic-laptop *,
 .iconic-timer * {
 	fill: $base-font-color;
 	stroke: $base-font-color;
@@ -358,11 +363,19 @@ $browser-content-background-3: #F0F0F0;
   z-index: 999;
 }
 
-
 .responsive{
-	background: grey;
-	background: rgba(151,187,205,1);
-	padding-bottom: 10em;
+	@include texture(180deg, lighten($red, 1), darken($red, 10),67, 1);
+	// background: grey;
+	// background: lightgray;
+	// background: rgba(151,187,205,1);
+	// background: #755B4A;
+	// background: #6BDF86;
+	// background: #DB4632;
+	// background: #88E6FC;
+	// background: #BDE9FF;
+	// background: #FFC286;
+	// background: #F06B59;
+	padding-bottom: 8em;
 	padding-top: 8em;
 }
 .responsive .container{
@@ -414,7 +427,7 @@ $browser-content-background-3: #F0F0F0;
 }
 .future-friendly{
 	padding-bottom: 8em;
-	padding-top: 8em;
+	padding-top: 10em;
 }
 .future-friendly .container{
 	@include outer-container();
@@ -454,9 +467,19 @@ $browser-content-background-3: #F0F0F0;
 	@include outer-container();
 }
 .contact{
-	// background: #DB4632;
+	background: #DB4632;
+	// background: #755B4A;
+	background:
+		linear-gradient(
+			rgba(35,35,35,0.6),
+			rgba(35,35,35,0.6)
+		),
+		// url('/img/LoveLetter.jpg');
+		url('/img/russian_typewriter.jpg');
+	background-position: center;
+	background-size: cover;
 	padding-bottom: 5em;
-	padding-top: 0em;
+	padding-top: 5em;
 }
 .contact .container{
 	text-align: center;	
@@ -464,6 +487,8 @@ $browser-content-background-3: #F0F0F0;
 }
 .contact-button{
 	@extend button;
+	// background: #fff;
+	// color: #3b3b3b;
 	// display: inline-block;
 	margin: 0 auto;
 	// text-align: center;

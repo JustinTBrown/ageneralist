@@ -380,6 +380,24 @@ Style with support for rainbow parens
 .tex .hljs-formula {
   background: #eee8d5; }
 
+.texture {
+  height: 5em;
+  width: 100%; }
+
+.texture-normal {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), -webkit-linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  float: left;
+  height: 5em;
+  width: 50%; }
+
+.texture-inverted {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), -webkit-linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  float: left;
+  height: 5em;
+  width: 50%; }
+
 /* LAYOUT ------------------------------------------------------------------------------*/
 .wrap {
   max-width: 100vw;
@@ -432,9 +450,7 @@ Style with support for rainbow parens
 .text-overlay h1 {
   font-family: "Arvo";
   font-family: "Open Sans";
-  font-size: 0.5em;
-  font-weight: 400;
-  margin-bottom: 2em; }
+  font-weight: 400; }
 
 .text-overlay em {
   font-family: 'Arvo';
@@ -516,6 +532,8 @@ Style with support for rainbow parens
 .iconic-person-female *,
 .iconic-image-landscape *,
 .iconic-iphone *,
+.iconic-tablet *,
+.iconic-laptop *,
 .iconic-timer * {
   fill: #333;
   stroke: #333; }
@@ -665,9 +683,9 @@ Style with support for rainbow parens
   z-index: 999; }
 
 .responsive {
-  background: grey;
-  background: #97bbcd;
-  padding-bottom: 10em;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), -webkit-linear-gradient(180deg, #dc4a36, #b93321), center no-repeat #dc4a36 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #dc4a36, #b93321), center no-repeat #dc4a36 scroll;
+  padding-bottom: 8em;
   padding-top: 8em; }
 
 .responsive .container {
@@ -727,7 +745,7 @@ Style with support for rainbow parens
 
 .future-friendly {
   padding-bottom: 8em;
-  padding-top: 8em; }
+  padding-top: 10em; }
 
 .future-friendly .container {
   max-width: 1000px;
@@ -782,8 +800,12 @@ Style with support for rainbow parens
     clear: both; }
 
 .contact {
+  background: #DB4632;
+  background: linear-gradient(rgba(35, 35, 35, 0.6), rgba(35, 35, 35, 0.6)), url("/img/russian_typewriter.jpg");
+  background-position: center;
+  background-size: cover;
   padding-bottom: 5em;
-  padding-top: 0em; }
+  padding-top: 5em; }
 
 .contact .container {
   text-align: center; }
