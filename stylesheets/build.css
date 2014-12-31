@@ -418,7 +418,9 @@ Style with support for rainbow parens
   text-align: left; }
 
 .hero-home {
-  background: #DB4632; }
+  background: #DB4632;
+  display: block;
+  height: 100vh; }
 
 #particles-js {
   background: #DB4632;
