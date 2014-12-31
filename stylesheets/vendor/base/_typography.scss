@@ -1,11 +1,17 @@
+// BOURBON BITTERS - TYPOGRAPHY
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Open+Sans+Condensed:300,700|Arvo:400,700);
+
 body {
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
+  display: block;
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   line-height: $base-line-height;
+  margin: 0;
 }
 
 h1,
@@ -71,6 +77,37 @@ h5 {
 
 h6 {
   font-size: $h6-font-size;
+}
+
+#landing-page h1,
+#landing-page h2,
+#landing-page h3,
+#landing-page h4,
+#landing-page h5,
+#landing-page h6{
+  @include media($mobile){
+    font-size: 2em;
+  }
+  font-family: 
+  "Open Sans",
+  sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color:#3b3b3b;
+}
+
+// h1{font-size: 64px}
+// #landing-page h1{
+//   // font-family: "Arvo";
+//   font-weight: 400;
+// }
+#landing-page h2{
+  border: none;
+  font-family: 'Open Sans';
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
 }
 
 time {

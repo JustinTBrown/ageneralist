@@ -41,7 +41,8 @@ $h1-text-alignment: center;
 
 // Colors
 $blue: #477DCA;
-$dark-gray: #333;
+// $dark-gray: #333;
+$dark-gray: #3b3b3b;
 $faint-gray: #EEE;
 // $faint-gray: #FFF;
 $medium-gray: #999;
@@ -51,6 +52,7 @@ $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $red: #DB4632;
+$transparent-red: rgba(219, 70, 50, 0.6);
 
 // Background Color
 $base-background-color: white;

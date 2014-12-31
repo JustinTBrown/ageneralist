@@ -33,11 +33,13 @@ input[type="submit"] {
 body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
-  color: #333;
+  color: #3b3b3b;
+  display: block;
   font-family: "Arvo", "EB Garamond", "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  margin: 0; }
 
 h1,
 h2,
@@ -45,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: #3b3b3b;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.25;
@@ -61,7 +63,7 @@ h6 a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #333;
+  color: #3b3b3b;
   text-decoration: none; }
   h1 a:hover,
   h2 a:hover,
@@ -109,6 +111,33 @@ h5 {
 h6 {
   font-size: 18px; }
 
+#landing-page h1,
+#landing-page h2,
+#landing-page h3,
+#landing-page h4,
+#landing-page h5,
+#landing-page h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #3b3b3b; }
+  @media screen and (max-width: 479px) {
+    #landing-page h1,
+    #landing-page h2,
+    #landing-page h3,
+    #landing-page h4,
+    #landing-page h5,
+    #landing-page h6 {
+      font-size: 2em; } }
+
+#landing-page h2 {
+  border: none;
+  font-family: 'Open Sans';
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center; }
+
 time {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 18px;
@@ -145,12 +174,12 @@ picture {
 
 blockquote {
   border-left: 2px solid #DDD;
-  color: #595959;
+  color: #616161;
   margin: 1.6em 0;
   padding-left: 0.8em; }
 
 cite {
-  color: #737373;
+  color: #7b7b7b;
   font-style: italic; }
   cite:before {
     content: "\2014 \00A0"; }
@@ -280,10 +309,6 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
-body {
-  display: block;
-  margin: 0; }
-
 /*
 
 Style with support for rainbow parens
@@ -407,17 +432,10 @@ Style with support for rainbow parens
 .body-wrap {
   margin: 6em 0 0 0; }
 
-.landing-page h2 {
-  border: none;
-  font-family: 'Open Sans';
-  font-size: 3em;
-  font-weight: 700;
-  text-align: center; }
-
-.landing-page p {
+#landing-page p {
   text-align: left; }
 
-.hero-home {
+#hero-home {
   background: #DB4632;
   display: block;
   height: 100vh;
@@ -437,45 +455,35 @@ Style with support for rainbow parens
 
 .hero-overlay {
   display: block;
+  height: 100%;
   pointer-events: none;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 5; }
+  @media screen and (max-width: 479px) {
+    .hero-overlay {
+      padding-left: 2em;
+      padding-right: 2em; } }
 
 .text-overlay {
-  margin: 0 auto;
-  padding-top: 16em;
-  width: 800px; }
-
-.text-overlay header {
-  font-family: 'Open Sans';
-  font-size: 3em;
-  font-weight: 700; }
-
-.text-overlay h1 {
-  font-family: "Arvo";
-  font-family: "Open Sans";
-  font-weight: 400; }
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .text-overlay em {
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 700; }
 
-.text-overlay span {
-  font-family: 'Arvo';
-  font-weight: 400; }
-
-.text-overlay strong {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 2px; }
-
 .point-down {
   bottom: 0;
-  color: #333;
+  color: #3b3b3b;
   display: block;
   position: absolute;
   text-align: center;
@@ -532,7 +540,7 @@ Style with support for rainbow parens
     margin-right: 0; }
 
 #user-focused p {
-  color: #333; }
+  color: #3b3b3b; }
 
 .bullet-icon {
   border-radius: 50%;
@@ -720,8 +728,8 @@ Style with support for rainbow parens
 #responsive .iconic-laptop-screen-border *,
 #responsive .iconic-tablet-body *,
 #responsive .iconic-iphone-body * {
-  fill: #333;
-  stroke: #333; }
+  fill: #3b3b3b;
+  stroke: #3b3b3b; }
 
 .iphone,
 .tablet {
@@ -1216,7 +1224,7 @@ a:hover ~ .post-tile-text {
   font-weight: 700;
   margin-top: 0.5em; }
   .post-tile-title:hover {
-    color: #333; }
+    color: #3b3b3b; }
 
 .post-snippet {
   font-size: 13.5px;
@@ -1507,7 +1515,7 @@ body.project-index {
     display: block; }
   .hover-tile-outer .hover-tile-hidden {
     position: relative;
-    background: rgba(51, 51, 51, 0.95); }
+    background: rgba(59, 59, 59, 0.95); }
     @media screen and (min-width: 768px) {
       .hover-tile-outer .hover-tile-hidden {
         padding: 3em 5em; } }
@@ -1610,8 +1618,8 @@ footer {
 .iconic-tablet *,
 .iconic-laptop *,
 .iconic-timer * {
-  fill: #333;
-  stroke: #333; }
+  fill: #3b3b3b;
+  stroke: #3b3b3b; }
 
 a:hover .iconic-person-female-body {
   fill: #DB4632; }
