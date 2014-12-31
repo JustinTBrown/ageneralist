@@ -76,7 +76,7 @@
 .text-overlay{
 	// color: #fff;
 	margin: 0 auto;
-	padding-top: 12em;
+	padding-top: 16em;
 	width: 800px;
 }
 .text-overlay header{
@@ -118,7 +118,7 @@
 	text-align: center;
 	width: 100%;
 }
-.principles{
+#principles{
 	// @include outer-container();
 	// background: $base-font-color;
 	// background: #606060;
@@ -131,14 +131,14 @@
 .container{
 	@include outer-container();
 }
-// .principles .iconic-person-female *,
-// .principles .iconic-image-landscape *,
-// .principles .iconic-iphone *,
-// .principles .iconic-timer * {
+// #principles .iconic-person-female *,
+// #principles .iconic-image-landscape *,
+// #principles .iconic-iphone *,
+// #principles .iconic-timer * {
 // 	fill: #fff;
 // 	stroke: #fff;
 // }
-.principles h2{
+#principles h2{
 	// border: none;
 	// color: #eee;
 	// color: $base-link-color;
@@ -153,20 +153,26 @@
 	// text-align: center;
 
 }
-.principles ul{
+#principles ul{
 	padding-left: 0;
 }
-.principles li{
+#principles li{
 	@include span-columns(3);
 	font-size: 1.5em;
 	text-align: center;
 }
-.user-focused{
-	@include outer-container();
+#principles a{
+	// color: $darkgrey;
+	color: #3b3b3b;
+}
+#principles a:hover{
+	color: $red;
+}
+#user-focused .container{
 	padding-top: 10em;
 	padding-bottom: 8em;
 }
-.user-focused .column-1{
+#user-focused .column-1{
 	// @include row();
 	@include span-columns(6);
 	// @include shift(7);
@@ -175,10 +181,10 @@
   margin-bottom: $base-line-height;
 
 }
-.user-focused .column-2{
+#user-focused .column-2{
 
 }
-.user-focused h2{
+#user-focused h2{
 	// display: inline-block;
 	// margin-top: 1em;
 	// margin-top: 0;
@@ -188,17 +194,8 @@
   // margin-bottom: $icon-bullet-size /6;
   // border-bottom: 1px solid transparentize($base-font-color, .8);
 }
-.user-focused p{
+#user-focused p{
 	color: $base-font-color;
-}
-.iconic-person-female *,
-.iconic-image-landscape *,
-.iconic-iphone *,
-.iconic-tablet *,
-.iconic-laptop *,
-.iconic-timer * {
-	fill: $base-font-color;
-	stroke: $base-font-color;
 }
 $icon-bullet-size: 3.5em;
 .bullet-icon {
@@ -254,16 +251,16 @@ $icon-bullet-size: 3.5em;
 // 	float: left;
 // 	// text-align: left;
 // }
-.content-driven{
+#content-driven{
 	@include outer-container();
 	margin-bottom: 8em;
 	margin-top: 8em;
 }
-.content-driven .column-1{
+#content-driven .column-1{
 	@include span-columns(6);
 	@include shift(6);
 }
-.content-driven .column-2{
+#content-driven .column-2{
 	@include span-columns(6);
 	@include shift(-12);
 }
@@ -364,7 +361,7 @@ $browser-content-background-3: #F0F0F0;
   z-index: 999;
 }
 
-.responsive{
+#responsive{
 	@include texture(180deg, lighten($red, 1), darken($red, 10),67, 1);
 	// background: grey;
 	// background: lightgray;
@@ -379,27 +376,27 @@ $browser-content-background-3: #F0F0F0;
 	padding-bottom: 8em;
 	padding-top: 8em;
 }
-.responsive .container{
+#responsive .container{
 	@include outer-container();
 
 }
-.responsive .column-1{
+#responsive .column-1{
 	@include span-columns(5);
 	@include shift(7);
 }
-.responsive .column-2{
+#responsive .column-2{
 	@include span-columns(7);
 	@include shift(-12);
 }
-.responsive h2{
+#responsive h2{
 	margin-top: 0;
 	padding-top: 0;
 	text-align: left;
 }
-.responsive .iconic-laptop-base *,
-.responsive .iconic-laptop-screen-border *,
-.responsive .iconic-tablet-body *,
-.responsive .iconic-iphone-body * {
+#responsive .iconic-laptop-base *,
+#responsive .iconic-laptop-screen-border *,
+#responsive .iconic-tablet-body *,
+#responsive .iconic-iphone-body * {
 	fill: $base-font-color;
 	stroke: $base-font-color;
 	// height: 256px;
@@ -426,18 +423,18 @@ $browser-content-background-3: #F0F0F0;
 .laptop{
 	margin: 0 1em;
 }
-.future-friendly{
+#future-friendly{
 	padding-bottom: 8em;
 	padding-top: 10em;
 }
-.future-friendly .container{
+#future-friendly .container{
 	@include outer-container();
 
 }
-.future-friendly .column-1{
+#future-friendly .column-1{
 	@include span-columns(6);
 }
-.future-friendly .column-2{
+#future-friendly .column-2{
 	@include span-columns(6);
 	// @include shift(-12);
 	height: 400px;
@@ -450,7 +447,7 @@ $browser-content-background-3: #F0F0F0;
 	// width: 400px;
 	width: 100%;
 }
-.future-friendly figcaption{
+#future-friendly figcaption{
 	color: #16161d;
 	font-family: 'Open Sans Condensed', adobe-caslon-pro, sans-serif;
 	font-size: 0.7em;

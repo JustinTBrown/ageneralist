@@ -440,7 +440,7 @@ Style with support for rainbow parens
 
 .text-overlay {
   margin: 0 auto;
-  padding-top: 12em;
+  padding-top: 16em;
   width: 800px; }
 
 .text-overlay header {
@@ -476,7 +476,7 @@ Style with support for rainbow parens
   text-align: center;
   width: 100%; }
 
-.principles {
+#principles {
   padding-bottom: 8em;
   padding-top: 5em; }
 
@@ -489,55 +489,45 @@ Style with support for rainbow parens
     display: table;
     clear: both; }
 
-.principles h2 {
+#principles h2 {
   font-size: 2em;
   margin-bottom: 2em; }
 
-.principles ul {
+#principles ul {
   padding-left: 0; }
 
-.principles li {
+#principles li {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
   font-size: 1.5em;
   text-align: center; }
-  .principles li:last-child {
+  #principles li:last-child {
     margin-right: 0; }
 
-.user-focused {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+#principles a {
+  color: #3b3b3b; }
+
+#principles a:hover {
+  color: #DB4632; }
+
+#user-focused .container {
   padding-top: 10em;
   padding-bottom: 8em; }
-  .user-focused:after {
-    content: "";
-    display: table;
-    clear: both; }
 
-.user-focused .column-1 {
+#user-focused .column-1 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   overflow: auto;
   margin-bottom: 1.6; }
-  .user-focused .column-1:last-child {
+  #user-focused .column-1:last-child {
     margin-right: 0; }
 
-.user-focused p {
+#user-focused p {
   color: #333; }
-
-.iconic-person-female *,
-.iconic-image-landscape *,
-.iconic-iphone *,
-.iconic-tablet *,
-.iconic-laptop *,
-.iconic-timer * {
-  fill: #333;
-  stroke: #333; }
 
 .bullet-icon {
   border-radius: 50%;
@@ -572,33 +562,33 @@ Style with support for rainbow parens
   padding-top: 0.1em;
   text-align: center; }
 
-.content-driven {
+#content-driven {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8em;
   margin-top: 8em; }
-  .content-driven:after {
+  #content-driven:after {
     content: "";
     display: table;
     clear: both; }
 
-.content-driven .column-1 {
+#content-driven .column-1 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 51.17883%; }
-  .content-driven .column-1:last-child {
+  #content-driven .column-1:last-child {
     margin-right: 0; }
 
-.content-driven .column-2 {
+#content-driven .column-2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: -102.35765%; }
-  .content-driven .column-2:last-child {
+  #content-driven .column-2:last-child {
     margin-right: 0; }
 
 .browsers {
@@ -683,48 +673,48 @@ Style with support for rainbow parens
   width: 100%;
   z-index: 999; }
 
-.responsive {
+#responsive {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), -webkit-linear-gradient(180deg, #dc4a36, #b93321), center no-repeat #dc4a36 scroll;
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #dc4a36, #b93321), center no-repeat #dc4a36 scroll;
   padding-bottom: 8em;
   padding-top: 8em; }
 
-.responsive .container {
+#responsive .container {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto; }
-  .responsive .container:after {
+  #responsive .container:after {
     content: "";
     display: table;
     clear: both; }
 
-.responsive .column-1 {
+#responsive .column-1 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
   margin-left: 59.70863%; }
-  .responsive .column-1:last-child {
+  #responsive .column-1:last-child {
     margin-right: 0; }
 
-.responsive .column-2 {
+#responsive .column-2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 57.35098%;
   margin-left: -102.35765%; }
-  .responsive .column-2:last-child {
+  #responsive .column-2:last-child {
     margin-right: 0; }
 
-.responsive h2 {
+#responsive h2 {
   margin-top: 0;
   padding-top: 0;
   text-align: left; }
 
-.responsive .iconic-laptop-base *,
-.responsive .iconic-laptop-screen-border *,
-.responsive .iconic-tablet-body *,
-.responsive .iconic-iphone-body * {
+#responsive .iconic-laptop-base *,
+#responsive .iconic-laptop-screen-border *,
+#responsive .iconic-tablet-body *,
+#responsive .iconic-iphone-body * {
   fill: #333;
   stroke: #333; }
 
@@ -744,34 +734,34 @@ Style with support for rainbow parens
 .laptop {
   margin: 0 1em; }
 
-.future-friendly {
+#future-friendly {
   padding-bottom: 8em;
   padding-top: 10em; }
 
-.future-friendly .container {
+#future-friendly .container {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto; }
-  .future-friendly .container:after {
+  #future-friendly .container:after {
     content: "";
     display: table;
     clear: both; }
 
-.future-friendly .column-1 {
+#future-friendly .column-1 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%; }
-  .future-friendly .column-1:last-child {
+  #future-friendly .column-1:last-child {
     margin-right: 0; }
 
-.future-friendly .column-2 {
+#future-friendly .column-2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   height: 400px; }
-  .future-friendly .column-2:last-child {
+  #future-friendly .column-2:last-child {
     margin-right: 0; }
 
 #future-chart {
@@ -780,7 +770,7 @@ Style with support for rainbow parens
   margin: 3em auto;
   width: 100%; }
 
-.future-friendly figcaption {
+#future-friendly figcaption {
   color: #16161d;
   font-family: 'Open Sans Condensed', adobe-caslon-pro, sans-serif;
   font-size: 0.7em;
@@ -1608,3 +1598,41 @@ footer {
   position: absolute;
   top: -10em;
   width: 100%; }
+
+.iconic-person-female *,
+.iconic-image-landscape *,
+.iconic-iphone *,
+.iconic-tablet *,
+.iconic-laptop *,
+.iconic-timer * {
+  fill: #333;
+  stroke: #333; }
+
+a:hover .iconic-person-female-body {
+  fill: #DB4632; }
+
+a:hover .iconic-person-female-head {
+  fill: gray; }
+
+a:hover .iconic-image-landscape-sun {
+  fill: #fcb400; }
+
+a:hover .iconic-image-landscape-mountain {
+  fill: #b3b3b3; }
+
+a:hover .iconic-image-landscape-mountain-front {
+  fill: darkgreen; }
+
+a:hover .iconic-image-landscape-frame {
+  stroke: #4d4d4d; }
+
+a:hover .iconic-iphone-body {
+  fill: dimgray; }
+
+a:hover .iconic-timer-needle {
+  fill: #DB4632; }
+
+a:hover .iconic-timer-body,
+a:hover .iconic-timer-stop-button {
+  fill: dimgray;
+  stroke: dimgray; }

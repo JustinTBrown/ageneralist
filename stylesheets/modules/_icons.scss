@@ -1,0 +1,53 @@
+.iconic-person-female *,
+.iconic-image-landscape *,
+.iconic-iphone *,
+.iconic-tablet *,
+.iconic-laptop *,
+.iconic-timer * {
+	fill: $base-font-color;
+	stroke: $base-font-color;
+}
+
+// PERSON
+a:hover .iconic-person-female-body {
+	fill: $red;
+	// fill: $transparent-red;
+}
+a:hover .iconic-person-female-head {
+	fill: gray;
+}
+
+// IMAGE
+a:hover .iconic-image-landscape-sun {
+	fill: #fcb400;
+}
+a:hover .iconic-image-landscape-mountain {
+	fill: #b3b3b3;
+}
+a:hover .iconic-image-landscape-mountain-front {
+	// fill: #4d4d4d;
+	fill: darkgreen;
+}
+a:hover .iconic-image-landscape-frame {
+	stroke: #4d4d4d;
+}
+
+// IPHONE
+a:hover .iconic-iphone-body {
+	// fill: black;
+	// fill: darkgray;
+	fill: dimgray;
+	// stroke: darkgray;
+}
+
+// TIMER
+a:hover .iconic-timer-needle {
+	fill: $red;
+}
+a:hover .iconic-timer-body,
+a:hover .iconic-timer-stop-button {
+	// fill: darkgray;
+	fill: dimgray;
+	// stroke: darkgray;
+	stroke: dimgray;
+}
