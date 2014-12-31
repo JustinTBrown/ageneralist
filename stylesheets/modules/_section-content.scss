@@ -1,0 +1,24 @@
+.bullet-content {
+	h2{
+		display: inline-block;
+		font-size: 2.5em;
+		margin-bottom: $icon-bullet-size /6;
+	  margin-top: 0;
+	  padding-top: 0.1em;
+		text-align: left;
+	};
+  margin-left: $icon-bullet-size *1.4;
+  margin-bottom: 2em;
+}
+.center-content {
+	h2{
+		// display: inline-block;
+		font-size: 2.5em;
+		margin-bottom: $icon-bullet-size /6;
+	  margin-top: 0.3em;
+	  padding-top: 0.1em;
+		text-align: center;
+	};
+  // margin-left: $icon-bullet-size *1.4;
+  // margin-bottom: 2em;
+}

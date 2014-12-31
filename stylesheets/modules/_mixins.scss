@@ -1,3 +1,10 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+
 @mixin texture($gradient-angle, $bg-color-1, $bg-color-2, $texture-number, $inverted) { $texture-list: 
   "paper.png"             
 
@@ -109,21 +116,21 @@
 
 // The mixin above should preferably be in a file of its own. Below is the code for the object that has the texture.
 
-.texture {
-  height: 5em;
-  width: 100%;
-}
+// .texture {
+//   height: 5em;
+//   width: 100%;
+// }
 
-.texture-normal {
-  @include texture(180deg, lighten(#DDF0EF, 1), darken(#DDF0EF, 10), 67, 1); // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
-  float: left;
-  height: 5em;
-  width: 50%;
-}
+// .texture-normal {
+//   @include texture(180deg, lighten(#DDF0EF, 1), darken(#DDF0EF, 10), 67, 1); // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+//   float: left;
+//   height: 5em;
+//   width: 50%;
+// }
 
-.texture-inverted {
-  @include texture(180deg, lighten(#DDF0EF, 1), darken(#DDF0EF, 10), 67, 0); // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
-  float: left;
-  height: 5em;
-  width: 50%;
-}
+// .texture-inverted {
+//   @include texture(180deg, lighten(#DDF0EF, 1), darken(#DDF0EF, 10), 67, 0); // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+//   float: left;
+//   height: 5em;
+//   width: 50%;
+// }

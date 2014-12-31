@@ -1,0 +1,172 @@
+// LAYOUT - LANDING PAGE: OVERALL ----------------------------------------------------------------------------------------------------------------
+
+#landing-page p{
+	text-align: left;
+}
+#landing-page section{
+	padding: 10em 0;
+}
+
+// LAYOUT - LANDING PAGE: HERO SECTION
+section#hero-home{
+	background: #DB4632;
+	display: block;
+	height: 100vh;
+	overflow: hidden;
+	padding: 0;
+}
+#particles-js{
+	background: #DB4632;
+	display: block;
+	height: 105%;
+	left: -5%;
+	position: relative;
+	width: 110%;
+}
+#particle-js canvas{
+	height: 100%;
+	z-index: -1;
+}
+.hero-overlay{
+	@include media($mobile){
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	display: block;
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+.text-overlay{
+	@include vertical-align;
+}
+.point-down{
+	bottom: 0;
+	color: $base-font-color;
+	display: block;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+// LAYOUT - LANDING PAGE: PRINCIPLES SECTION
+section#principles{
+}
+.container{
+	@include outer-container();
+}
+#principles h2{
+	font-size: 2em;
+	margin-bottom: 2em;
+}
+#principles ul{
+	padding-left: 0;
+}
+#principles li{
+	@include span-columns(3);
+	font-size: 1.5em;
+	text-align: center;
+}
+#principles a{
+	color: $dark-gray;
+	// color: #3b3b3b;
+}
+#principles a:hover{
+	color: $red;
+}
+
+// LAYOUT - LANDING PAGE: USER FOCUSED
+section#user-focused{
+	padding: 0;
+}
+#user-focused .container{
+	padding-top: 10em;
+	padding-bottom: 10em;
+}
+#user-focused .column-1{
+	@include span-columns(6);
+	overflow: auto;
+  margin-bottom: $base-line-height;
+}
+#user-focused .column-2{
+
+}
+
+// LAYOUT - LANDING PAGE: CONTENT DRIVEN
+section#content-driven{
+}
+#content-driven .column-1{
+	@include span-columns(6);
+	@include shift(6);
+}
+#content-driven .column-2{
+	@include span-columns(6);
+	@include shift(-12);
+}
+
+// LAYOUT - LANDING PAGE: RESPONSIVE
+section#responsive{
+	@include texture(180deg, lighten($red, 1), darken($red, 10),67, 1);
+}
+#responsive .container{
+	@include outer-container();
+}
+#responsive .column-1{
+	@include span-columns(5);
+	@include shift(7);
+}
+#responsive .column-2{
+	@include span-columns(7);
+	@include shift(-12);
+}
+#responsive h2{
+	margin-top: 0;
+	padding-top: 0;
+	text-align: left;
+}
+
+// LAYOUT - LANDING PAGE: FUTURE FRIENDLY
+section#future-friendly{
+
+}
+#future-friendly .column-1{
+	@include span-columns(6);
+}
+#future-friendly .column-2{
+	@include span-columns(6);
+	height: 400px;
+}
+#future-chart{
+	display: block;
+	height: 100%;
+	margin: 3em auto;
+	width: 100%;
+}
+#future-friendly figcaption{
+	color: #16161d;
+	font-family: 'Open Sans Condensed', adobe-caslon-pro, sans-serif;
+	font-size: 0.7em;
+	font-weight: 300;
+}
+
+// LAYOUT - LANDING PAGE: CONTACT
+#contact{
+	background:
+		linear-gradient(
+			rgba(35,35,35,0.6),
+			rgba(35,35,35,0.6)
+		),
+		url('/img/russian_typewriter.jpg');
+	background-position: center;
+	background-size: cover;
+}
+#contact .container{
+	text-align: center;	
+}
+.contact-button{
+	@extend button;
+	margin: 0 auto;
+}
