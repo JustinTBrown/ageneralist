@@ -1,7 +1,7 @@
 // LAYOUT - LANDING PAGE: OVERALL ----------------------------------------------------------------------------------------------------------------
 
 #landing-page p{
-	text-align: left;
+	// text-align: left;
 }
 #landing-page section{
 	@include media($mobile) {
@@ -25,17 +25,17 @@ section#hero-home{
 // LAYOUT - LANDING PAGE: PRINCIPLES SECTION
 section#principles{
 }
-// #principles h2{
-// 	font-size: 2em;
-// 	margin-bottom: 2em;
-// }
+#principles h2{
+	font-size: 1.5em;
+	// margin-bottom: 2em;
+}
 #principles ul{
 	margin: 3em 0 0 0;
-	// padding-left: 0;
+	padding-left: 0;
 }
 #principles li{
 	@include span-columns(6);
-	font-size: 1em;
+	font-size: 0.8em;
 	margin: 0 0 2em 0;
 	text-align: center;
 	@include media($tablet) {
@@ -66,8 +66,10 @@ section#user-focused{
 	padding: 0 1em;
 	overflow: auto;
   margin-bottom: $base-line-height;
+  // text-align: center;
 	@include media($tablet) {
 		@include span-columns(6);
+		// text-align: left;
 	}
 }
 #user-focused .column-2{
@@ -78,25 +80,20 @@ section#content-driven{
 }
 #content-driven .column-1{
 	@include span-columns(12);
-	padding: 0 1em;
 	@include media($tablet) {
 		@include span-columns(6);
 	}
-	// @include shift(6);
 }
 #content-driven .column-2{
 	@include span-columns(12);
-	padding: 0 1em;
 	@include media($tablet) {
 		@include span-columns(6);
 	}
-	// @include shift(-12);
 }
 
 // LAYOUT - LANDING PAGE: RESPONSIVE
 section#responsive{
 	@include texture(180deg, lighten($red, 1), darken($red, 10),67, 1);
-	// padding: 0 1em;
 }
 #responsive{
 	// @include outer-container();
@@ -104,14 +101,17 @@ section#responsive{
 #responsive .column-1{
 	@include span-columns(12);
 	@include shift(0);
+	margin: 0 0 2em 0;
 	@include media($tablet) {
 		@include span-columns(5);
 		@include shift(7);
+		margin: 0;
 	}
 }
 #responsive .column-2{
 	@include span-columns(12);
 	@include shift(0);
+	text-align: center;
 	@include media($tablet) {
 		@include span-columns(7);
 		@include shift(-12);

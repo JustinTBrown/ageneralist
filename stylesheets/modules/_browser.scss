@@ -54,7 +54,7 @@ $browser-content-background-3: #F0F0F0;
 }
 
 //////////////////////////////////////////////
-
+// $browser-content-height:
 .browser {
   @include transform(scale(1));
   background-color: $browser-content-background-2;
@@ -78,6 +78,7 @@ $browser-content-background-3: #F0F0F0;
     background-repeat: no-repeat;
     background-size: cover;
     // display: block;
+    height: 10em;
     @include media($large-screen) {
       height: 10em;
     }
@@ -86,9 +87,13 @@ $browser-content-background-3: #F0F0F0;
 .cover {
   background: $base-background-color;
   border-top: 1px solid #E6E6E6;
-  height: 3.5em;
+  height: 1.5em;
   margin-top: -1em;
   position: relative;
   width: 100%;
-  z-index: 999;
+  z-index: 5;
+  @include media($large-screen) {
+    height: 3.5em;
+    
+  }
 }
