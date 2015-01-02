@@ -1,8 +1,9 @@
 .hero-overlay{
-	@include media($mobile){
-		padding-left: 2em;
-		padding-right: 2em;
-	}
+	padding-left: 2em;
+	padding-right: 2em;
+	// @include media($large-screen) {
+	// 	padding: 0;
+	// }
 	display: block;
 	height: 100%;
 	pointer-events: none;

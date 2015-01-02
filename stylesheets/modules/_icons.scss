@@ -80,12 +80,21 @@ a:hover .iconic-timer-stop-button,
 }
 .iphone,
 .tablet{
-	@include media($tablet) {
+	@include media($large-screen) {
 		@include vertical-align;
+	}
+}
+.iphone{
+	margin-left: -0.5em;
+	@include media($tablet) {
+		margin-left: 0;
 	}
 }
 .laptop{
 	margin: 0 1em;
+	@include media($screen) {
+		margin: 0;
+	}
 }
 #responsive .iconic-laptop-base *,
 #responsive .iconic-laptop-screen-border *,

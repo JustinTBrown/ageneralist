@@ -6,14 +6,10 @@
 	  margin-top: 0;
 	  padding-top: 0.1em;
 	};
-  // margin-left: $icon-bullet-size *1.4;
-  // margin-bottom: 2em;
   text-align: center;
-  // p{
-	 //  text-align: center;
-  	
-  // }
   @include media($tablet) {
+	  margin-left: $icon-bullet-size *1.4;
+	  margin-bottom: 2em;
 		text-align: left;
   }
 }

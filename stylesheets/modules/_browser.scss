@@ -79,7 +79,10 @@ $browser-content-background-3: #F0F0F0;
     background-size: cover;
     // display: block;
     height: 10em;
-    @include media($large-screen) {
+    @include media($tablet) {
+      height: 12em;
+    }    
+    @include media($screen) {
       height: 10em;
     }
   }

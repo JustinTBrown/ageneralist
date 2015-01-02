@@ -321,6 +321,7 @@ var options = {
   // multiTooltipTemplate: "<%= data %>",
   pointDotRadius: 9,
   pointDotStrokeWidth: 4,
+  responsive: true,
   scaleShowGridLines: false,
   // showScale: false
   // showScale: true
@@ -338,6 +339,10 @@ var options = {
 
 
 };
+// Chart.defaults.global = {
+//   responsive: true,
+// };
+// Chart.defaults.global.responsive = true;
 var canvas = document.getElementById("future-chart");
 var ctx = canvas.getContext("2d");
 // new Chart(ctx).Doughnut(data);
