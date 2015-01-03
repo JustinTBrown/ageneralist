@@ -139,11 +139,11 @@ section#responsive{
 			text-align: center;
 		}
 	}
-	// @include media($screen) {
-	// 	@include span-columns(6);
-	// 	@include shift(6);
-	// 	margin-bottom: 0;
-	// }
+	@include media($screen) {
+		// @include span-columns(6);
+		// @include shift(6);
+		margin-bottom: 0;
+	}
 	@include media($large-screen) {
 		@include span-columns(5);
 		@include shift(7);

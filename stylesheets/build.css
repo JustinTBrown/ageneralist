@@ -1220,6 +1220,9 @@ section#responsive {
         margin-right: 0; }
       #responsive .column-1 p {
         text-align: center; } }
+  @media screen and (min-width: 769px) {
+    #responsive .column-1 {
+      margin-bottom: 0; } }
   @media screen and (min-width: 1000px) {
     #responsive .column-1 {
       float: left;
