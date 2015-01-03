@@ -286,10 +286,11 @@ function parallax(){
 
 var data = {
   // A labels array that can contain any sort of values
-  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+  // labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+  labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"],
   // Our series array that contains series objects or in this case series data arrays
   series: [
-    [5, 2, 4, 2, 0]
+    [1, 2, 3, 6, 12, 21, 33]
   ]
 };
 var futureChart = new Chartist.Line('.ct-chart', data);
