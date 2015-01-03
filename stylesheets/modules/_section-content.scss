@@ -5,11 +5,13 @@
 		margin-bottom: $icon-bullet-size /6;
 	  margin-top: 0;
 	  padding-top: 0.1em;
+	  text-align: left;
 	};
   text-align: center;
   @include media($tablet) {
 	  margin-left: $icon-bullet-size *1.4;
 	  margin-bottom: 2em;
+	  margin-bottom: 0;
 		text-align: left;
   }
 }
