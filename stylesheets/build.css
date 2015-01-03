@@ -145,6 +145,10 @@ h6 {
     #landing-page h2 {
       font-size: 2.5em; } }
 
+#contact h2 {
+  color: #fff;
+  margin-bottom: 1em; }
+
 time {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 18px;
@@ -1984,7 +1988,7 @@ footer {
       transform: scale(1.2);
       width: 80%; } }
   .browser .browser-content {
-    background: url(/img/user_smartphone.jpg);
+    background: url(/img/Figment_HD3.jpg);
     background-color: white;
     background-position: top;
     background-repeat: no-repeat;
@@ -1995,7 +1999,7 @@ footer {
         height: 12em; } }
     @media screen and (min-width: 769px) {
       .browser .browser-content {
-        height: 10em; } }
+        height: 16em; } }
 
 .cover {
   background: white;
@@ -2023,10 +2027,10 @@ footer {
   background: url("/img/user_smartphone_reverse.jpg");
   background-size: cover;
   background-color: beige;
-  background-position: 0% 1300%;
-  background-position: 0% 1800%;
-  height: 75em;
-  right: 0;
+  background-position: top;
+  background-position: 0% 800%;
+  height: 60em;
+  left: 0;
   position: absolute;
   top: -10em;
   width: 100%; }

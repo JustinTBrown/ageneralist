@@ -297,6 +297,9 @@ var options = {
   axisX: {
     showGrid: false
   },
+  chartPadding: 0,
+  // fullWidth: true,
+  // stroke-width: 20px,
   showArea: true
 };
 var futureChart = new Chartist.Line('.ct-chart', data, options);
@@ -317,14 +320,14 @@ $chart.on('mouseenter', '.ct-point', function() {
     value = $point.attr('ct:value'),
     seriesName = $point.parent().attr('ct:series-name');
 
-  $point.animate({'stroke-width': '50px'}, 300, easeOutQuad);
+  $point.animate({'stroke-width': '30px'}, 300, easeOutQuad);
   $toolTip.html(value + '%').show();
 });
 
 $chart.on('mouseleave', '.ct-point', function() {
   var $point = $(this);
 
-  $point.animate({'stroke-width': '20px'}, 300, easeOutQuad);
+  $point.animate({'stroke-width': '10px'}, 300, easeOutQuad);
   $toolTip.hide();
 });
 
