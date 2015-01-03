@@ -285,65 +285,47 @@ function parallax(){
 // FUTURE CHART -------------------------------------------------------------------------------------------------------------------------------
 
 var data = {
-  labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"],
-  datasets: [
-    // {
-    //     label: "My First dataset",
-    //     fillColor: "rgba(220,220,220,0.2)",
-    //     strokeColor: "rgba(220,220,220,1)",
-    //     pointColor: "rgba(220,220,220,1)",
-    //     pointStrokeColor: "#fff",
-    //     pointHighlightFill: "#fff",
-    //     pointHighlightStroke: "rgba(220,220,220,1)",
-    //     data: [65, 59, 80, 81, 56, 55, 40]
-    // },
-    {
-      label: "My Second dataset",
-      // fillColor: "rgba(151,187,205,0.2)",
-      fillColor: "rgba(219, 70, 50, 0.7)",
-      // strokeColor: "rgba(151,187,205,1)",
-      strokeColor: "#DB4632",
-      // pointColor: "rgba(151,187,205,1)",
-      // pointColor: "#DB4632",
-      pointColor: "#fff",
-      pointStrokeColor: "#DB4632",
-      pointHighlightFill: "#fff",
-      pointHighlightStroke: "rgba(151,187,205,1)",
-      data: [1, 2, 3, 6, 12, 21, 33],
-      // showScale: false
-    }
+  // A labels array that can contain any sort of values
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+  // Our series array that contains series objects or in this case series data arrays
+  series: [
+    [5, 2, 4, 2, 0]
   ]
 };
-var steps = 2;
-var options = {
-  bezierCurve: false,
-  datasetStrokeWidth: 6,
-  // multiTooltipTemplate: "<%= data %>",
-  pointDotRadius: 9,
-  pointDotStrokeWidth: 4,
-  responsive: true,
-  scaleShowGridLines: false,
-  // showScale: false
-  // showScale: true
-  // scaleShowLabels: false,
-  scaleShowLabels: true,
-  scaleOverride: true,
-  scaleSteps: steps,
-  scaleStepWidth: Math.ceil(40 / steps),
-  scaleStartValue: 0,
-  showTooltips: true
-  // tooltipXPadding: 10,
-  // tooltipYPadding: 6,
-  // tooltipFontSize: 18,
-  // tooltipFontStyle: 'bold'
+var futureChart = new Chartist.Line('.ct-chart', data);
 
 
-};
-// Chart.defaults.global = {
-//   responsive: true,
+
+// var data = {
+//   labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+//   datasets: [
+//     {
+//       label: "My Second dataset",
+//       fillColor: "rgba(219, 70, 50, 0.7)",
+//       strokeColor: "#DB4632",
+//       pointColor: "#fff",
+//       pointStrokeColor: "#DB4632",
+//       pointHighlightFill: "#fff",
+//       pointHighlightStroke: "rgba(151,187,205,1)",
+//       data: [1, 2, 3, 6, 12, 21, 33],
+//     }
+//   ]
 // };
-// Chart.defaults.global.responsive = true;
-var canvas = document.getElementById("future-chart");
-var ctx = canvas.getContext("2d");
-// new Chart(ctx).Doughnut(data);
-var myLineChart = new Chart(ctx).Line(data, options);
+// var steps = 2;
+// var options = {
+//   bezierCurve: false,
+//   datasetStrokeWidth: 6,
+//   pointDotRadius: 9,
+//   pointDotStrokeWidth: 4,
+//   responsive: true,
+//   scaleShowGridLines: false,
+//   scaleShowLabels: true,
+//   scaleOverride: true,
+//   scaleSteps: steps,
+//   scaleStepWidth: Math.ceil(40 / steps),
+//   scaleStartValue: 0,
+//   showTooltips: true
+// };
+// var canvas = document.getElementById("future-chart");
+// var ctx = canvas.getContext("2d");
+// var myLineChart = new Chart(ctx).Line(data, options);

@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "chartjs": "~0.2.0"
+    "chartjs": "~0.2.0",
+    "chartist": "~0.5.0"
   }
 }

@@ -4,6 +4,7 @@
 @import "vendor/base/base";
 @import "vendor/highlight/rainbow";
 @import "modules/mixins";
+@import "../bower_components/chartist/dist/scss/chartist";
 
 // Base
 // @import "base/base";
@@ -26,6 +27,7 @@
 @import "modules/home-parallax";
 @import "modules/icons";
 @import "modules/section-content";
+@import "modules/chartist-settings";
 // test
 
 

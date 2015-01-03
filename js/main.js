@@ -14,9 +14,14 @@ require(["main/highlight.pack"], function() {
 require(["main/iconic.min"], function() {
 	console.log("iconic.min.js loaded");
 });
-require(["../bower_components/chartjs/Chart.js?v=1.12"], function() {
-	console.log("Chart.js loaded");
-});
+// require(["../bower_components/chartist/dist/chartist.min.js"], function() {
+// 	console.log("Chartist loaded");
+// });
+
+// require(["../bower_components/chartjs/Chart.js?v=1.12"], function() {
+// 	console.log("Chart.js loaded");
+// });
+
 // require(["../bower_components/chartjs/Chart.js?v=1"], function(Chart){
 // 	// Chart.defaults.global.responsive = true;
 //   // Use Chart.js as normal here.
