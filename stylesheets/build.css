@@ -1069,6 +1069,13 @@ img .header-image {
     display: table;
     clear: both; }
 
+.header-line {
+  border-bottom: solid 1px rgba(80, 80, 80, 0.5);
+  margin-bottom: 1.5em; }
+
+#responsive .header-line {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5); }
+
 section#hero-home {
   background: #DB4632;
   display: block;
@@ -1085,7 +1092,7 @@ section#principles {
   @media screen and (min-width: 480px) {
     #principles h2 {
       font-size: 2.5em;
-      margin-bottom: 2em; } }
+      margin-bottom: 0.5em; } }
 
 #principles ul {
   margin: 3em 0 0 0;
@@ -1199,6 +1206,11 @@ section#responsive {
     section#responsive {
       padding-right: 3em; } }
 
+#responsive {
+  color: #fff; }
+  #responsive h2 {
+    color: #fff; }
+
 #responsive .column-1 {
   float: left;
   display: block;
@@ -1310,7 +1322,7 @@ section#responsive {
   margin: 0 0 1em 0; }
   @media screen and (min-width: 769px) {
     #future-chart-box {
-      margin: 0 auto 2em auto; } }
+      margin: -0.5em auto 2em auto; } }
 
 .tooltip {
   background: rgba(219, 70, 50, 0.6);
@@ -1873,7 +1885,6 @@ footer {
   pointer-events: none;
   position: absolute;
   top: 0;
-  width: 100%;
   z-index: 5; }
 
 .text-overlay {
@@ -1931,8 +1942,7 @@ footer {
   width: 100%; }
   @media screen and (min-width: 1000px) {
     .browsers {
-      padding-top: 2em;
-      padding-top: 1.2em; } }
+      padding-top: 2em; } }
 
 .browser-top-bar {
   background-color: #ececec;
@@ -2038,8 +2048,24 @@ footer {
       background-position: 0% 800%;
       background-size: cover; } }
 
+.bullet-icon,
+.center-icon {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%; }
+
+#user-focused .bullet-icon {
+  border: solid 1px rgba(255, 255, 255, 0.4); }
+
+#content-driven .center-icon,
+#future-friendly .bullet-icon {
+  border: solid 1px rgba(180, 180, 180, 0.9); }
+
+#responsive .center-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border: solid 1px rgba(255, 255, 255, 0.2); }
+
 .bullet-icon {
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
   height: 3.5em;
   padding: 0.875em;
   width: 3.5em; }
@@ -2047,10 +2073,13 @@ footer {
     .bullet-icon {
       display: inline-block;
       float: left; } }
+  @media screen and (min-width: 769px) {
+    .bullet-icon {
+      margin: 0 auto; } }
 
 .center-icon {
   padding: 0.875em;
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
   width: 3.5em;
   height: 3.5em; }
 
@@ -2165,7 +2194,7 @@ section p {
 
 .center-content h2 {
   font-size: 2.5em;
-  margin-bottom: 0.58333em;
+  margin-bottom: 0.875em;
   margin-top: 0.3em;
   padding-top: 0.1em;
   text-align: center; }

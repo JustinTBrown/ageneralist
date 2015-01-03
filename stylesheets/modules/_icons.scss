@@ -1,7 +1,29 @@
 // MODULE - ICONS ----------------------------------------------------------------------------------------------------------------------------------
 // $icon-bullet-size: 3.5em;
+.bullet-icon,
+.center-icon{
+	background: rgba(255,255,255,0.4);
+	// background: $transparent-red;
+	border-radius: 50%;
+}
+#user-focused .bullet-icon{
+	border: solid 1px rgba(255,255,255,0.4);
+}
+#content-driven .center-icon,
+#future-friendly .bullet-icon{
+	// background: $transparent-red;
+	border: solid 1px rgba(180,180,180,0.9);
+
+}
+#responsive .center-icon{
+	// background: $transparent-red;
+	background: rgba(255,255,255,0.2);
+	border: solid 1px rgba(255,255,255,0.2);
+	// border: solid 1px rgba(180,180,180,0.9);
+
+}
 .bullet-icon {
-	margin: 0 auto;
+	margin: 0 auto 1em auto;
   height: $icon-bullet-size;
   padding: $icon-bullet-size /4;
   width: $icon-bullet-size;
@@ -9,10 +31,13 @@
 	  display: inline-block;
 	  float: left;
   }
+  @include media($screen) {
+  	margin: 0 auto;
+  }
 }
 .center-icon {
   padding: $icon-bullet-size /4;
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
   width: $icon-bullet-size;
   height: $icon-bullet-size;
 }

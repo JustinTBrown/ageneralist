@@ -28,7 +28,9 @@ section p{
 	h2{
 		// display: inline-block;
 		font-size: 2.5em;
-		margin-bottom: $icon-bullet-size /6;
+		// margin-bottom: $icon-bullet-size /6;
+		margin-bottom: $icon-bullet-size /4;
+		// margin-bottom: 4em;
 	  margin-top: 0.3em;
 	  padding-top: 0.1em;
 		text-align: center;
