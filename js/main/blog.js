@@ -293,9 +293,47 @@ var data = {
     [1, 2, 3, 6, 12, 21, 33]
   ]
 };
-var futureChart = new Chartist.Line('.ct-chart', data);
+var options = {
+  axisX: {
+    showGrid: false
+  },
+  showArea: true
+};
+var futureChart = new Chartist.Line('.ct-chart', data, options);
 
+var easeOutQuad = function (x, t, b, c, d) {
+  return -c * (t /= d) * (t - 2) + b;
+};
 
+var $chart = $('.ct-chart');
+
+var $toolTip = $chart
+  .append('<div class="tooltip"></div>')
+  .find('.tooltip')
+  .hide();
+
+$chart.on('mouseenter', '.ct-point', function() {
+  var $point = $(this),
+    value = $point.attr('ct:value'),
+    seriesName = $point.parent().attr('ct:series-name');
+
+  $point.animate({'stroke-width': '50px'}, 300, easeOutQuad);
+  $toolTip.html(value + '%').show();
+});
+
+$chart.on('mouseleave', '.ct-point', function() {
+  var $point = $(this);
+
+  $point.animate({'stroke-width': '20px'}, 300, easeOutQuad);
+  $toolTip.hide();
+});
+
+$chart.on('mousemove', function(event) {
+  $toolTip.css({
+    left: (event.offsetX || event.originalEvent.layerX) - $toolTip.width() / 2 - 10,
+    top: (event.offsetY || event.originalEvent.layerY) - $toolTip.height() - 40
+  });
+});
 
 // var data = {
 //   labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"],

@@ -195,8 +195,24 @@ section#future-friendly{
 #future-chart{
 	// display: block;
 	// height: 100%;
-	// margin: 3em auto;
+	margin: 3.5em auto 2em auto;
 	// width: 100%;
+}
+.ct-point{
+	
+}
+.tooltip{
+	background: $transparent-red;
+	background: rgba(80,80,80,0.7);
+	border-radius: 5%;
+	// color: $base-font-color;
+	color: white;
+	display: inline-block;
+	min-width: 5em;
+	padding: 0.5em;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
 }
 #future-friendly figcaption{
 	color: #16161d;
