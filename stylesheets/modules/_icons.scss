@@ -1,5 +1,5 @@
 // MODULE - ICONS ----------------------------------------------------------------------------------------------------------------------------------
-$icon-bullet-size: 3.5em;
+// $icon-bullet-size: 3.5em;
 .bullet-icon {
 	margin: 0 auto;
   height: $icon-bullet-size;
@@ -80,19 +80,25 @@ a:hover .iconic-timer-stop-button,
 }
 .iphone,
 .tablet{
-	@include media($large-screen) {
+	@include media($screen) {
 		@include vertical-align;
 	}
 }
 .iphone{
 	margin-left: -0.5em;
-	@include media($tablet) {
+	@include media($large-screen) {
 		margin-left: 0;
+		margin-right: -0.5em;
 	}
 }
 .laptop{
+	display: block;
 	margin: 0 1em;
 	@include media($screen) {
+		display: inline-block;
+		// margin: 0;
+	}
+	@include media($large-screen) {
 		margin: 0;
 	}
 }

@@ -16,6 +16,12 @@
 // .bullet-content > p{
 // 	text-align: center;
 // }
+section p{
+	text-align: center;
+	@include media($tablet) {
+		text-align: left;
+	}
+}
 .center-content {
 	h2{
 		// display: inline-block;
@@ -25,12 +31,9 @@
 	  padding-top: 0.1em;
 		text-align: center;
 	};
+	p{
+		text-align: center;
+	}
   // margin-left: $icon-bullet-size *1.4;
   // margin-bottom: 2em;
-}
-section p{
-	text-align: center;
-	@include media($tablet) {
-		text-align: left;
-	}
 }

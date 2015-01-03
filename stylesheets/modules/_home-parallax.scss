@@ -19,14 +19,21 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background {
-  // background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
-  background: url("/img/user_smartphone_reverse.jpg");
+  background: 
+    linear-gradient(
+      rgba(210,210,210,0.6),
+      rgba(210,210,210,0.6)
+    ),
+    url("/img/user_smartphone_reverse.jpg");
   background-size: cover;
-  // background-size: 110%;
   background-color: beige;
-  // background-origin: bottom;
-  background-position: top;
-  background-position: 0% 800%;
+  background-position: -30em -16em;
+  @include media($screen) {
+    background: url("/img/user_smartphone_reverse.jpg");
+    background-position: 0% 800%;
+    background-size: cover;
+    
+  }
   // background-position: 0% 1300%;
   // background-position: 0% 1800%;
   height: $parallax-background-height;
@@ -34,7 +41,7 @@ $parallax-background-height: $parallax-window-height * 2;
   //   background-position: 0% 1800%;
   //   height: $parallax-background-height;
   // }
-  left: 0;
+  // left: 0;
   // right: 0;
   position: absolute;
   top: - $parallax-window-height / 3;

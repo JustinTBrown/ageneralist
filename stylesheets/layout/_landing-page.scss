@@ -30,6 +30,8 @@ section#hero-home{
 
 // LAYOUT - LANDING PAGE: PRINCIPLES SECTION
 section#principles{
+	padding-left: 2em;
+	padding-right: 2em;
 }
 #principles h2{
 	font-size: 1.5em;
@@ -114,12 +116,12 @@ section#content-driven{
 // LAYOUT - LANDING PAGE: RESPONSIVE
 section#responsive{
 	@include texture(180deg, lighten($red, 1), darken($red, 10),67, 1);
-	@include media($tablet) {
+	@include media($large-screen) {
 		padding-right: 3em;
 	}
-	@include media($screen) {
-		padding-right: 0;
-	}
+	// @include media($screen) {
+	// 	padding-right: 0;
+	// }
 }
 #responsive{
 	// @include outer-container();
@@ -130,33 +132,41 @@ section#responsive{
 	// margin: 0 0 2em 0;
 	margin-bottom: 2em;
 	@include media($tablet) {
-		@include span-columns(12);
-		@include shift(0);
+		@include span-columns(8);
+		@include shift(2);
 		// margin-bottom: 0;
+		p{
+			text-align: center;
+		}
 	}
-	@include media($screen) {
-		@include span-columns(6);
-		@include shift(6);
-		margin-bottom: 0;
-	}
+	// @include media($screen) {
+	// 	@include span-columns(6);
+	// 	@include shift(6);
+	// 	margin-bottom: 0;
+	// }
 	@include media($large-screen) {
 		@include span-columns(5);
 		@include shift(7);
 		margin-bottom: 0;
+		p{
+			text-align: left;
+		}
 	}
 }
 #responsive .column-2{
 	@include span-columns(12);
 	@include shift(0);
+	// max-width: 500px;
 	text-align: center;
 	@include media($tablet) {
 		@include span-columns(12);
 		@include shift(0);
 	}
-	@include media($screen) {
-		@include span-columns(6);
-		@include shift(-12);
-	}
+	// @include media($screen) {
+	// 	@include span-columns(6);
+	// 	@include shift(-12);
+	// 	max-width: none;
+	// }
 	@include media($large-screen) {
 		@include span-columns(7);
 		@include shift(-12);
@@ -195,7 +205,17 @@ section#future-friendly{
 #future-chart{
 	// display: block;
 	// height: 100%;
-	margin: 3.5em auto 2em auto;
+	margin: 0 0 1em 0;
+  // @include media($tablet) {
+	 //  // margin-left: $icon-bullet-size *1.4;
+	 //  // padding-left: $icon-bullet-size *1.4;
+	 //  // margin-bottom: 2em;
+		// // text-align: left;
+  // }
+	@include media($screen) {
+		margin: 3.5em auto 2em auto;
+		
+	}
 	// width: 100%;
 }
 // .ct-point{
