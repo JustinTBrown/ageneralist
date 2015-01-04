@@ -1,7 +1,3 @@
-// require(['jquery'], function() {
-//     console.log('jquery required from blog.js');
-// });
-
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
     console.log("script loading?");
@@ -59,14 +55,10 @@ $('nav a').click(function(event) {
 /* @params: set the params [object, optional, default values : check particles.js] */
 
 /* config dom id (optional) + config particles params */
-
-
 function pJS_desktop(){
   particlesJS('particles-js', {
     particles: {
       color: '#fff',
-      // color: '#F0A459',
-      // color: '#FFC286',
       shape: 'circle',
       opacity: 1,
       size: 2.5,
@@ -76,8 +68,6 @@ function pJS_desktop(){
         enable_auto: true,
         distance: 250,
         color: '#fff',
-        // color: '#F0A459',
-        // color: '#FFC286',
         opacity: 0.5,
         width: 1,
         condensed_mode: {
@@ -113,10 +103,7 @@ function pJS_desktop(){
   });
 }
 
-
-
 /* MOBILE / TABLET */
-
 function pJS_mobile(){
   particlesJS('particles-js', {
     particles: {
@@ -167,7 +154,6 @@ function pJS_mobile(){
 
 
 /* LAUNCH */
-
 if(window.innerWidth > 1100){
   pJS_desktop();
 }else{
@@ -175,7 +161,6 @@ if(window.innerWidth > 1100){
 }
 
 /* on resize */
-
 window.addEventListener('resize', function() {
   checkOnResize();
 }, true);
@@ -195,59 +180,6 @@ function checkOnResize(){
     }
   }
 }
-
-
-// particlesJS('particles-js', {
-//   particles: {
-//     // color: '#fff',
-//     // color: '#353535',
-//     color: '#fff',
-//     shape: 'circle', // "circle", "edge" or "triangle"
-//     opacity: 0.8,
-//     size: 3,
-//     size_random: true,
-//     nb: 170,
-//     line_linked: {
-//       enable_auto: true,
-//       // distance: 100,
-//       distance: 120,
-//       // color: '#fff',
-//       // color: '#353535',
-//       color: '#fff',
-//       opacity: 0.8,
-//       width: 1,
-//       condensed_mode: {
-//         enable: false,
-//         rotateX: 600,
-//         rotateY: 600
-//       }
-//     },
-//     anim: {
-//       enable: true,
-//       speed: 2
-//     }
-//   },
-//   interactivity: {
-//     enable: true,
-//     mouse: {
-//       distance: 250
-//     },
-//     detect_on: 'canvas', // "canvas" or "window"
-//     mode: 'grab',
-//     line_linked: {
-//       opacity: .5
-//     },
-//     events: {
-//       onclick: {
-//         enable: true,
-//         mode: 'push', // "push" or "remove" (particles)
-//         nb: 4
-//       }
-//     }
-//   },
-//   /* Retina Display Support */
-//   retina_detect: true
-// });
 
 // PARALLAX WINDOW -------------------------------------------------------------------------------------------------------------------------
 
@@ -282,13 +214,9 @@ function parallax(){
   };
 };
 
-// FUTURE CHART -------------------------------------------------------------------------------------------------------------------------------
-
+// FUTURE CHART ------------------------------------------------------------------------------------------------------------------------
 var data = {
-  // A labels array that can contain any sort of values
-  // labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
   labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"],
-  // Our series array that contains series objects or in this case series data arrays
   series: [
     [1, 2, 3, 6, 12, 21, 33]
   ]
@@ -298,8 +226,6 @@ var options = {
     showGrid: false
   },
   chartPadding: 0,
-  // fullWidth: true,
-  // stroke-width: 20px,
   showArea: true
 };
 var futureChart = new Chartist.Line('.ct-chart', data, options);
@@ -337,37 +263,3 @@ $chart.on('mousemove', function(event) {
     top: (event.offsetY || event.originalEvent.layerY) - $toolTip.height() - 40
   });
 });
-
-// var data = {
-//   labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"],
-//   datasets: [
-//     {
-//       label: "My Second dataset",
-//       fillColor: "rgba(219, 70, 50, 0.7)",
-//       strokeColor: "#DB4632",
-//       pointColor: "#fff",
-//       pointStrokeColor: "#DB4632",
-//       pointHighlightFill: "#fff",
-//       pointHighlightStroke: "rgba(151,187,205,1)",
-//       data: [1, 2, 3, 6, 12, 21, 33],
-//     }
-//   ]
-// };
-// var steps = 2;
-// var options = {
-//   bezierCurve: false,
-//   datasetStrokeWidth: 6,
-//   pointDotRadius: 9,
-//   pointDotStrokeWidth: 4,
-//   responsive: true,
-//   scaleShowGridLines: false,
-//   scaleShowLabels: true,
-//   scaleOverride: true,
-//   scaleSteps: steps,
-//   scaleStepWidth: Math.ceil(40 / steps),
-//   scaleStartValue: 0,
-//   showTooltips: true
-// };
-// var canvas = document.getElementById("future-chart");
-// var ctx = canvas.getContext("2d");
-// var myLineChart = new Chart(ctx).Line(data, options);
