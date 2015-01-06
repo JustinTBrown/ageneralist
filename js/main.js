@@ -1,10 +1,11 @@
 // require(["main/jquery-1.11.1.min"], function(util) {});
 
-require(["main/particles"], function() {
-	console.log("particles.js loaded");
-});
 require(["jquery-2.1.3.min"], function() {
 	console.log("jquery loaded");
+});
+
+require(["main/particles"], function() {
+	console.log("particles.js loaded");
 });
 require(["main/highlight.pack"], function() {
 	hljs.initHighlightingOnLoad();

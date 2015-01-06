@@ -1136,7 +1136,11 @@ section#principles {
   color: #DB4632; }
 
 section#user-focused {
-  padding: 0; }
+  padding: 0;
+  background: url("/img/user_smartphone_reverse.jpg");
+  background-position: center;
+  background-position: 0 -5em;
+  background-size: cover; }
 
 #user-focused .container {
   padding: 4em 0; }
@@ -2022,31 +2026,6 @@ footer {
   @media screen and (min-width: 1000px) {
     .cover {
       height: 3.5em; } }
-
-.parallax-window {
-  max-height: 30em;
-  overflow: hidden;
-  position: relative;
-  width: 100%; }
-
-.parallax-static-content {
-  position: relative;
-  z-index: 9; }
-
-.parallax-background {
-  background: linear-gradient(rgba(210, 210, 210, 0.6), rgba(210, 210, 210, 0.6)), url("/img/user_smartphone_reverse.jpg");
-  background-size: cover;
-  background-color: beige;
-  background-position: -30em -16em;
-  height: 60em;
-  position: absolute;
-  top: -10em;
-  width: 100%; }
-  @media screen and (min-width: 769px) {
-    .parallax-background {
-      background: url("/img/user_smartphone_reverse.jpg");
-      background-position: 0% 800%;
-      background-size: cover; } }
 
 .bullet-icon,
 .center-icon {

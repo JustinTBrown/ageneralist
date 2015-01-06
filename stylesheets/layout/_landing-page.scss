@@ -80,6 +80,10 @@ section#principles{
 // LAYOUT - LANDING PAGE: USER FOCUSED
 section#user-focused{
 	padding: 0;
+	background: url("/img/user_smartphone_reverse.jpg");
+	background-position: center;
+	background-position: 0 -5em;
+	background-size: cover;
 }
 #user-focused .container{
 	padding: 4em 0;
