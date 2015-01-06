@@ -80,9 +80,28 @@ section#principles{
 // LAYOUT - LANDING PAGE: USER FOCUSED
 section#user-focused{
 	padding: 0;
-	background: url("/img/user_smartphone_reverse.jpg");
-	background-position: center;
-	background-position: 0 -5em;
+	background: 
+		linear-gradient( 
+			rgba(255,255,255,0.6),
+			rgba(255,255,255,0.6)
+		),
+		url("/img/user_smartphone_reverse.jpg");
+	background-position: 50% 0%;
+	@include media( $tablet ) {
+		background-position: 0 80%;
+	};
+	@include media( $screen ) {
+		background-image: 
+			linear-gradient( 
+				rgba(255,255,255,0),
+				rgba(255,255,255,0)
+			),
+			url("/img/user_smartphone_reverse.jpg");
+		background-position: 0 95%;
+	};
+	@include media( $large-screen ) {
+		background-position: 0 90%;
+	}
 	background-size: cover;
 }
 #user-focused .container{

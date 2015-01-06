@@ -1137,10 +1137,19 @@ section#principles {
 
 section#user-focused {
   padding: 0;
-  background: url("/img/user_smartphone_reverse.jpg");
-  background-position: center;
-  background-position: 0 -5em;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/img/user_smartphone_reverse.jpg");
+  background-position: 50% 0%;
   background-size: cover; }
+  @media screen and (min-width: 480px) {
+    section#user-focused {
+      background-position: 0 80%; } }
+  @media screen and (min-width: 769px) {
+    section#user-focused {
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/img/user_smartphone_reverse.jpg");
+      background-position: 0 95%; } }
+  @media screen and (min-width: 1000px) {
+    section#user-focused {
+      background-position: 0 90%; } }
 
 #user-focused .container {
   padding: 4em 0; }
