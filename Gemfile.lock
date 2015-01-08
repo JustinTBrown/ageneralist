@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    autoprefixer-rails (4.0.2.2)
+      execjs
     bigdecimal (1.2.5)
     bitters (0.10.1)
       bourbon (>= 3.2)
@@ -29,6 +31,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.0.4)
+    execjs (2.2.2)
     ffi (1.9.6)
     formatador (0.2.5)
     fssm (0.2.10)
@@ -101,6 +104,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   bigdecimal
   bitters
   bourbon

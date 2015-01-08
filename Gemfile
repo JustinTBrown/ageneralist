@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 #ruby=ruby-2.0.0-p353@ageneralist
 
+gem 'autoprefixer-rails'
 gem 'bigdecimal'
 gem 'bitters'
 gem 'bourbon'
