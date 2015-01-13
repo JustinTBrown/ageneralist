@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% comment %}<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -10,10 +10,10 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
-
+<!-- LANDING TEST -->
 <body>
   <header class="wrap">
-    <div class="site-header site-header-default">
+    <div class="site-header site-header-landing">
       <h1 class="site-name">
         <a href="/"> {{ site.title }} </a>
       </h1>
@@ -49,26 +49,19 @@
     {{ body }}
   </div>
 
-  <footer>
+ <!--  <footer>
     <div class="social-links">
-      <!-- <a href="{{site.permalink}}/feed.xml"><img src="img/rss.svg" alt="rss"></a> -->
     </div>
-    <!-- </br> -->
-    <!-- <img src="img/rss.png" alt="rss"> -->
-    <!-- <a href="/"><img class="logo" src="/img/foxy.svg"></a> -->
-<!--     <svg>
-      <path class="rss" .../>
-    </svg> -->
     <div class="footer-image">
       <img src="/img/phyllo-sunflower4.png" class="footer-image" style="min-width: 128px"> 
     </div> 
     <span class="copyright">
       &copy; {{ site.date | date: '%Y' }} Justin Brown, all rights reserved
     </span>
-  </footer>
+  </footer> -->
 
   <script src="/js/scripts.js"></script>
   <script src="/js/main/blog.js"></script>
-
 </body>
 </html>
+{% endcomment %}
