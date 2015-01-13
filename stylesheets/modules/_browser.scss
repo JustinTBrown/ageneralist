@@ -61,7 +61,7 @@ $browser-content-background-3: #F0F0F0;
   border-bottom: none;
   border-top-left-radius: $base-border-radius;
   border-top-right-radius: $base-border-radius;
-  box-shadow: 0 3px 5px transparentize(black, .7);
+  box-shadow: 0 5px 7px transparentize(black, .3);
   display: inline-block;    
   text-align: left;
   width: 90%;
@@ -73,6 +73,7 @@ $browser-content-background-3: #F0F0F0;
 
   .browser-content {
     background: url(/img/Figment_HD4.jpg);
+    // background: url(/img/Bookshelf_Bar_LargeView_partial_image.jpg);
     background-color: $browser-content-background-2; 
     background-position: top;
     background-repeat: no-repeat;
@@ -88,7 +89,8 @@ $browser-content-background-3: #F0F0F0;
   }
 }
 .cover {
-  background: $base-background-color;
+  // background: $secondary-background-color;
+  background: #fff;
   border-top: 1px solid #E6E6E6;
   height: 1.5em;
   margin-top: -1em;
