@@ -1395,6 +1395,7 @@ section#responsive {
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
+  margin-top: 6em;
   float: none; }
   .post:after {
     content: "";
