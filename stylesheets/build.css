@@ -155,7 +155,6 @@ time {
   color: #999; }
 
 p {
-  margin: 0 0 0.8em;
   font-size: 18px; }
 
 a {
@@ -1403,7 +1402,7 @@ section#responsive {
     clear: both; }
   @media screen and (min-width: 480px) {
     .post {
-      padding: 1em 2em; } }
+      padding: 1em 1em; } }
   @media screen and (min-width: 769px) {
     .post {
       padding: 1em 6em; } }
@@ -1452,7 +1451,7 @@ time.post-time {
   @media screen and (min-width: 480px) {
     .recent-posts,
     .recent-posts-outer {
-      padding: 1em 2em; } }
+      padding: 1em 1em; } }
   @media screen and (min-width: 769px) {
     .recent-posts,
     .recent-posts-outer {
@@ -1472,49 +1471,22 @@ time.post-time {
 
 li.block {
   display: inline-block;
-  margin-bottom: 3em; }
-  @media screen and (min-width: 480px) {
-    li.block {
-      display: inline;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      margin-bottom: 3em; }
-      li.block:last-child {
-        margin-right: 0; }
-      li.block:nth-child(2n) {
-        margin-right: 0; }
-      li.block:nth-child(2n+1) {
-        clear: left; } }
-  @media screen and (min-width: 769px) {
-    li.block {
-      display: inline;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-bottom: 3em; }
-      li.block:last-child {
-        margin-right: 0; }
-      li.block:nth-child(2n) {
-        margin-right: 0; }
-      li.block:nth-child(2n+1) {
-        clear: left; } }
-  @media screen and (min-width: 1000px) {
-    li.block {
-      display: inline;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-bottom: 3em; }
-      li.block:last-child {
-        margin-right: 0; }
-      li.block:nth-child(2n) {
-        margin-right: 0; }
-      li.block:nth-child(2n+1) {
-        clear: left; } }
+  margin-bottom: 3em;
+  width: 100%; }
+  li.block a {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 600; }
+  li.block time.post-time {
+    font-size: 0.8em;
+    margin: 0;
+    line-height: 2.3;
+    text-align: left; }
+    @media screen and (min-width: 769px) {
+      li.block time.post-time {
+        float: right; } }
+  li.block p {
+    margin-top: 0.5em;
+    text-align: left; }
 
 .post-tile-outer {
   position: relative;

@@ -12,7 +12,7 @@
 	margin-top: 6em;
 	// };
 	@include media($tablet) {
-		@include pad(1em 2em);
+		@include pad(1em 1em);
 	};
 	@include media($screen) {
 		@include pad(1em 6em);
@@ -86,7 +86,7 @@ time.post-time{
 	@include outer-container();
 	@include pad(1em 1em);
 	@include media($tablet) {
-		@include pad(1em 2em);
+		@include pad(1em 1em);
 	};
 	@include media($screen) {
 		@include pad(1em 6em);
@@ -104,30 +104,27 @@ time.post-time{
 	padding-left: 0;
 }
 li.block{
-	// @include media($mobile) {
 	display: inline-block;
-		// @include span-columns(12);
-	  // @include span-columns(4);
-		// @include omega(1n);
 	margin-bottom: 3em;
-	// }
-	@include media($tablet) {
-		display: inline;
-	  @include span-columns(4);
-	  @include omega(2n);
-	  margin-bottom: 3em;
+	width: 100%;
+	a {
+		font-family: $header-font-family;
+		font-weight: 600;
 	}
-	@include media($screen) {
-		display: inline;
-	  @include span-columns(6);
-	  @include omega(2n);
-	  margin-bottom: 3em;
+	time.post-time {
+		font-size: 0.8em;
+		margin: 0;
+		line-height: 2.3;
+		text-align: left;
+
+		@include media($screen) {
+			float: right;
+
+		}
 	}
-	@include media($large-screen) {
-		display: inline;
-	  @include span-columns(6);
-	  @include omega(2n);
-	  margin-bottom: 3em;
+	p {
+		margin-top: 0.5em;
+		text-align: left;
 	}
 }
 .post-tile-outer{
